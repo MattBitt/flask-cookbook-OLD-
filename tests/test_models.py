@@ -1,4 +1,4 @@
-from cookbook.models import Recipe, Step, Note
+from cookbook.models import Recipe, Step, Note, Ingredient, Department, Unit, RecipeIngredient
 from flask.ext.testing import TestCase
 from cookbook import db, app
 from flask.ext.fixtures import FixturesMixin
@@ -6,7 +6,7 @@ from flask.ext.fixtures import FixturesMixin
 FixturesMixin.init_app(app, db)
 
 class ModelTest(TestCase, FixturesMixin):
-
+    
 
     def create_app(self):
         app.config.from_object('config.TestingConfig')
@@ -23,7 +23,11 @@ class ModelTest(TestCase, FixturesMixin):
 class RecipeTest(ModelTest):
     fixtures = ['recipes.json',
                 'steps.json',
-                'notes.json']
+                'ingredients.json',
+                'units.json',
+                'notes.json',
+                'departments.json',
+                'recipeingredients.json']
 
     def test_recipe(self):
         r = Recipe.query.get(1)
@@ -83,8 +87,29 @@ class RecipeTest(ModelTest):
 
         r2 = Recipe.query.get(1)
         assert len(r2.notes.all()) == before - 1
-        print r.notes.all()
 
+    def test_recipeingredient(self):
+        rec = Recipe.query.get(1)
+        before = len(rec.recipeingredients.all())
+        
+        ri = RecipeIngredient.query.get(5)
+        #ri2 = RecipeIngredient(qty = 42, preparation = "diced")
+        #ri2.unit = Unit.query.get(1)
+        #ri2.ingredient = Ingredient.query.get(1)
+        rec.recipeingredients.append(ri)
+        #rec.recipeingredients.append(ri2)
+        db.session.add(rec)
+        db.session.add(ri)
+        #db.session.add(ri2)
+        db.session.commit()
+        
+        r2 = Recipe.query.get(1)
+        print r2.name
+        print type(r2.recipeingredients)
+        print r2.recipeingredients.all()
+        assert len(r2.recipeingredients.all()) == before + 1
+        
+                
         
 class StepTest(ModelTest):
     fixtures = ['steps.json']
@@ -116,3 +141,91 @@ class NoteTest(ModelTest):
         db.session.add(n)
         db.session.commit()
         assert len(Note.query.all()) == before + 1
+        
+        
+class IngredientTest(ModelTest):
+    fixtures = ['ingredients.json', 
+                'departments.json']
+    
+    def test_ingredient(self):
+        i = Ingredient.query.get(1)
+        assert i.name == 'cauliflower'
+        
+        
+    def test_create(self):
+        before = len(Ingredient.query.all())
+        i = Ingredient(name='carrots')
+        
+        db.session.add(i)
+        db.session.commit()
+        
+        
+class DepartmentTest(ModelTest):
+    fixtures = ['departments.json']
+    
+    def test_department(self):
+        d = Department.query.get(1)
+        assert d.name == 'Produce'
+        
+        
+    def test_create(self):
+        before = len(Department.query.all())
+        d = Department(name="Deli")
+        
+        db.session.add(d)
+        db.session.commit()
+        
+        assert len(Department.query.all()) == before + 1
+    
+    def test_remove(self):
+        before = len(Department.query.all())
+        d = Department.query.get(1)
+
+        db.session.delete(d)
+        db.session.commit()
+
+        assert len(Department.query.all()) == before - 1
+        
+
+class UnitTest(ModelTest):
+    fixtures = ['units.json']
+    
+    def test_uni(self):
+        d = Unit.query.get(1)
+        assert d.name == 'tablespoon'
+        
+        
+    def test_create(self):
+        before = len(Unit.query.all())
+        u = Unit(name="ounce")
+        
+        db.session.add(u)
+        db.session.commit()
+        
+        assert len(Unit.query.all()) == before + 1
+    
+    def test_remove(self):
+        before = len(Unit.query.all())
+        u = Unit.query.get(1)
+
+        db.session.delete(u)
+        db.session.commit()
+
+        assert len(Unit.query.all()) == before - 1       
+        
+class RecipeIngredientTest  (ModelTest):
+    fixtures = ['recipeingredients.json',
+                'recipes.json',
+                'ingredients.json',
+                'units.json']
+    
+    
+    def test_recipeingredient(self):
+        ri = RecipeIngredient.query.get(1)
+        rec = Recipe.query.get(1)
+        assert ri.qty == 4
+    
+    def test_ingredient_name(self):
+        ri = RecipeIngredient.query.get(1)
+        assert ri.ingredient_name == 'cauliflower'
+        

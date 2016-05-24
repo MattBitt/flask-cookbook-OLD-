@@ -1,0 +1,47 @@
+[
+  {
+    "model": "cookbook.models.RecipeIngredient",
+    "records": [
+      {
+        "id" : 1,
+        "recipe_id" : 1,
+        "ingredient_id" : 1,
+        "qty" : 4,
+        "unit_id" : 1,
+        "preparation" : "chopped"
+      },
+      {
+        "id" : 2,
+        "recipe_id" : 1,
+        "ingredient_id" : 2,
+        "qty" : 16,
+        "unit_id" : 2,
+        "preparation" : "diced"
+      },
+      {
+        "id" : 3,
+        "recipe_id" : 1,
+        "ingredient_id" : 3,
+        "qty" : 1,
+        "unit_id" : 4,
+        "preparation" : "cooked"
+      },
+      {
+        "id" : 4,
+        "recipe_id" : 1,
+        "ingredient_id" : 4,
+        "qty" : 1,
+        "unit_id" : 3,
+        "preparation" : "scalded"
+      },
+      {
+        "id" : 5,
+        "recipe_id" : 2,
+        "ingredient_id" : 4,
+        "qty" : 1,
+        "unit_id" : 3,
+        "preparation" : "shaken"
+      }
+    ]
+  }
+]

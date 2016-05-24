@@ -1,0 +1,23 @@
+[
+  {
+    "model": "cookbook.models.Department",
+    "records": [
+      {
+        "name": "Produce",
+        "id": 1
+      },
+      {
+        "name": "Grocery",
+        "id": 2
+      },
+      {
+        "name": "Meat",
+        "id": 3
+      },
+      {
+        "name": "Dairy",
+        "id": 4
+      }
+    ]
+  }
+]

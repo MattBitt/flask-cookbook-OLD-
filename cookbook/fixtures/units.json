@@ -1,0 +1,23 @@
+[
+  {
+    "model": "cookbook.models.Unit",
+    "records": [
+      {
+        "name": "tablespoon",
+        "id": 1
+      },
+      {
+        "name": "teaspoon",
+        "id": 2
+      },
+      {
+        "name": "cup",
+        "id": 3
+      },
+      {
+        "name": "pound",
+        "id": 4
+      }
+    ]
+  }
+]

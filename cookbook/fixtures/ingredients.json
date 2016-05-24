@@ -1,0 +1,27 @@
+[
+  {
+    "model": "cookbook.models.Ingredient",
+    "records": [
+      {
+        "name": "cauliflower",
+        "id": 1,
+        "department_id" : 1
+      },
+      {
+        "name": "broccoli",
+        "id": 2,
+        "department_id" : 1
+      },
+      {
+        "name": "spaghetti",
+        "id": 3,
+        "department_id" : 2
+      },
+      {
+        "name": "milk",
+        "id": 4,
+        "department_id" : 4
+      }
+    ]
+  }
+]
