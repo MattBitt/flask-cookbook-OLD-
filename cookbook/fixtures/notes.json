@@ -1,0 +1,11 @@
+[
+  {
+    "model": "cookbook.models.Note",
+    "records": [
+      {
+        "note": "Eat with asparagus",
+        "id": 1
+      }
+    ]
+  }
+]

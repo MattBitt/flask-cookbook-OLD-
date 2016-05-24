@@ -1,0 +1,31 @@
+[
+  {
+    "model": "cookbook.models.Step",
+    "records": [
+      {
+        "step": "Bring water to a boil",
+        "order" : 1,
+        "id": 1,
+        "recipe_id" : 1
+      },
+      {
+        "step": "Reduce to simmer",
+        "order" : 2,
+        "id": 2,
+        "recipe_id" : 1
+      },
+      {
+        "step": "Cook for 1 hour",
+        "order" : 1,
+        "id": 3,
+        "recipe_id" : 2
+      },
+      {
+        "step": "Remove from oven",
+        "order" : 4,
+        "id": 4,
+        "recipe_id" : 1
+      }
+    ]
+  }
+]

@@ -1,0 +1,19 @@
+[
+  {
+    "model": "cookbook.models.Recipe",
+    "records": [
+      {
+        "name": "Spaghetti",
+        "id": 1
+      },
+      {
+        "name": "Boudin",
+        "id": 2
+      },
+      {
+        "name": "Tacos",
+        "id": 3
+      }
+    ]
+  }
+]
