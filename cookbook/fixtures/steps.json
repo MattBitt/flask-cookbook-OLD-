@@ -22,7 +22,7 @@
       },
       {
         "step": "Remove from oven",
-        "order" : 4,
+        "order" : 3,
         "id": 4,
         "recipe_id" : 1
       }

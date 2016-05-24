@@ -10,6 +10,8 @@ class Recipe(db.Model):
     name = db.Column(db.String)
     steps = db.relationship('Step', backref='recipe',
                                 lazy='dynamic')
+    notes = db.relationship('Note', backref='recipe',
+                                lazy='dynamic')
     def __repr__(self):
         return '<Recipe {:d} {}>'.format(self.id, self.name)
 
@@ -27,7 +29,7 @@ class Step(db.Model):
 
 
     def __repr__(self):
-        return '<Step {:d} {}>'.format(self.id, self.step)
+        return '<Step {:d} {} (Recipe {})>'.format(self.order, self.step, self.recipe_id)
 
     def __str__(self):
         return self.step
@@ -38,7 +40,7 @@ class Note(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
     note = db.Column(db.String)
-    # recipe link goes here
+    recipe_id = db.Column(db.Integer, db.ForeignKey('recipes.id'))
 
     def __repr__(self):
         return '<Note {:d} {}>'.format(self.id, self.note)

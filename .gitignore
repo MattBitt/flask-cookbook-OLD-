@@ -2,3 +2,4 @@ venv/*
 instance/*
 cookbook/static/*
 .idea/*
+*.pyc

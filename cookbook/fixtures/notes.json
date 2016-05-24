@@ -4,7 +4,8 @@
     "records": [
       {
         "note": "Eat with asparagus",
-        "id": 1
+        "id": 1,
+        "recipe_id" : 1
       }
     ]
   }

@@ -38,18 +38,54 @@ class RecipeTest(ModelTest):
         db.session.commit()
         assert len(Recipe.query.all()) == before + 1
 
-    def test_recipe_steps(self):
+    def test_recipe_add_step(self):
         r = Recipe.query.get(1)
-        assert len(r.steps.all()) == 3
+        before = len(r.steps.all())
         s = Step(order = 5, step = "Have a beer")
         r.steps.append(s)
         db.session.add(r)
         db.session.add(s)
         db.session.commit()
-        print r.steps.all()
-        print Step.query.all()
+        r2 = Recipe.query.get(1)
+        assert len(r2.steps.all()) == before + 1
+        
+    def test_recipe_remove_step(self):
+        r = Recipe.query.get(1)
+        before = len(r.steps.all())
+        r.steps.filter_by(order = 1).delete()
 
+        db.session.add(r)
+        db.session.commit()
 
+        r2 = Recipe.query.get(1)
+        assert len(r2.steps.all()) == before - 1
+
+    def test_recipe_add_note(self):
+        r = Recipe.query.get(1)
+        before = len(r.notes.all())
+        n = Note(note = "Have a beer")
+        r.notes.append(n)
+                
+        db.session.add(r)
+        db.session.add(n)
+        db.session.commit()
+
+        r2 = Recipe.query.get(1)
+        assert len(r2.notes.all()) == before + 1
+        
+    def test_recipe_remove_note(self):
+        r = Recipe.query.get(1)
+        before = len(r.notes.all())
+        db.session.delete(r.notes.first())
+
+        db.session.add(r)
+        db.session.commit()
+
+        r2 = Recipe.query.get(1)
+        assert len(r2.notes.all()) == before - 1
+        print r.notes.all()
+
+        
 class StepTest(ModelTest):
     fixtures = ['steps.json']
 
