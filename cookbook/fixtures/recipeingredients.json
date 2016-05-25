@@ -30,7 +30,7 @@
         "id" : 4,
         "recipe_id" : 1,
         "ingredient_id" : 4,
-        "qty" : 1,
+        "qty" : 0.25,
         "unit_id" : 3,
         "preparation" : "scalded"
       },

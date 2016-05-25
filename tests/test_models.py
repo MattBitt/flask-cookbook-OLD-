@@ -93,20 +93,13 @@ class RecipeTest(ModelTest):
         before = len(rec.recipeingredients.all())
         
         ri = RecipeIngredient.query.get(5)
-        #ri2 = RecipeIngredient(qty = 42, preparation = "diced")
-        #ri2.unit = Unit.query.get(1)
-        #ri2.ingredient = Ingredient.query.get(1)
         rec.recipeingredients.append(ri)
-        #rec.recipeingredients.append(ri2)
+
         db.session.add(rec)
         db.session.add(ri)
-        #db.session.add(ri2)
         db.session.commit()
         
         r2 = Recipe.query.get(1)
-        print r2.name
-        print type(r2.recipeingredients)
-        print r2.recipeingredients.all()
         assert len(r2.recipeingredients.all()) == before + 1
         
                 
