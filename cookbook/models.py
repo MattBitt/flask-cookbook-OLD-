@@ -89,7 +89,30 @@ class RecipeIngredient(db.Model):
     qty = db.Column(db.Float)
     unit_id = db.Column(db.Integer, db.ForeignKey('units.id'))
     preparation = db.Column(db.String)
+    # put a column for the ingredient heading here?
+    # in this example, oil and flour would have ingredient grouping "roux" and 
+    # bell pepper... would have ingredient_grouping "gumbo"
+    # if no groupings field would be blank
+    # allow for links to subrecipes on our site?
+    # Roux
+    # 1 cup oil
+    # 1 cup of flour
+    # Gumbo
+    # 1 bell pepper
+    # 
+    
+    
+    # try to emulate Modernist Cuisine Style Recipes?
+    # give each recipeingredient and step and group number
+    # subrecipe wouldn't be important anymore
+    #
+    # 1 cup oil                                 Stir Together
+    # 1 cup flour                           Cook until desired color
+    # _____________________________________________________________
+    # 1 Onion                                   Chop vegetables
+    # 1 bell pepper    
 
+    
     @property
     def ingredient_name(self):
         return Ingredient.query.get(self.ingredient_id).name

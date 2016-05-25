@@ -2,21 +2,32 @@ from bs4 import BeautifulSoup
 import urllib
 
 
+def web_scraper(url):
+    """ Class factory function. Returns a scraper object based on the url """
+    """ should first check if an hRecipe compliant site """
+    html = download_url(url)
+    if 'seriouseats' in url:
+        return SeriousEatsScraper(html)
+    elif 'skinnytaste' in url:
+        return SkinnyTasteScraper(html)
+    else:
+        return GenericScraper(html)
+
+def download_url(url):
+    return urllib.urlopen(url)
+
+    
 class Scraper(object):
 
-    def __init__(self, url):
-        self.soup = BeautifulSoup(self.download_url(url), 'html.parser')
-        self.url = url
-        
-
-    def download_url(self, url):
-        html = urllib.urlopen(url)
-        return html
+    def __init__(self, html):
+        self.soup = BeautifulSoup(html, 'html.parser')
     
+    @property
+    def title(self):
+        raise NotImplementedError
 
 class SeriousEatsScraper(Scraper):
-    
-  
+
     @property
     def title(self):
         return self.soup.find('h1', {'class' : 'recipe-title'}).text
@@ -36,3 +47,13 @@ class SeriousEatsScraper(Scraper):
         for l in list_items_with_tags:
             list_items.append(l.text)
         return list_items
+        
+class SkinnyTasteScraper(Scraper):
+    @property
+    def title(self):
+        return "SkinnyTaste Title"
+
+class GenericScraper(Scraper):
+    @property
+    def directions(self):
+        return "Generic Directions"
