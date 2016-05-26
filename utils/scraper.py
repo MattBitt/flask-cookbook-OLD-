@@ -13,6 +13,8 @@ def web_scraper(url):
         return SkinnyTasteScraper(html)
     elif 'foodnetwork' in url:
         return FoodNetworkScraper(html)
+    elif 'epicurious' in url:
+        return EpicuriousScraper(html)
     else:
         if 'hrecipe' in html:
             return GenericHRecipeScraper(html)
@@ -47,8 +49,7 @@ class Scraper(object):
     def url(self):
         return self.soup.find('meta', {'property' : 'og:url'}).get('content')
 
-    def get_list_contents(self, tag, class_name):
-        list_items_with_tags = self.soup.find_all(tag, {'class' : class_name})
+    def get_list_contents(self, list_items_with_tags):
         list_items = []
         for l in list_items_with_tags:
             list_items.append(l.text)
@@ -61,11 +62,13 @@ class Scraper(object):
 class SeriousEatsScraper(Scraper):
     @property 
     def ingredients(self):
-        return self.get_list_contents('li', 'ingredient')
+        list_items_with_tags = self.soup.find_all('li', {'class' : 'ingredient'})
+        return self.get_list_contents(list_items_with_tags)
 
     @property
     def directions(self):
-        return self.get_list_contents('div', 'recipe-procedure-text')
+        list_items_with_tags = self.soup.find_all('div', {'class' : 'recipe-procedure-text'})
+        return self.get_list_contents(list_items_with_tags)
 
         
 class SkinnyTasteScraper(Scraper):
@@ -76,18 +79,12 @@ class SkinnyTasteScraper(Scraper):
     @property
     def ingredients(self):
         list_items_with_tags = self.soup.find_all('li', {'itemprop' : 'ingredients'})
-        list_items = []
-        for l in list_items_with_tags:
-            list_items.append(l.text)
-        return list_items  
+        return self.get_list_contents(list_items_with_tags)
         
     @property
     def directions(self):
         list_items_with_tags = self.soup.find('span', {'itemprop' : 'recipeInstructions'}).find('ol').find_all('li')
-        list_items = []
-        for l in list_items_with_tags:
-            list_items.append(l.text)
-        return list_items 
+        return self.get_list_contents(list_items_with_tags)
 
 
 class GenericHRecipeScraper(Scraper):
@@ -108,15 +105,20 @@ class FoodNetworkScraper(Scraper):
     @property
     def ingredients(self):
         list_items_with_tags = self.soup.find_all('li', {'itemprop' : 'ingredients'})
-        list_items = []
-        for l in list_items_with_tags:
-            list_items.append(l.text)
-        return list_items
+        return self.get_list_contents(list_items_with_tags)
         
     @property
     def directions(self):
         list_items_with_tags = self.soup.find('ul', {'class' : 'recipe-directions-list'}).find_all('li')
-        list_items = []
-        for l in list_items_with_tags:
-            list_items.append(l.find('p').text)
-        return list_items
+        return self.get_list_contents(list_items_with_tags)
+        
+class EpicuriousScraper(Scraper):
+    @property
+    def ingredients(self):
+        list_items_with_tags = self.soup.find_all('li', {'itemprop' : 'ingredients'})
+        return self.get_list_contents(list_items_with_tags)
+        
+    @property
+    def directions(self):
+        list_items_with_tags = self.soup.find_all('li', {'class' : 'preparation-step'})
+        return self.get_list_contents(list_items_with_tags)
