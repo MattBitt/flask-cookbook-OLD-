@@ -21,12 +21,11 @@ class IngredientsViewTest(ViewTest):
     
     def test_ingredients(self):
         result = app.test_client().get('/ingredients')
+        print result.data
 
-
-        res_schema = IngredientSchema(many=True)
-        ingredients = res_schema.load(result.data)
-        #print len(ingredients)
-        #print ingredients
+        res_schema = IngredientSchema()
+        ingredients = res_schema.load(result.data).data
+        print ingredients
 
     def test_departments(self):
         result = app.test_client().get('/departments')
