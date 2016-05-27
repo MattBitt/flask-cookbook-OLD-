@@ -3,9 +3,10 @@ from flask import Flask
 from .models import db
 
 app = Flask(__name__)
-app.config.from_object('config.ProductionConfig')
-#app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
+#app.config.from_object('config.ProductionConfig')
+app.config.from_object('config.TestingConfig')
 
+from cookbook import views
 
 # Add the `constants` variable to all Jinja templates.
 @app.context_processor

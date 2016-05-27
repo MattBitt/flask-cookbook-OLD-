@@ -59,6 +59,12 @@ class Ingredient(db.Model):
     department_id = db.Column(db.Integer, db.ForeignKey('departments.id'))
     recipeingredients = db.relationship('RecipeIngredient', backref='ingredient',
                                 lazy='dynamic')
+    
+    @property
+    def as_dict(self):
+        #return {c.name: getattr(self, c.name) for c in self.__table__.columns}
+        return {'name' : self.name, 'department' : Department.query.get(self.department_id).name}
+    
     def __repr__(self):
         return '<Ingredient id {:d}: {}>'.format(self.id, self.name)
 
