@@ -9,9 +9,4 @@ db = SQLAlchemy()
 
 from cookbook import views
 
-# Add the `constants` variable to all Jinja templates.
-@app.context_processor
-def provide_constants():
-    return {"constants": {"TUTORIAL_PART": 1}}
-
 db.init_app(app)
