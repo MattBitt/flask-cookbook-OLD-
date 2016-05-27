@@ -1,6 +1,6 @@
-from flask.ext.sqlalchemy import SQLAlchemy
 
-db = SQLAlchemy()
+from cookbook import db
+
 
 
 class Recipe(db.Model):
@@ -149,3 +149,4 @@ class Unit(db.Model):
 
     def __str__(self):
         return self.name
+

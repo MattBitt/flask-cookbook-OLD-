@@ -51,7 +51,6 @@ class TestScrapers(unittest.TestCase):
         assert epi.title == 'Braised Short Ribs'
         assert '2 cups dry red wine' in epi.ingredients
         assert 'cook on low heat' in epi.directions[0]
-        print epi.image_url
         # image_url doesn't work here.  maybe image format issue??
         #assert epi.image_url == 'http://assets.epicurious.com/photos/560d79097b55306961bf354d/6:4/w_620%2Ch_413/350091_hires.jpg'
         # content="http://assets.epicurious.com/photos/560d79097b55306961bf354d/1:1/w_600%2Ch_600/350091_hires.jpg">

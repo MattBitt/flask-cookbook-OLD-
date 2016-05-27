@@ -206,7 +206,7 @@ class UnitTest(ModelTest):
 
         assert len(Unit.query.all()) == before - 1       
         
-class RecipeIngredientTest  (ModelTest):
+class RecipeIngredientTest(ModelTest):
     fixtures = ['recipeingredients.json',
                 'recipes.json',
                 'ingredients.json',

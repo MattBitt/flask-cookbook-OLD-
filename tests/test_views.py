@@ -2,7 +2,10 @@ from cookbook.models import Recipe, Step, Note, Ingredient, Department, Unit, Re
 from flask.ext.testing import TestCase
 from cookbook import db, app
 from flask.ext.fixtures import FixturesMixin
+from cookbook.schemas import IngredientSchema, DepartmentSchema
 import json
+
+
 FixturesMixin.init_app(app, db)
 
 class ViewTest(TestCase, FixturesMixin):
@@ -18,13 +21,16 @@ class IngredientsViewTest(ViewTest):
     
     def test_ingredients(self):
         result = app.test_client().get('/ingredients')
-        
-        decoded = json.loads(result.data)
-        ingredients = decoded['ingredients']
-        departments = decoded['departments']
-        print "Ingredients"
-        print ingredients
-        print "Departments"
-        print departments
+
+
+        res_schema = IngredientSchema(many=True)
+        ingredients = res_schema.load(result.data)
+        #print len(ingredients)
+        #print ingredients
+
+    def test_departments(self):
+        result = app.test_client().get('/departments')
+        assert 'Produce' in result.data
+
         
     

@@ -5,12 +5,15 @@ class Config(object):
     DEBUG = False
     TESTING = False
     SECRET_KEY = 'flask-session-insecure-secret-key'
-    SQLALCHEMY_DATABASE_URI = 'sqlite:///' + join(_cwd, 'cookbook.db')
+
     SQLALCHEMY_ECHO = False
     SQLALCHEMY_TRACK_MODIFICATIONS = True
 
 class ProductionConfig(Config):
-    SQLALCHEMY_DATABASE_URI = 'mysql://user@localhost/foo'
+    TESTING = True
+    DEBUG = True
+
+    SQLALCHEMY_DATABASE_URI = 'postgresql://postgres:mattscott@192.168.0.201/cookbook'
 
 class DevelopmentConfig(Config):
     DEBUG = True
