@@ -1,6 +1,6 @@
 
 from cookbook import db
-
+from utils.serializer import serialize 
 
 
 class Recipe(db.Model):
@@ -63,7 +63,12 @@ class Ingredient(db.Model):
     @property
     def as_dict(self):
         #return {c.name: getattr(self, c.name) for c in self.__table__.columns}
-        return {'name' : self.name, 'department' : Department.query.get(self.department_id).name}
+        return {'name' : self.name, 'department' : self.department_name}
+    
+    @property
+    def department_name(self):
+        return Department.query.get(self.department_id).name
+    
     
     def __repr__(self):
         return '<Ingredient id {:d}: {}>'.format(self.id, self.name)
@@ -71,6 +76,13 @@ class Ingredient(db.Model):
     def __str__(self):
         return self.name
 
+    def serialize(self, fields_to_exclude=[]):
+        f_map = {'id' : self.id,
+                 'name' : self.name,
+                 'department_id' : self.department_id,
+                 'department' : self.department_name}
+        return serialize(f_map, fields_to_exclude)
+        
 class Department(db.Model):
     __tablename__ = 'departments'
 
@@ -79,13 +91,24 @@ class Department(db.Model):
     ingredients = db.relationship('Ingredient', backref='department',
                                 lazy='dynamic')
 
+
+    @property
+    def ingredients_list(self):
+        return [i.serialize() for i in self.ingredients.all()]
+    
     def __repr__(self):
         return '<Department {:d} {}>'.format(self.id, self.name)
 
     def __str__(self):
         return self.name
-
-
+        
+    
+    def serialize(self, fields_to_exclude=[]):
+        f_map = {'id' : self.id,
+                 'name' : self.name,
+                 'ingredients' : self.ingredients_list}
+        return serialize(f_map, fields_to_exclude)
+    
 class RecipeIngredient(db.Model):
     __tablename__ = 'recipeingredients'
 

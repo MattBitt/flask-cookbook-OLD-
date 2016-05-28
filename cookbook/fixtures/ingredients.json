@@ -21,6 +21,11 @@
         "name": "milk",
         "id": 4,
         "department_id" : 4
+      },
+      {
+        "name": "honey kiss melon",
+        "id": 5,
+        "department_id" : 1
       }
     ]
   }
