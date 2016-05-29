@@ -44,7 +44,8 @@ def update_object(obj, obj_schema, id, envelope):
     if not json_data:
         return jsonify({'message': 'No input data provided'}), 400
     # Validate and deserialize input
-    data, errors = obj_schema.load(json_data[envelope])
+    data, errors = obj_schema.load(json_data)
+    
     if errors:
         return jsonify(errors), 422
     new_obj = obj.query.get(id)
@@ -59,7 +60,9 @@ def create_object(obj, obj_schema, envelope):
     if not json_data:
         return jsonify({'message': 'No input data provided'}), 400
     # Validate and deserialize input
-    data, errors = obj_schema.load(json_data[envelope])
+    
+    data, errors = obj_schema.load(json_data)
+    
     if errors:
         return jsonify(errors), 422
     data.save()
