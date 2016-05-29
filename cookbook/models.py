@@ -91,14 +91,14 @@ class Step(db.Model, CRUDModel):
         self.save()
 
 class StepSchema(ma.ModelSchema):
-    
+    step = fields.Str()
+    order = fields.Int()
+    recipe = fields.Nested('RecipeSchema')
     class Meta:
         # Fields to expose
-        step = fields.Str()
-        order = fields.Int()
-        recipe = fields.Nested('RecipeSchema')
+        
         model = Step
-        fields = ('step', 'order')
+        #fields = ('step', 'order')
             
 class Note(db.Model, CRUDModel):
     __tablename__ = 'notes'
@@ -120,13 +120,10 @@ class Note(db.Model, CRUDModel):
         self.save()
 
 class NoteSchema(ma.ModelSchema):
-    
+    note = fields.Str()
+    recipe = fields.Nested('RecipeSchema')
     class Meta:
-        # Fields to expose
-        note = fields.Str()
-        recipe = fields.Nested('RecipeSchema')
         model = Note
-        fields = ('id', 'note')
 
         
 class Ingredient(db.Model, CRUDModel):
@@ -184,33 +181,31 @@ class Department(db.Model, CRUDModel):
 
 
 class IngredientSchema(ma.ModelSchema):
-    
-    class Meta:
-        # Fields to expose
-        name = fields.Str()
-        department = fields.Nested('DepartmentSchema')
-        model = Ingredient
-        fields = ('id', 'department', 'name', '_links')
+    name = fields.Str()
+    department = fields.Nested('DepartmentSchema', exclude=('ingredients',))
      #Smart hyperlinking
     _links = ma.Hyperlinks({
         'self': ma.URLFor('get_ingredient', id='<id>'),
         'collection': ma.URLFor('get_ingredients')
     })
+    class Meta:
+        model = Ingredient
+
+
 
         
 class DepartmentSchema(ma.ModelSchema):
-    
-    class Meta:
-        # Fields to expose
-        model = Department
-        ingredients = fields.Nested(IngredientSchema, many=True)
-        name = fields.Str()
-        fields = ('id', 'name', '_links')
-
+    ingredients = fields.Nested(IngredientSchema, many=True, exclude=('department',))
+    name = fields.Str()
     _links = ma.Hyperlinks({
         'self': ma.URLFor('get_department', id='<id>'),
         'collection': ma.URLFor('get_departments')
-    })
+    })    
+    class Meta:
+        model = Department
+        
+
+
 
 class Unit(db.Model, CRUDModel):
     __tablename__ = 'units'
@@ -230,16 +225,9 @@ class Unit(db.Model, CRUDModel):
         
 class UnitSchema(ma.ModelSchema):
     
+    name = fields.String()
     class Meta:
-        # Fields to expose
-        model = Unit
-        name = fields.String()
-        fields = ('id', 'name', '_links')
-
-    _links = ma.Hyperlinks({
-        'self': ma.URLFor('get_unit', id='<id>'),
-        'collection': ma.URLFor('get_units')
-    })        
+        model = Unit    
 
 class Recipe(db.Model, CRUDModel):
     __tablename__ = 'recipes'
@@ -268,16 +256,13 @@ class Recipe(db.Model, CRUDModel):
         self.save()
 
 class RecipeSchema(ma.ModelSchema):
-    
-    class Meta:
-        # Fields to expose
-        model = Recipe
-        steps = fields.Nested(StepSchema, many=True)
-        notes = fields.Nested(NoteSchema, many=True)
-        name = fields.Str()
-        fields = ('id', 'name', '_links')
-
+    steps = fields.Nested(StepSchema, many=True, exclude=('recipe',))
+    notes = fields.Nested(NoteSchema, many=True, exclude=('recipe',))
+    name = fields.Str()
     _links = ma.Hyperlinks({
         'self': ma.URLFor('get_recipe', id='<id>'),
         'collection': ma.URLFor('get_recipes')
     })
+    class Meta:
+        # Fields to expose
+        model = Recipe
