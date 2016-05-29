@@ -1,9 +1,13 @@
 from cookbook import app, api
-from cookbook.models import Ingredient, Department
+from cookbook.models import Ingredient, Department, DepartmentSchema, IngredientSchema
 from flask import jsonify
 
 import json
 
+department_schema = DepartmentSchema()
+departments_schema = DepartmentSchema(many=True)
+ingredient_schema = IngredientSchema()
+ingredients_schema = IngredientSchema(many=True)
 
 def get_individual_object(obj, id):
     q = obj.query.get(id)
@@ -26,27 +30,46 @@ def index():
     return "Hello, World!"
   
 
-@app.route('/departments')
-def get_departments_list():
-    return get_objects(Department.query)
+@app.route('/departments/', methods=['GET'])
+def get_departments():   
+    all_departments = Department.query.all()
+    result = departments_schema.dump(all_departments)
+    print result.data
+    return jsonify(departments=result.data)
     
-
-@app.route('/departments/<int:department_id>')
-def get_department(department_id):
-    return get_individual_object(Department, department_id)
-
-@app.route('/departments/<int:department_id>/ingredients')
-def get_department_ingredients(department_id):
-    d = Department.query.get(department_id)
-    return get_objects(d.ingredients)
-
     
-@app.route('/ingredients')            
-def get_ingredients_list():
-    return get_objects(Ingredient.query)
- 
-@app.route('/ingredients/<int:ingredient_id>')       
-def get_ingredient(ingredient_id):
-    return get_individual_object(Ingredient, ingredient_id)
+@app.route('/departments/<int:id>', methods=['GET'])
+def get_department(id):
+    department = Department.query.get(id)
+    result = department_schema.dump(department)
+    return jsonify(department=result.data)
+
+
+@app.route('/ingredients/', methods=['GET'])
+def get_ingredients():   
+    all_ingredients = Ingredient.query.all()
+    if all_ingredients:
+        result = ingredients_schema.dump(all_ingredients)
+        return jsonify(ingredient=result.data)
+    else:
+        return jsonify({'message' : 'No ingredients found'})
 
         
+@app.route('/ingredients/<int:id>', methods=['GET'])
+def get_ingredient(id):
+    try:
+        ingredient = Ingredient.query.get(id)
+    except IntegrityError:
+        return jsonify({"message": "Ingredient could not be found."}), 400
+    return ingredient_schema.jsonify(ingredient)    
+    
+@app.route('/departments/<int:id>/ingredients/', methods=['GET'])
+def get_department_ingredients(id):
+    try:
+        department = Department.query.get(id)
+    except IntegrityError:
+        return jsonify({"message": "Department could not be found."}), 400
+    department_result = department_schema.dump(department)
+    ingredients_result = ingredients_schema.dump(department.ingredients.all())
+    return jsonify({'department': department_result.data, 'ingredients': ingredients_result.data})
+    

@@ -1,25 +1,8 @@
 
-from cookbook import db
+from cookbook import db, ma
 from utils.serializer import serialize 
+from marshmallow import fields
 
-
-class Recipe(db.Model):
-    __tablename__ = 'recipes'
-
-    id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String)
-    steps = db.relationship('Step', backref='recipe',
-                                lazy='dynamic')
-    notes = db.relationship('Note', backref='recipe',
-                                lazy='dynamic')
-    recipeingredients = db.relationship('RecipeIngredient', backref='recipe',
-                                lazy='dynamic')                                
-                                
-    def __repr__(self):
-        return '<Recipe {:d} {}>'.format(self.id, self.name)
-
-    def __str__(self):
-        return self.name
 
 
 class Step(db.Model):
@@ -57,8 +40,8 @@ class Ingredient(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String)
     department_id = db.Column(db.Integer, db.ForeignKey('departments.id'))
-    recipeingredients = db.relationship('RecipeIngredient', backref='ingredient',
-                                lazy='dynamic')
+    #recipeingredients = db.relationship('RecipeIngredient', backref='ingredient',
+    #                            lazy='dynamic')
     
     @property
     def as_dict(self):
@@ -108,7 +91,45 @@ class Department(db.Model):
                  'name' : self.name,
                  'ingredients' : self.ingredients_list}
         return serialize(f_map, fields_to_exclude)
+
+
+class IngredientSchema(ma.ModelSchema):
+    class Meta:
+        # Fields to expose
+        
+        department = fields.Nested('DepartmentSchema')
+        
+        #department_id = fields.Int()
+        #name = fields.String()
+        
+        model = Ingredient
+        fields = ('department', 'department_name', 'name', '_links')#,'department')
+     #Smart hyperlinking
+    _links = ma.Hyperlinks({
+        'self': ma.URLFor('get_ingredient', id='<id>'),
+        'collection': ma.URLFor('get_ingredients')
+    })
+
+        
+class DepartmentSchema(ma.ModelSchema):
     
+    class Meta:
+        # Fields to expose
+        model = Department
+        ingredients = fields.Nested(IngredientSchema, many=True)
+        name = fields.String()
+        
+        fields = ('id', 'name', '_links')#,'ingredients')
+    _links = ma.Hyperlinks({
+        'self': ma.URLFor('get_department', id='<id>'),
+        'collection': ma.URLFor('get_departments')
+    })
+
+
+
+
+
+        
 class RecipeIngredient(db.Model):
     __tablename__ = 'recipeingredients'
 
@@ -173,3 +194,20 @@ class Unit(db.Model):
     def __str__(self):
         return self.name
 
+class Recipe(db.Model):
+    __tablename__ = 'recipes'
+
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String)
+    steps = db.relationship('Step', backref='recipe',
+                                lazy='dynamic')
+    notes = db.relationship('Note', backref='recipe',
+                                lazy='dynamic')
+    recipeingredients = db.relationship('RecipeIngredient', backref='recipe',
+                                lazy='dynamic')                                
+                                
+    def __repr__(self):
+        return '<Recipe {:d} {}>'.format(self.id, self.name)
+
+    def __str__(self):
+        return self.name

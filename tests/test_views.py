@@ -33,7 +33,8 @@ class DepartmentsViewTest(ViewTest):
     
     def test_department(self):
         result = app.test_client().get('/departments/1')
-        departments = json.loads(result.data)['departments']
+        print result.data
+        departments = json.loads(result.data)['department']
         
         assert departments['name'] == 'Produce'
         assert departments['id'] == 1
