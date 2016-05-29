@@ -3,7 +3,7 @@
     "model": "cookbook.models.Recipe",
     "records": [
       {
-        "name": "Spaghetti",
+        "name": "Spaghetti and Meatballs",
         "id": 1
       },
       {

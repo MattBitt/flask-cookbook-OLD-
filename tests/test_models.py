@@ -31,7 +31,7 @@ class RecipeTest(ModelTest):
 
     def test_recipe(self):
         r = Recipe.query.get(1)
-        assert r.name == 'Spaghetti'
+        assert r.name == 'Spaghetti and Meatballs'
 
 
     def test_create(self):
