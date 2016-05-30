@@ -194,17 +194,20 @@ class IngredientSchema(ma.ModelSchema):
 
         
 class DepartmentSchema(ma.ModelSchema):
-    ingredients = fields.Nested(IngredientSchema, many=True, exclude=('department',))
-    name = fields.Str(required=True)
-    id = fields.Int(dump_only=True)
-    #_links = ma.Hyperlinks({
-    #    'self': ma.URLFor('get_department', id='<id>'),
-    #    'collection': ma.URLFor('get_departments')
-    #})    
     class Meta:
         model = Department
+        sqla_session = db.session
+    #ingredients = fields.Nested(IngredientSchema, many=True, exclude=('department',))
+    #name = fields.Str(required=True)
+    #id = fields.Int(dump_only=True)
+    
+    #_links = ma.Hyperlinks({
+    #        'self': ma.URLFor('get_department', id='<id>'),
+    #        'collection': ma.URLFor('get_departments')
+    #    })
         
 
+        
 
 
 class Unit(db.Model, CRUDModel):

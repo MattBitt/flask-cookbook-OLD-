@@ -25,16 +25,17 @@ def get_object(obj, obj_schema, id, envelope):
     except IntegrityError:
         return jsonify({"message": "{} could not be found.".format(envelope)}), 400
     if new_obj:
-        result = obj_schema.dump(new_obj)
-        return jsonify({envelope : result.data})
+        data, errors = obj_schema.dump(new_obj)
+        return jsonify(data)
     else:
         return jsonify({'message' : 404})
         
 def get_objects(obj, obj_schema, envelope):
     objs = obj.query.all()
     if objs:
-        result = obj_schema.dump(objs)
-        return jsonify({envelope : result.data})
+        data, errors = obj_schema.dump(objs)
+
+        return jsonify(envelope=data)
     else:
         return jsonify({'message' : 'No {}s found'.format(envelope)})
 
