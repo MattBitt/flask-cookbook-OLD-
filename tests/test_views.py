@@ -1,12 +1,12 @@
 from cookbook.models import Recipe, Step, Note, Ingredient, Department, Unit, RecipeIngredient
-from cookbook.models import DepartmentSchema, IngredientSchema
+from cookbook.schemas import DepartmentSchema, IngredientSchema
 from flask.ext.testing import TestCase
 from cookbook import db, app
 from flask.ext.fixtures import FixturesMixin
 import json
 import pprint
 import unittest 
-
+import jsonpickle
 
 FixturesMixin.init_app(app, db)
 
@@ -33,41 +33,66 @@ class ViewTest(TestCase, FixturesMixin):
     def t_client_delete(self, url):
         return app.test_client().delete(url)
 
-@unittest.skip('skipping') 
+
 class IngredientsViewTest(ViewTest):
     fixtures = ['ingredients.json', 
                 'departments.json']
     
     def test_ingredient(self):
         result = app.test_client().get('/ingredients/1')
-        ingredients = json.loads(result.data)['ingredients']
-        assert ingredients['name'] == 'cauliflower'
-        assert ingredients['id'] == 1
+        assert result.status_code == 200
+        obj_dict = json.loads(result.data)['ingredients']
+        data, errors = IngredientSchema().load(obj_dict)
+        assert errors == {}
+        assert isinstance(data, Ingredient) == True
+        assert data.name == 'cauliflower'
+        assert data.id == 1
+        assert data.department.id == 1
         
+    
     def test_bad_ingredient_id(self):
         result = app.test_client().get('/ingredients/15')
-        error = json.loads(result.data)['message']
-        assert error == 404
-        
+        assert result.status_code == 404
+    
+ 
     def test_all_ingredients(self):
         result = app.test_client().get('/ingredients/')
-        ingredients = json.loads(result.data)['ingredients']
-        assert len(ingredients) == 5
-    
+        assert result.status_code == 200
+        obj_dict_list = json.loads(result.data)['ingredients']
+        data, errors = IngredientSchema(many=True).load(obj_dict_list)
+        assert len(data) == 5
+        assert data[0].name == 'cauliflower'
+        
     def test_create_ingredient(self):
-        ing = Ingredient(name='bell pepper')
-        Department.query.get(1).ingredients.append(ing)
-        j = IngredientSchema().load(ing)
-        result = self.t_client_post('/ingredients/', j.data)
-        assert Ingredient.query.get(6).name == 'bell pepper'
-   
-    def test_update_ingredient(self):
-        new_ing = Ingredient(name='watermelon')
-        Department.query.get(2).ingredients.append(new_ing)
-        j = IngredientSchema().dumps(new_ing)
-        result = self.t_client_put('/ingredients/1', j.data)
+        ing = r"""{"name" : "ground pork", "department" : { "id" : 2, "name" : "Meat"}}"""
+        result = self.t_client_post('/ingredients/', ing)
+        assert result.status_code == 200
+        result = app.test_client().get('/ingredients/')
+        assert result.status_code == 200
+        assert 'ground pork' in result.data
+    
+    def test_create_ingredient_missing_department(self):
+        ing = r"""{"name" : "ground pork"}"""
+        result = self.t_client_post('/ingredients/', ing)
+        assert 'Missing data' in result.data
+    
+    
+    def test_update_ingredient_name(self):
+        assert Ingredient.query.get(1).name == 'cauliflower'
+        ing = r"""{"name" : "watermelon"}"""
+        result = self.t_client_put('/ingredients/1', ing)
+        assert result.status_code == 200
         assert Ingredient.query.get(1).name == 'watermelon'
-        assert Ingredient.query.get(1).department_id
+        assert Ingredient.query.get(1).department_id == 1
+    
+    def test_update_ingredient_department(self):
+        assert Ingredient.query.get(1).name == 'cauliflower'
+        ing = r"""{"department" : {"name" : "Meat", "id" : 3}}"""
+        result = self.t_client_put('/ingredients/1', ing)
+        assert result.status_code == 200
+        assert Ingredient.query.get(1).name == 'cauliflower'
+        assert Ingredient.query.get(1).department.id == 3
+        assert Department.query.get(3).name == 'Meat'
         
     def test_delete_ingredient(self):
         assert Ingredient.query.get(1).name == 'cauliflower'
@@ -81,40 +106,40 @@ class DepartmentsViewTest(ViewTest):
     def test_department(self):
         result = app.test_client().get('/departments/1')
         assert result.status_code == 200
-        #departments = json.loads(result.data)['departments']
-        data, errors = DepartmentSchema().loads(result.data)
+        obj_dict = json.loads(result.data)['department']
+        data, errors = DepartmentSchema().load(obj_dict)
+        assert errors == {}
+        assert isinstance(data, Department) == True
         assert data.name == 'Produce'
         assert data.id == 1
         assert len(data.ingredients.all()) == 3
-        
+
     def test_bad_department_id(self):
         result = app.test_client().get('/departments/15')
-        assert result.status_code == 200
-        data, errors = DepartmentSchema(many=True).loads(result.data)
-        assert error == 404
+        assert result.status_code == 404
 
     def test_all_departments(self):
         result = app.test_client().get('/departments/')
         assert result.status_code == 200
-        data, errors = DepartmentSchema(many=True).load(result.data)
-        #departments = json.loads(result.data)['departments']
+        obj_dict_list = json.loads(result.data)['departments']
+        data, errors = DepartmentSchema(many=True).load(obj_dict_list)
+        assert data[0].name == 'Produce'
         assert len(data) == 4
-    @unittest.skip('skipping') 
+        
     def test_create_department(self):
-        dep = Department(name='hba')
-        data, errors = DepartmentSchema().dumps(dep)
-        result = self.t_client_post('/departments/', data)
+        dep = r"""{"name" : "hba"}"""
+        result = self.t_client_post('/departments/', dep)
         assert result.status_code == 200
         result = app.test_client().get('/departments/')
         assert result.status_code == 200
         assert 'hba' in result.data
-    @unittest.skip('skipping') 
+        
     def test_update_department(self):
-        new_dep = Department(name='bakery')
-        j = DepartmentSchema().dumps(new_dep)
-        result = self.t_client_put('/departments/1', j.data)
-        assert Department.query.get(1).name == 'bakery'
-    @unittest.skip('skipping') 
+        dep = r"""{"name" : "hba"}"""
+        assert Department.query.get(1).name == 'Produce'
+        result = self.t_client_put('/departments/1', dep)
+        assert Department.query.get(1).name == 'hba'
+
     def test_delete_department(self):
         assert Department.query.get(1).name == 'Produce'
         result = self.t_client_delete('/departments/1')

@@ -1,7 +1,6 @@
 
-from cookbook import db, ma
-from utils.serializer import serialize 
-from marshmallow import fields, ValidationError, validate
+from cookbook import db
+import json
 
 
 class CRUDModel(object):
@@ -90,13 +89,6 @@ class Step(db.Model, CRUDModel):
         self.recipe_id = new_obj.recipe_id
         self.save()
 
-class StepSchema(ma.ModelSchema):
-    step = fields.Str()
-    order = fields.Int()
-    recipe = fields.Nested('RecipeSchema')
-    class Meta:
-        model = Step
-        
             
 class Note(db.Model, CRUDModel):
     __tablename__ = 'notes'
@@ -117,12 +109,6 @@ class Note(db.Model, CRUDModel):
         
         self.save()
 
-class NoteSchema(ma.ModelSchema):
-    note = fields.Str()
-    recipe = fields.Nested('RecipeSchema')
-    class Meta:
-        model = Note
-
         
 class Ingredient(db.Model, CRUDModel):
     __tablename__ = 'ingredients'
@@ -133,25 +119,18 @@ class Ingredient(db.Model, CRUDModel):
     recipeingredients = db.relationship('RecipeIngredient', backref='ingredient',
                                 lazy='dynamic')
     
-    @property
-    def as_dict(self):
-        #return {c.name: getattr(self, c.name) for c in self.__table__.columns}
-        return {'name' : self.name, 'department' : self.department_name}
-    
-    @property
-    def department_name(self):
-        return Department.query.get(self.department_id).name
-    
-    
+   
     def __repr__(self):
-        return '<Ingredient id {:d}: {}>'.format(self.id, self.name)
+        return '<Ingredient id {}: {}>'.format(self.id, self.name)
 
     def __str__(self):
         return self.name
 
     def update_from(self, new_obj):
-        self.name = new_obj.name
-        self.department = new_obj.department
+        if new_obj.name:
+            self.name = new_obj.name
+        if new_obj.department:
+            self.department = new_obj.department
         self.save()
         
 class Department(db.Model, CRUDModel):
@@ -161,11 +140,6 @@ class Department(db.Model, CRUDModel):
     name = db.Column(db.String)
     ingredients = db.relationship('Ingredient', backref='department',
                                 lazy='dynamic')
-
-
-    @property
-    def ingredients_list(self):
-        return [i.serialize() for i in self.ingredients.all()]
     
     def __repr__(self):
         return '<Department {} {}>'.format(self.id, self.name)
@@ -176,39 +150,8 @@ class Department(db.Model, CRUDModel):
     def update_from(self, new_obj):
         self.name = new_obj.name
         self.save()
-
-
-class IngredientSchema(ma.ModelSchema):
-    name = fields.Str(required=True)
-    department = fields.Nested('DepartmentSchema', exclude=('ingredients',), required=True)
-    id = fields.Int(dump_only=True)
-     #Smart hyperlinking
-    #_links = ma.Hyperlinks({
-    #    'self': ma.URLFor('get_ingredient', id='<id>'),
-    #    'collection': ma.URLFor('get_ingredients')
-    #})
-    class Meta:
-        model = Ingredient
-
-
-
-        
-class DepartmentSchema(ma.ModelSchema):
-    class Meta:
-        model = Department
-        sqla_session = db.session
-    #ingredients = fields.Nested(IngredientSchema, many=True, exclude=('department',))
-    #name = fields.Str(required=True)
-    #id = fields.Int(dump_only=True)
     
-    #_links = ma.Hyperlinks({
-    #        'self': ma.URLFor('get_department', id='<id>'),
-    #        'collection': ma.URLFor('get_departments')
-    #    })
-        
-
-        
-
+ 
 
 class Unit(db.Model, CRUDModel):
     __tablename__ = 'units'
@@ -217,20 +160,16 @@ class Unit(db.Model, CRUDModel):
     name = db.Column(db.String)
 
     def __repr__(self):
-        return '<Unit {:d} {}>'.format(self.id, self.name)
+        return '<Unit {} {}>'.format(self.id, self.name)
 
     def __str__(self):
         return self.name
         
     def update_from(self, new_obj):
-        self.name = new_obj.name
+        if new_ojb.name:
+            self.name = new_obj.name
         self.save()
-        
-class UnitSchema(ma.ModelSchema):
-    
-    name = fields.String()
-    class Meta:
-        model = Unit    
+          
 
 class Recipe(db.Model, CRUDModel):
     __tablename__ = 'recipes'
@@ -257,15 +196,5 @@ class Recipe(db.Model, CRUDModel):
         self.rating = new_obj.rating
         self.date_added = new_obj.date_added
         self.save()
-
-class RecipeSchema(ma.ModelSchema):
-    steps = fields.Nested(StepSchema, many=True, exclude=('recipe',))
-    notes = fields.Nested(NoteSchema, many=True, exclude=('recipe',))
-    name = fields.Str()
-    _links = ma.Hyperlinks({
-        'self': ma.URLFor('get_recipe', id='<id>'),
-        'collection': ma.URLFor('get_recipes')
-    })
-    class Meta:
-        # Fields to expose
-        model = Recipe
+        
+        
