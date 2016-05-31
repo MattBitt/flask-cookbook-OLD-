@@ -166,7 +166,7 @@ class Unit(db.Model, CRUDModel):
         return self.name
         
     def update_from(self, new_obj):
-        if new_ojb.name:
+        if new_obj.name:
             self.name = new_obj.name
         self.save()
           

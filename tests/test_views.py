@@ -1,8 +1,9 @@
 from cookbook.models import Recipe, Step, Note, Ingredient, Department, Unit, RecipeIngredient
-from cookbook.schemas import DepartmentSchema, IngredientSchema
-from flask.ext.testing import TestCase
+from cookbook.schemas import DepartmentSchema, IngredientSchema, UnitSchema, StepSchema
+from cookbook.schemas import NoteSchema, RecipeSchema
+from flask_testing import TestCase
 from cookbook import db, app
-from flask.ext.fixtures import FixturesMixin
+from flask_fixtures import FixturesMixin
 import json
 import pprint
 import unittest 
@@ -41,7 +42,7 @@ class IngredientsViewTest(ViewTest):
     def test_ingredient(self):
         result = app.test_client().get('/ingredients/1')
         assert result.status_code == 200
-        obj_dict = json.loads(result.data)['ingredients']
+        obj_dict = json.loads(result.data)#['ingredients']
         data, errors = IngredientSchema().load(obj_dict)
         assert errors == {}
         assert isinstance(data, Ingredient) == True
@@ -58,7 +59,7 @@ class IngredientsViewTest(ViewTest):
     def test_all_ingredients(self):
         result = app.test_client().get('/ingredients/')
         assert result.status_code == 200
-        obj_dict_list = json.loads(result.data)['ingredients']
+        obj_dict_list = json.loads(result.data)#['ingredients']
         data, errors = IngredientSchema(many=True).load(obj_dict_list)
         assert len(data) == 5
         assert data[0].name == 'cauliflower'
@@ -106,7 +107,7 @@ class DepartmentsViewTest(ViewTest):
     def test_department(self):
         result = app.test_client().get('/departments/1')
         assert result.status_code == 200
-        obj_dict = json.loads(result.data)['department']
+        obj_dict = json.loads(result.data)#['department']
         data, errors = DepartmentSchema().load(obj_dict)
         assert errors == {}
         assert isinstance(data, Department) == True
@@ -121,7 +122,7 @@ class DepartmentsViewTest(ViewTest):
     def test_all_departments(self):
         result = app.test_client().get('/departments/')
         assert result.status_code == 200
-        obj_dict_list = json.loads(result.data)['departments']
+        obj_dict_list = json.loads(result.data)#['departments']
         data, errors = DepartmentSchema(many=True).load(obj_dict_list)
         assert data[0].name == 'Produce'
         assert len(data) == 4
@@ -146,7 +147,7 @@ class DepartmentsViewTest(ViewTest):
         assert Department.query.get(1) is None
 
         
-@unittest.skip("classing skipping") 
+@unittest.skip('skipping')
 class UnitsViewTest(ViewTest):
     fixtures = ['units.json']
     
@@ -159,8 +160,7 @@ class UnitsViewTest(ViewTest):
         
     def test_bad_unit_id(self):
         result = app.test_client().get('/units/15')
-        error = json.loads(result.data)['message']
-        assert error == 404
+        assert result.status_code == 404
         
     def test_all_units(self):
         result = app.test_client().get('/units/')

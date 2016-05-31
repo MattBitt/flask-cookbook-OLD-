@@ -1,7 +1,7 @@
 from cookbook.models import Recipe, Step, Note, Ingredient, Department, Unit, RecipeIngredient
-from flask.ext.testing import TestCase
+from flask_testing import TestCase
 from cookbook import db, app
-from flask.ext.fixtures import FixturesMixin
+from flask_fixtures import FixturesMixin
 
 FixturesMixin.init_app(app, db)
 

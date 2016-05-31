@@ -1,6 +1,7 @@
 from cookbook import app, api
 from cookbook.models import Ingredient, Department, Unit, Step, Note, Recipe
-from cookbook.schemas import DepartmentSchema, IngredientSchema
+from cookbook.schemas import DepartmentSchema, IngredientSchema, UnitSchema, StepSchema
+from cookbook.schemas import NoteSchema, RecipeSchema
 from flask import jsonify, request
 
 import json
@@ -11,11 +12,11 @@ def get_object(obj, obj_schema, id, envelope):
     ## retrieve item from db and dump it to a json string
     try:
         new_obj = obj.query.get(id)
-    except IntegrityError:
-        return jsonify({"message": "{} Integrity Error.".format(envelope)}), 400
+    except:# IntegrityError:
+        return jsonify({"message": "No {} found with id {}.".format(envelope, id)}), 404
     if new_obj:
         obj_dict, errors = obj_schema(many=False).dump(new_obj)
-        return jsonify({envelope : obj_dict})
+        return jsonify(obj_dict)
     else:
         return jsonify({"message": "{} could not be found.".format(envelope)}), 404
         
@@ -26,11 +27,13 @@ def get_objects(obj, obj_schema, envelope):
         obj_dict_list, errors = obj_schema(many=True).dump(objs)
         if errors:
             return jsonify(errors), 500
-        return jsonify({envelope : obj_dict_list})
+        return jsonify(obj_dict_list)
     else:
         return jsonify({'message' : 'No {}s found'.format(envelope)})
 
 def create_object(obj, obj_schema, envelope):
+    ## if this is always a POST request, should return 201
+    
     ## takes in new data and converts that to a new object
     ## this new object is then saved in the database
     json_data = request.get_json()
@@ -131,19 +134,19 @@ def delete_ingredient(id):
 ############## Unit Routes ####################    
 @app.route('/units/', methods=['GET'])
 def get_units():   
-    return get_objects(Unit, 'units')
+    return get_objects(Unit, UnitSchema,'units')
                     
 @app.route('/units/<int:id>', methods=['GET'])
 def get_unit(id):
-    return get_object(Unit, id, 'units')
+    return get_object(Unit, id, UnitSchema,'units')
 
 @app.route('/units/', methods=['POST'])
 def create_unit():
-    return create_object(Unit, 'units')
+    return create_object(Unit, UnitSchema,'units')
 
 @app.route('/units/<int:id>', methods=['PUT'])
 def update_unit(id):
-    return update_object(Unit, id, 'units')
+    return update_object(Unit, UnitSchema, id,'units')
 
 @app.route('/units/<int:id>', methods=['DELETE'])
 def delete_unit(id):
@@ -153,19 +156,19 @@ def delete_unit(id):
 ############## Step Routes ####################    
 @app.route('/steps/', methods=['GET'])
 def get_steps():   
-    return get_objects(Step, 'steps')
+    return get_objects(Step, StepSchema,'steps')
                     
 @app.route('/steps/<int:id>', methods=['GET'])
 def get_step(id):
-    return get_object(Step, id, 'steps')
+    return get_object(Step, id, StepSchema,'steps')
 
 @app.route('/steps/', methods=['POST'])
 def create_step():
-    return create_object(Step, 'steps')
+    return create_object(Step, StepSchema,'steps')
 
 @app.route('/steps/<int:id>', methods=['PUT'])
 def update_step(id):
-    return update_object(Step, id, 'steps')
+    return update_object(Step, StepSchema,id, 'steps')
 
 @app.route('/steps/<int:id>', methods=['DELETE'])
 def delete_step(id):
@@ -175,19 +178,19 @@ def delete_step(id):
 ############## Note Routes ####################    
 @app.route('/notes/', methods=['GET'])
 def get_notes():   
-    return get_objects(Note, 'notes')
+    return get_objects(Note, NoteSchema,'notes')
                     
 @app.route('/notes/<int:id>', methods=['GET'])
 def get_note(id):
-    return get_object(Note, id, 'notes')
+    return get_object(Note, NoteSchema,id, 'notes')
 
 @app.route('/notes/', methods=['POST'])
 def create_note():
-    return create_object(Note, 'notes')
+    return create_object(Note, NoteSchema,'notes')
 
 @app.route('/notes/<int:id>', methods=['PUT'])
 def update_note(id):
-    return update_object(Note, id, 'notes')
+    return update_object(Note, NoteSchema,id, 'notes')
 
 @app.route('/notes/<int:id>', methods=['DELETE'])
 def delete_note(id):
@@ -196,19 +199,19 @@ def delete_note(id):
 ############## Recipe Routes ####################    
 @app.route('/recipes/', methods=['GET'])
 def get_recipes():   
-    return get_objects(Recipe, 'recipes')
+    return get_objects(Recipe, RecipeSchema,'recipes')
                     
 @app.route('/recipes/<int:id>', methods=['GET'])
 def get_recipe(id):
-    return get_object(Recipe, id, 'recipes')
+    return get_object(Recipe, RecipeSchema,id, 'recipes')
 
 @app.route('/recipes/', methods=['POST'])
 def create_recipe():
-    return create_object(Recipe, 'recipes')
+    return create_object(Recipe, RecipeSchema,'recipes')
 
 @app.route('/recipes/<int:id>', methods=['PUT'])
 def update_recipe(id):
-    return update_object(Recipe, id, 'recipes')
+    return update_object(Recipe, RecipeSchema,id, 'recipes')
 
 @app.route('/recipes/<int:id>', methods=['DELETE'])
 def delete_recipe(id):
