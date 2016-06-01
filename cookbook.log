@@ -1,0 +1,359 @@
+2016-06-01 14:42:57,618 | cookbook | <module> | WARNING | THE APP IS STARTING 
+2016-06-01 14:42:59,657 | cookbook.views | get_object | DEBUG | GET request for departments: id: 1 
+2016-06-01 14:42:59,740 | cookbook.views | get_object | DEBUG | GET request for departments: id: 15 
+2016-06-01 14:42:59,770 | cookbook.views | get_object | DEBUG | GET request for departments: id: 1 
+2016-06-01 14:42:59,813 | cookbook.models | update_from | ERROR | bet this works 
+2016-06-01 14:42:59,937 | cookbook.views | get_object | DEBUG | GET request for ingredients: id: 1 
+2016-06-01 14:43:00,042 | cookbook.views | get_object | DEBUG | GET request for ingredients: id: 15 
+2016-06-01 14:43:00,075 | cookbook.views | get_object | DEBUG | GET request for ingredients: id: 1 
+2016-06-01 14:43:00,338 | cookbook.views | get_object | DEBUG | GET request for recipes: id: 1 
+2016-06-01 14:43:00,499 | cookbook.views | get_object | DEBUG | GET request for recipes: id: 15 
+2016-06-01 14:43:00,532 | cookbook.views | get_object | DEBUG | GET request for recipes: id: 1 
+2016-06-01 14:43:00,726 | cookbook.views | get_object | DEBUG | GET request for units: id: 1 
+2016-06-01 14:43:00,809 | cookbook.views | get_object | DEBUG | GET request for units: id: 15 
+2016-06-01 14:43:00,839 | cookbook.views | get_object | DEBUG | GET request for units: id: 1 
+2016-06-01 14:43:26,355 | cookbook | <module> | WARNING | THE APP IS STARTING 
+2016-06-01 14:43:28,311 | cookbook.views | get_object | DEBUG | GET request for departments: id: 1 
+2016-06-01 14:43:28,391 | cookbook.views | get_object | DEBUG | GET request for departments: id: 15 
+2016-06-01 14:43:28,421 | cookbook.views | get_object | DEBUG | GET request for departments: id: 1 
+2016-06-01 14:43:28,461 | cookbook.models | update_from | DEBUG | bet this works 
+2016-06-01 14:43:28,576 | cookbook.views | get_object | DEBUG | GET request for ingredients: id: 1 
+2016-06-01 14:43:28,674 | cookbook.views | get_object | DEBUG | GET request for ingredients: id: 15 
+2016-06-01 14:43:28,703 | cookbook.views | get_object | DEBUG | GET request for ingredients: id: 1 
+2016-06-01 14:43:28,938 | cookbook.views | get_object | DEBUG | GET request for recipes: id: 1 
+2016-06-01 14:43:29,085 | cookbook.views | get_object | DEBUG | GET request for recipes: id: 15 
+2016-06-01 14:43:29,115 | cookbook.views | get_object | DEBUG | GET request for recipes: id: 1 
+2016-06-01 14:43:29,296 | cookbook.views | get_object | DEBUG | GET request for units: id: 1 
+2016-06-01 14:43:29,377 | cookbook.views | get_object | DEBUG | GET request for units: id: 15 
+2016-06-01 14:43:29,407 | cookbook.views | get_object | DEBUG | GET request for units: id: 1 
+2016-06-01 14:44:07,920 | cookbook | <module> | WARNING | THE APP IS STARTING 
+2016-06-01 14:44:09,875 | cookbook.views | get_object | DEBUG | GET request for departments: id: 1 
+2016-06-01 14:44:09,957 | cookbook.views | get_object | DEBUG | GET request for departments: id: 15 
+2016-06-01 14:44:09,986 | cookbook.views | get_object | DEBUG | GET request for departments: id: 1 
+2016-06-01 14:44:10,028 | cookbook.models | update_from | DEBUG | Updating Produce from floral 
+2016-06-01 14:44:10,140 | cookbook.views | get_object | DEBUG | GET request for ingredients: id: 1 
+2016-06-01 14:44:10,240 | cookbook.views | get_object | DEBUG | GET request for ingredients: id: 15 
+2016-06-01 14:44:10,272 | cookbook.views | get_object | DEBUG | GET request for ingredients: id: 1 
+2016-06-01 14:44:10,512 | cookbook.views | get_object | DEBUG | GET request for recipes: id: 1 
+2016-06-01 14:44:10,663 | cookbook.views | get_object | DEBUG | GET request for recipes: id: 15 
+2016-06-01 14:44:10,693 | cookbook.views | get_object | DEBUG | GET request for recipes: id: 1 
+2016-06-01 14:44:10,874 | cookbook.views | get_object | DEBUG | GET request for units: id: 1 
+2016-06-01 14:44:10,954 | cookbook.views | get_object | DEBUG | GET request for units: id: 15 
+2016-06-01 14:44:10,984 | cookbook.views | get_object | DEBUG | GET request for units: id: 1 
+2016-06-01 14:45:01,591 | cookbook | <module> | WARNING | THE APP IS STARTING 
+2016-06-01 14:45:03,509 | cookbook.views | index | DEBUG | getting index 
+2016-06-01 14:45:03,562 | cookbook.views | get_object | DEBUG | GET request for departments: id: 1 
+2016-06-01 14:45:03,595 | cookbook.views | index | DEBUG | getting index 
+2016-06-01 14:45:03,625 | cookbook.views | get_object | DEBUG | GET request for departments: id: 15 
+2016-06-01 14:45:03,655 | cookbook.views | get_object | DEBUG | GET request for departments: id: 1 
+2016-06-01 14:45:03,698 | cookbook.models | update_from | DEBUG | Updating Produce from floral 
+2016-06-01 14:45:03,769 | cookbook.views | index | DEBUG | getting index 
+2016-06-01 14:45:03,806 | cookbook.views | get_object | DEBUG | GET request for ingredients: id: 1 
+2016-06-01 14:45:03,836 | cookbook.views | index | DEBUG | getting index 
+2016-06-01 14:45:03,868 | cookbook.views | get_object | DEBUG | GET request for ingredients: id: 15 
+2016-06-01 14:45:03,900 | cookbook.views | get_object | DEBUG | GET request for ingredients: id: 1 
+2016-06-01 14:45:04,094 | cookbook.views | index | DEBUG | getting index 
+2016-06-01 14:45:04,138 | cookbook.views | get_object | DEBUG | GET request for recipes: id: 1 
+2016-06-01 14:45:04,171 | cookbook.views | index | DEBUG | getting index 
+2016-06-01 14:45:04,206 | cookbook.views | get_object | DEBUG | GET request for recipes: id: 15 
+2016-06-01 14:45:04,243 | cookbook.views | get_object | DEBUG | GET request for recipes: id: 1 
+2016-06-01 14:45:04,404 | cookbook.views | index | DEBUG | getting index 
+2016-06-01 14:45:04,440 | cookbook.views | get_object | DEBUG | GET request for units: id: 1 
+2016-06-01 14:45:04,469 | cookbook.views | index | DEBUG | getting index 
+2016-06-01 14:45:04,500 | cookbook.views | get_object | DEBUG | GET request for units: id: 15 
+2016-06-01 14:45:04,529 | cookbook.views | get_object | DEBUG | GET request for units: id: 1 
+2016-06-01 14:45:12,615 | cookbook | <module> | WARNING | THE APP IS STARTING 
+2016-06-01 14:45:14,509 | cookbook.views | index | DEBUG | getting index 
+2016-06-01 14:45:37,470 | cookbook.views | <module> | DEBUG | can you see this? 
+2016-06-01 14:45:40,201 | cookbook.views | get_object | DEBUG | GET request for departments: id: 1 
+2016-06-01 14:45:40,233 | cookbook.views | index | DEBUG | getting index 
+2016-06-01 14:45:42,457 | cookbook.views | get_object | DEBUG | GET request for departments: id: 15 
+2016-06-01 14:45:42,486 | cookbook.views | get_object | DEBUG | GET request for departments: id: 1 
+2016-06-01 14:45:42,528 | cookbook.models | update_from | DEBUG | Updating Produce from floral 
+2016-06-01 14:45:42,598 | cookbook.views | index | DEBUG | getting index 
+2016-06-01 14:45:43,681 | cookbook.views | get_object | DEBUG | GET request for ingredients: id: 1 
+2016-06-01 14:45:43,710 | cookbook.views | index | DEBUG | getting index 
+2016-06-01 14:45:44,688 | cookbook.views | get_object | DEBUG | GET request for ingredients: id: 15 
+2016-06-01 14:45:44,719 | cookbook.views | get_object | DEBUG | GET request for ingredients: id: 1 
+2016-06-01 14:45:44,888 | cookbook.views | index | DEBUG | getting index 
+2016-06-01 14:45:45,982 | cookbook.views | get_object | DEBUG | GET request for recipes: id: 1 
+2016-06-01 14:45:46,010 | cookbook.views | index | DEBUG | getting index 
+2016-06-01 14:51:48,457 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-01 14:51:50,413 | views | get_object | DEBUG | GET request for departments: id: 1 
+2016-06-01 14:51:50,493 | views | get_object | DEBUG | GET request for departments: id: 15 
+2016-06-01 14:51:50,523 | views | get_object | DEBUG | GET request for departments: id: 1 
+2016-06-01 14:51:50,565 | models | update_from | DEBUG | Updating Produce from floral 
+2016-06-01 14:51:50,680 | views | get_object | DEBUG | GET request for ingredients: id: 1 
+2016-06-01 14:51:50,775 | views | get_object | DEBUG | GET request for ingredients: id: 15 
+2016-06-01 14:51:50,805 | views | get_object | DEBUG | GET request for ingredients: id: 1 
+2016-06-01 14:51:51,038 | views | get_object | DEBUG | GET request for recipes: id: 1 
+2016-06-01 14:51:51,193 | views | get_object | DEBUG | GET request for recipes: id: 15 
+2016-06-01 14:51:51,224 | views | get_object | DEBUG | GET request for recipes: id: 1 
+2016-06-01 14:51:51,405 | views | get_object | DEBUG | GET request for units: id: 1 
+2016-06-01 14:51:51,484 | views | get_object | DEBUG | GET request for units: id: 15 
+2016-06-01 14:51:51,513 | views | get_object | DEBUG | GET request for units: id: 1 
+2016-06-01 14:52:09,217 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-01 14:52:11,184 | views | get_object | DEBUG | GET request for departments: id: 1 
+2016-06-01 14:52:11,265 | views | get_object | DEBUG | GET request for departments: id: 15 
+2016-06-01 14:52:11,296 | views | get_object | DEBUG | GET request for departments: id: 1 
+2016-06-01 14:52:11,338 | models | update_from | DEBUG | Updating Produce from floral 
+2016-06-01 14:52:11,450 | views | get_object | DEBUG | GET request for ingredients: id: 1 
+2016-06-01 14:52:11,546 | views | get_object | DEBUG | GET request for ingredients: id: 15 
+2016-06-01 14:52:11,576 | views | get_object | DEBUG | GET request for ingredients: id: 1 
+2016-06-01 14:52:11,809 | views | get_object | DEBUG | GET request for recipes: id: 1 
+2016-06-01 14:52:11,957 | views | get_object | DEBUG | GET request for recipes: id: 15 
+2016-06-01 14:52:11,987 | views | get_object | DEBUG | GET request for recipes: id: 1 
+2016-06-01 14:52:12,167 | views | get_object | DEBUG | GET request for units: id: 1 
+2016-06-01 14:52:12,250 | views | get_object | DEBUG | GET request for units: id: 15 
+2016-06-01 14:52:12,279 | views | get_object | DEBUG | GET request for units: id: 1 
+2016-06-01 14:52:45,492 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-01 14:52:47,510 | views | get_object | DEBUG | GET request for departments: id: 1 
+2016-06-01 14:52:47,594 | views | get_object | DEBUG | GET request for departments: id: 15 
+2016-06-01 14:52:47,624 | views | get_object | DEBUG | GET request for departments: id: 1 
+2016-06-01 14:53:08,960 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-01 14:53:10,908 | views | get_object | DEBUG | GET request for departments: id: 1 
+2016-06-01 14:53:10,989 | views | get_object | DEBUG | GET request for departments: id: 15 
+2016-06-01 14:53:11,019 | views | get_object | DEBUG | GET request for departments: id: 1 
+2016-06-01 14:53:11,059 | models | update_from | DEBUG | Updating Produce from floral 
+2016-06-01 14:53:11,181 | views | get_object | DEBUG | GET request for ingredients: id: 1 
+2016-06-01 14:53:11,278 | views | get_object | DEBUG | GET request for ingredients: id: 15 
+2016-06-01 14:53:11,308 | views | get_object | DEBUG | GET request for ingredients: id: 1 
+2016-06-01 14:53:11,539 | views | get_object | DEBUG | GET request for recipes: id: 1 
+2016-06-01 14:53:11,687 | views | get_object | DEBUG | GET request for recipes: id: 15 
+2016-06-01 14:53:11,716 | views | get_object | DEBUG | GET request for recipes: id: 1 
+2016-06-01 14:53:11,895 | views | get_object | DEBUG | GET request for units: id: 1 
+2016-06-01 14:53:11,976 | views | get_object | DEBUG | GET request for units: id: 15 
+2016-06-01 14:53:12,006 | views | get_object | DEBUG | GET request for units: id: 1 
+2016-06-01 14:54:03,513 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-01 14:54:05,461 | views | get_object | DEBUG | GET request for departments: id: 1 
+2016-06-01 14:54:05,543 | views | get_object | DEBUG | GET request for departments: id: 15 
+2016-06-01 14:54:05,573 | views | get_object | DEBUG | GET request for departments: id: 1 
+2016-06-01 14:54:05,615 | models | update_from | DEBUG | Updating Produce from floral 
+2016-06-01 14:54:05,726 | views | get_object | DEBUG | GET request for ingredients: id: 1 
+2016-06-01 14:54:05,822 | views | get_object | DEBUG | GET request for ingredients: id: 15 
+2016-06-01 14:54:05,852 | views | get_object | DEBUG | GET request for ingredients: id: 1 
+2016-06-01 14:54:06,088 | views | get_object | DEBUG | GET request for recipes: id: 1 
+2016-06-01 14:54:06,232 | views | get_object | DEBUG | GET request for recipes: id: 15 
+2016-06-01 14:54:06,263 | views | get_object | DEBUG | GET request for recipes: id: 1 
+2016-06-01 14:54:06,446 | views | get_object | DEBUG | GET request for units: id: 1 
+2016-06-01 14:54:06,525 | views | get_object | DEBUG | GET request for units: id: 15 
+2016-06-01 14:54:06,555 | views | get_object | DEBUG | GET request for units: id: 1 
+2016-06-01 14:59:19,296 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-01 14:59:21,257 | views | get_object | DEBUG | GET request for departments: id: 1 
+2016-06-01 14:59:21,342 | views | get_object | DEBUG | GET request for departments: id: 15 
+2016-06-01 14:59:21,374 | views | get_object | DEBUG | GET request for departments: id: 1 
+2016-06-01 14:59:21,414 | models | update_from | DEBUG | Updating Produce from floral 
+2016-06-01 14:59:21,526 | views | get_object | DEBUG | GET request for ingredients: id: 1 
+2016-06-01 14:59:21,625 | views | get_object | DEBUG | GET request for ingredients: id: 15 
+2016-06-01 14:59:21,654 | views | get_object | DEBUG | GET request for ingredients: id: 1 
+2016-06-01 14:59:21,887 | views | get_object | DEBUG | GET request for recipes: id: 1 
+2016-06-01 14:59:22,035 | views | get_object | DEBUG | GET request for recipes: id: 15 
+2016-06-01 14:59:22,063 | views | get_object | DEBUG | GET request for recipes: id: 1 
+2016-06-01 14:59:22,243 | views | get_object | DEBUG | GET request for units: id: 1 
+2016-06-01 14:59:22,325 | views | get_object | DEBUG | GET request for units: id: 15 
+2016-06-01 14:59:22,355 | views | get_object | DEBUG | GET request for units: id: 1 
+2016-06-01 15:00:33,915 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-01 15:00:35,864 | views | get_object | DEBUG | GET request for departments: id: 1 
+2016-06-01 15:00:35,950 | views | get_object | DEBUG | GET request for departments: id: 15 
+2016-06-01 15:00:35,980 | views | get_object | DEBUG | GET request for departments: id: 1 
+2016-06-01 15:00:36,023 | models | update_from | DEBUG | Updating Produce from floral 
+2016-06-01 15:00:36,145 | views | get_object | DEBUG | GET request for ingredients: id: 1 
+2016-06-01 15:00:36,250 | views | get_object | DEBUG | GET request for ingredients: id: 15 
+2016-06-01 15:00:36,282 | views | get_object | DEBUG | GET request for ingredients: id: 1 
+2016-06-01 15:00:36,542 | views | get_object | DEBUG | GET request for recipes: id: 1 
+2016-06-01 15:00:36,693 | views | get_object | DEBUG | GET request for recipes: id: 15 
+2016-06-01 15:00:36,726 | views | get_object | DEBUG | GET request for recipes: id: 1 
+2016-06-01 15:00:36,911 | views | get_object | DEBUG | GET request for units: id: 1 
+2016-06-01 15:00:36,996 | views | get_object | DEBUG | GET request for units: id: 15 
+2016-06-01 15:00:37,033 | views | get_object | DEBUG | GET request for units: id: 1 
+2016-06-01 15:01:16,203 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-01 15:01:16,322 | schemas | RecipeSchema | DEBUG | In baseschema 
+2016-06-01 15:01:16,334 | views | <module> | WARNING | logging 
+2016-06-01 15:01:18,279 | views | get_object | DEBUG | GET request for departments: id: 1 
+2016-06-01 15:01:18,364 | views | get_object | DEBUG | GET request for departments: id: 15 
+2016-06-01 15:01:18,392 | views | get_object | DEBUG | GET request for departments: id: 1 
+2016-06-01 15:01:18,434 | models | update_from | DEBUG | Updating Produce from floral 
+2016-06-01 15:01:18,546 | views | get_object | DEBUG | GET request for ingredients: id: 1 
+2016-06-01 15:01:18,644 | views | get_object | DEBUG | GET request for ingredients: id: 15 
+2016-06-01 15:01:18,674 | views | get_object | DEBUG | GET request for ingredients: id: 1 
+2016-06-01 15:01:18,910 | views | get_object | DEBUG | GET request for recipes: id: 1 
+2016-06-01 15:01:19,055 | views | get_object | DEBUG | GET request for recipes: id: 15 
+2016-06-01 15:01:19,085 | views | get_object | DEBUG | GET request for recipes: id: 1 
+2016-06-01 15:01:19,275 | views | get_object | DEBUG | GET request for units: id: 1 
+2016-06-01 15:01:19,355 | views | get_object | DEBUG | GET request for units: id: 15 
+2016-06-01 15:01:19,384 | views | get_object | DEBUG | GET request for units: id: 1 
+2016-06-01 15:03:06,700 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-01 15:03:06,805 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-01 15:03:08,740 | views | create_object | DEBUG | POST request for departments: 
+2016-06-01 15:03:08,756 | views | get_objects | DEBUG | GET request for all departments 
+2016-06-01 15:03:08,793 | views | delete_object | DEBUG | DELETE request for departments 1: 
+2016-06-01 15:03:08,802 | views | get_object | DEBUG | GET request for departments: id: 1 
+2016-06-01 15:03:08,831 | views | get_objects | DEBUG | GET request for all departments 
+2016-06-01 15:03:08,884 | views | get_object | DEBUG | GET request for departments: id: 15 
+2016-06-01 15:03:08,914 | views | get_object | DEBUG | GET request for departments: id: 1 
+2016-06-01 15:03:08,954 | views | update_object | DEBUG | PUT request for departments: 
+2016-06-01 15:03:08,957 | views | update_object | DEBUG | Incoming data: {u'name': u'floral'} 
+2016-06-01 15:03:08,960 | models | update_from | DEBUG | Updating Produce from floral 
+2016-06-01 15:03:08,993 | views | create_object | DEBUG | POST request for ingredients: 
+2016-06-01 15:03:09,023 | views | create_object | DEBUG | POST request for ingredients: 
+2016-06-01 15:03:09,033 | views | get_objects | DEBUG | GET request for all ingredients 
+2016-06-01 15:03:09,076 | views | delete_object | DEBUG | DELETE request for ingredients 1: 
+2016-06-01 15:03:09,084 | views | get_object | DEBUG | GET request for ingredients: id: 1 
+2016-06-01 15:03:09,114 | views | get_objects | DEBUG | GET request for all ingredients 
+2016-06-01 15:03:09,200 | views | get_object | DEBUG | GET request for ingredients: id: 15 
+2016-06-01 15:03:09,232 | views | get_object | DEBUG | GET request for ingredients: id: 1 
+2016-06-01 15:03:09,273 | views | update_object | DEBUG | PUT request for ingredients: 
+2016-06-01 15:03:09,276 | views | update_object | DEBUG | Incoming data: {u'department': {u'name': u'Meat', u'id': 3}} 
+2016-06-01 15:03:09,316 | views | update_object | DEBUG | PUT request for ingredients: 
+2016-06-01 15:03:09,319 | views | update_object | DEBUG | Incoming data: {u'name': u'watermelon'} 
+2016-06-01 15:03:09,355 | views | create_object | DEBUG | POST request for recipes: 
+2016-06-01 15:03:09,401 | views | create_object | DEBUG | POST request for recipes: 
+2016-06-01 15:03:09,417 | views | get_objects | DEBUG | GET request for all recipes 
+2016-06-01 15:03:09,480 | views | delete_object | DEBUG | DELETE request for recipes 1: 
+2016-06-01 15:03:09,492 | views | get_object | DEBUG | GET request for recipes: id: 1 
+2016-06-01 15:03:09,520 | views | get_objects | DEBUG | GET request for all recipes 
+2016-06-01 15:03:09,641 | views | get_object | DEBUG | GET request for recipes: id: 15 
+2016-06-01 15:03:09,670 | views | get_object | DEBUG | GET request for recipes: id: 1 
+2016-06-01 15:03:09,757 | views | update_object | DEBUG | PUT request for recipes: 
+2016-06-01 15:03:09,760 | views | update_object | DEBUG | Incoming data: {u'name': u'Lasagna'} 
+2016-06-01 15:03:09,812 | views | create_object | DEBUG | POST request for units: 
+2016-06-01 15:03:09,819 | views | get_objects | DEBUG | GET request for all units 
+2016-06-01 15:03:09,855 | views | delete_object | DEBUG | DELETE request for units 1: 
+2016-06-01 15:03:09,861 | views | get_object | DEBUG | GET request for units: id: 1 
+2016-06-01 15:03:09,891 | views | get_objects | DEBUG | GET request for all units 
+2016-06-01 15:03:09,943 | views | get_object | DEBUG | GET request for units: id: 15 
+2016-06-01 15:03:09,971 | views | get_object | DEBUG | GET request for units: id: 1 
+2016-06-01 15:03:10,007 | views | update_object | DEBUG | PUT request for units: 
+2016-06-01 15:03:10,010 | views | update_object | DEBUG | Incoming data: {u'name': u'liter'} 
+2016-06-01 15:04:19,276 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-01 15:04:19,375 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-01 15:04:19,966 | test_schemas | SchemaTest | ERROR | In test_schemas 
+2016-06-01 15:04:21,157 | views | create_object | DEBUG | POST request for departments: 
+2016-06-01 15:04:21,174 | views | get_objects | DEBUG | GET request for all departments 
+2016-06-01 15:04:21,217 | views | delete_object | DEBUG | DELETE request for departments 1: 
+2016-06-01 15:04:21,224 | views | get_object | DEBUG | GET request for departments: id: 1 
+2016-06-01 15:04:21,253 | views | get_objects | DEBUG | GET request for all departments 
+2016-06-01 15:04:21,309 | views | get_object | DEBUG | GET request for departments: id: 15 
+2016-06-01 15:04:21,338 | views | get_object | DEBUG | GET request for departments: id: 1 
+2016-06-01 15:04:21,378 | views | update_object | DEBUG | PUT request for departments: 
+2016-06-01 15:04:21,381 | views | update_object | DEBUG | Incoming data: {u'name': u'floral'} 
+2016-06-01 15:04:21,384 | models | update_from | DEBUG | Updating Produce from floral 
+2016-06-01 15:04:21,417 | views | create_object | DEBUG | POST request for ingredients: 
+2016-06-01 15:04:21,447 | views | create_object | DEBUG | POST request for ingredients: 
+2016-06-01 15:04:21,457 | views | get_objects | DEBUG | GET request for all ingredients 
+2016-06-01 15:04:21,496 | views | delete_object | DEBUG | DELETE request for ingredients 1: 
+2016-06-01 15:04:21,503 | views | get_object | DEBUG | GET request for ingredients: id: 1 
+2016-06-01 15:04:21,542 | views | get_objects | DEBUG | GET request for all ingredients 
+2016-06-01 15:04:21,618 | views | get_object | DEBUG | GET request for ingredients: id: 15 
+2016-06-01 15:04:21,648 | views | get_object | DEBUG | GET request for ingredients: id: 1 
+2016-06-01 15:04:21,687 | views | update_object | DEBUG | PUT request for ingredients: 
+2016-06-01 15:04:21,690 | views | update_object | DEBUG | Incoming data: {u'department': {u'name': u'Meat', u'id': 3}} 
+2016-06-01 15:04:21,727 | views | update_object | DEBUG | PUT request for ingredients: 
+2016-06-01 15:04:21,730 | views | update_object | DEBUG | Incoming data: {u'name': u'watermelon'} 
+2016-06-01 15:04:21,766 | views | create_object | DEBUG | POST request for recipes: 
+2016-06-01 15:04:21,811 | views | create_object | DEBUG | POST request for recipes: 
+2016-06-01 15:04:21,828 | views | get_objects | DEBUG | GET request for all recipes 
+2016-06-01 15:04:21,888 | views | delete_object | DEBUG | DELETE request for recipes 1: 
+2016-06-01 15:04:21,900 | views | get_object | DEBUG | GET request for recipes: id: 1 
+2016-06-01 15:04:21,930 | views | get_objects | DEBUG | GET request for all recipes 
+2016-06-01 15:04:22,051 | views | get_object | DEBUG | GET request for recipes: id: 15 
+2016-06-01 15:04:22,082 | views | get_object | DEBUG | GET request for recipes: id: 1 
+2016-06-01 15:04:22,171 | views | update_object | DEBUG | PUT request for recipes: 
+2016-06-01 15:04:22,174 | views | update_object | DEBUG | Incoming data: {u'name': u'Lasagna'} 
+2016-06-01 15:04:22,224 | views | create_object | DEBUG | POST request for units: 
+2016-06-01 15:04:22,233 | views | get_objects | DEBUG | GET request for all units 
+2016-06-01 15:04:22,269 | views | delete_object | DEBUG | DELETE request for units 1: 
+2016-06-01 15:04:22,275 | views | get_object | DEBUG | GET request for units: id: 1 
+2016-06-01 15:04:22,305 | views | get_objects | DEBUG | GET request for all units 
+2016-06-01 15:04:22,358 | views | get_object | DEBUG | GET request for units: id: 15 
+2016-06-01 15:04:22,388 | views | get_object | DEBUG | GET request for units: id: 1 
+2016-06-01 15:04:22,421 | views | update_object | DEBUG | PUT request for units: 
+2016-06-01 15:04:22,424 | views | update_object | DEBUG | Incoming data: {u'name': u'liter'} 
+2016-06-01 15:05:39,630 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-01 15:05:39,726 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-01 15:05:41,668 | views | create_object | DEBUG | POST request for departments: 
+2016-06-01 15:05:41,684 | views | get_objects | DEBUG | GET request for all departments 
+2016-06-01 15:05:41,723 | views | delete_object | DEBUG | DELETE request for departments 1: 
+2016-06-01 15:05:41,730 | views | get_object | DEBUG | GET request for departments: id: 1 
+2016-06-01 15:05:41,759 | views | get_objects | DEBUG | GET request for all departments 
+2016-06-01 15:05:41,812 | views | get_object | DEBUG | GET request for departments: id: 15 
+2016-06-01 15:05:41,842 | views | get_object | DEBUG | GET request for departments: id: 1 
+2016-06-01 15:05:41,881 | views | update_object | DEBUG | PUT request for departments: 
+2016-06-01 15:05:41,884 | views | update_object | DEBUG | Incoming data: {u'name': u'floral'} 
+2016-06-01 15:05:41,888 | models | update_from | DEBUG | Updating Produce from floral 
+2016-06-01 15:05:41,921 | views | create_object | DEBUG | POST request for ingredients: 
+2016-06-01 15:05:41,950 | views | create_object | DEBUG | POST request for ingredients: 
+2016-06-01 15:05:41,960 | views | get_objects | DEBUG | GET request for all ingredients 
+2016-06-01 15:05:42,002 | views | delete_object | DEBUG | DELETE request for ingredients 1: 
+2016-06-01 15:05:42,009 | views | get_object | DEBUG | GET request for ingredients: id: 1 
+2016-06-01 15:05:42,038 | views | get_objects | DEBUG | GET request for all ingredients 
+2016-06-01 15:05:42,107 | views | get_object | DEBUG | GET request for ingredients: id: 15 
+2016-06-01 15:05:42,135 | views | get_object | DEBUG | GET request for ingredients: id: 1 
+2016-06-01 15:05:42,176 | views | update_object | DEBUG | PUT request for ingredients: 
+2016-06-01 15:05:42,177 | views | update_object | DEBUG | Incoming data: {u'department': {u'name': u'Meat', u'id': 3}} 
+2016-06-01 15:05:42,217 | views | update_object | DEBUG | PUT request for ingredients: 
+2016-06-01 15:05:42,220 | views | update_object | DEBUG | Incoming data: {u'name': u'watermelon'} 
+2016-06-01 15:05:42,256 | views | create_object | DEBUG | POST request for recipes: 
+2016-06-01 15:05:42,302 | views | create_object | DEBUG | POST request for recipes: 
+2016-06-01 15:05:42,319 | views | get_objects | DEBUG | GET request for all recipes 
+2016-06-01 15:05:42,380 | views | delete_object | DEBUG | DELETE request for recipes 1: 
+2016-06-01 15:05:42,391 | views | get_object | DEBUG | GET request for recipes: id: 1 
+2016-06-01 15:05:42,421 | views | get_objects | DEBUG | GET request for all recipes 
+2016-06-01 15:05:42,540 | views | get_object | DEBUG | GET request for recipes: id: 15 
+2016-06-01 15:05:42,569 | views | get_object | DEBUG | GET request for recipes: id: 1 
+2016-06-01 15:05:42,660 | views | update_object | DEBUG | PUT request for recipes: 
+2016-06-01 15:05:42,663 | views | update_object | DEBUG | Incoming data: {u'name': u'Lasagna'} 
+2016-06-01 15:05:42,713 | views | create_object | DEBUG | POST request for units: 
+2016-06-01 15:05:42,720 | views | get_objects | DEBUG | GET request for all units 
+2016-06-01 15:05:42,756 | views | delete_object | DEBUG | DELETE request for units 1: 
+2016-06-01 15:05:42,763 | views | get_object | DEBUG | GET request for units: id: 1 
+2016-06-01 15:05:42,792 | views | get_objects | DEBUG | GET request for all units 
+2016-06-01 15:05:42,845 | views | get_object | DEBUG | GET request for units: id: 15 
+2016-06-01 15:05:42,875 | views | get_object | DEBUG | GET request for units: id: 1 
+2016-06-01 15:05:42,908 | views | update_object | DEBUG | PUT request for units: 
+2016-06-01 15:05:42,911 | views | update_object | DEBUG | Incoming data: {u'name': u'liter'} 
+2016-06-01 15:06:31,904 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-01 15:06:31,915 | models | <module> | DEBUG | loading models.py 
+2016-06-01 15:06:32,016 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-01 15:06:32,045 | views | <module> | DEBUG | loading views.py 
+2016-06-01 15:06:33,947 | views | create_object | DEBUG | POST request for departments: 
+2016-06-01 15:06:33,963 | views | get_objects | DEBUG | GET request for all departments 
+2016-06-01 15:06:33,999 | views | delete_object | DEBUG | DELETE request for departments 1: 
+2016-06-01 15:06:34,006 | views | get_object | DEBUG | GET request for departments: id: 1 
+2016-06-01 15:06:34,036 | views | get_objects | DEBUG | GET request for all departments 
+2016-06-01 15:06:34,089 | views | get_object | DEBUG | GET request for departments: id: 15 
+2016-06-01 15:06:34,119 | views | get_object | DEBUG | GET request for departments: id: 1 
+2016-06-01 15:06:34,160 | views | update_object | DEBUG | PUT request for departments: 
+2016-06-01 15:06:34,161 | views | update_object | DEBUG | Incoming data: {u'name': u'floral'} 
+2016-06-01 15:06:34,165 | models | update_from | DEBUG | Updating Produce from floral 
+2016-06-01 15:06:34,198 | views | create_object | DEBUG | POST request for ingredients: 
+2016-06-01 15:06:34,229 | views | create_object | DEBUG | POST request for ingredients: 
+2016-06-01 15:06:34,239 | views | get_objects | DEBUG | GET request for all ingredients 
+2016-06-01 15:06:34,280 | views | delete_object | DEBUG | DELETE request for ingredients 1: 
+2016-06-01 15:06:34,289 | views | get_object | DEBUG | GET request for ingredients: id: 1 
+2016-06-01 15:06:34,318 | views | get_objects | DEBUG | GET request for all ingredients 
+2016-06-01 15:06:34,387 | views | get_object | DEBUG | GET request for ingredients: id: 15 
+2016-06-01 15:06:34,417 | views | get_object | DEBUG | GET request for ingredients: id: 1 
+2016-06-01 15:06:34,456 | views | update_object | DEBUG | PUT request for ingredients: 
+2016-06-01 15:06:34,457 | views | update_object | DEBUG | Incoming data: {u'department': {u'name': u'Meat', u'id': 3}} 
+2016-06-01 15:06:34,496 | views | update_object | DEBUG | PUT request for ingredients: 
+2016-06-01 15:06:34,499 | views | update_object | DEBUG | Incoming data: {u'name': u'watermelon'} 
+2016-06-01 15:06:34,535 | views | create_object | DEBUG | POST request for recipes: 
+2016-06-01 15:06:34,581 | views | create_object | DEBUG | POST request for recipes: 
+2016-06-01 15:06:34,598 | views | get_objects | DEBUG | GET request for all recipes 
+2016-06-01 15:06:34,663 | views | delete_object | DEBUG | DELETE request for recipes 1: 
+2016-06-01 15:06:34,674 | views | get_object | DEBUG | GET request for recipes: id: 1 
+2016-06-01 15:06:34,703 | views | get_objects | DEBUG | GET request for all recipes 
+2016-06-01 15:06:34,822 | views | get_object | DEBUG | GET request for recipes: id: 15 
+2016-06-01 15:06:34,851 | views | get_object | DEBUG | GET request for recipes: id: 1 
+2016-06-01 15:06:34,943 | views | update_object | DEBUG | PUT request for recipes: 
+2016-06-01 15:06:34,944 | views | update_object | DEBUG | Incoming data: {u'name': u'Lasagna'} 
+2016-06-01 15:06:34,996 | views | create_object | DEBUG | POST request for units: 
+2016-06-01 15:06:35,003 | views | get_objects | DEBUG | GET request for all units 
+2016-06-01 15:06:35,039 | views | delete_object | DEBUG | DELETE request for units 1: 
+2016-06-01 15:06:35,046 | views | get_object | DEBUG | GET request for units: id: 1 
+2016-06-01 15:06:35,075 | views | get_objects | DEBUG | GET request for all units 
+2016-06-01 15:06:35,130 | views | get_object | DEBUG | GET request for units: id: 15 
+2016-06-01 15:06:35,160 | views | get_object | DEBUG | GET request for units: id: 1 
+2016-06-01 15:06:35,194 | views | update_object | DEBUG | PUT request for units: 
+2016-06-01 15:06:35,197 | views | update_object | DEBUG | Incoming data: {u'name': u'liter'} 

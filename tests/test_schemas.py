@@ -7,7 +7,12 @@ import json
 import unittest 
 from cookbook.schemas import DepartmentSchema, IngredientSchema, UnitSchema, RecipeSchema
 from cookbook.schemas import StepSchema, NoteSchema, RecipeIngredientSchema
+
+
 FixturesMixin.init_app(app, db)
+
+
+
 
 class SchemaTest(TestCase, FixturesMixin):
     def __init__(self, *args, **kwargs):
@@ -300,7 +305,6 @@ class RecipeIngredientSchemaTest(SchemaTest):
         assert data.ingredient.name == 'honey kiss melon'
         data.save()
         assert data.id == self.test_data['new_id']
-        1/0
         
     def test_load_many(self):
         pass

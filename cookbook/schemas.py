@@ -1,8 +1,11 @@
 from marshmallow_sqlalchemy import ModelSchema
 from marshmallow import fields, pre_load, post_load, post_dump
 
-from cookbook import db
+from cookbook import db, app
 from cookbook.models import Department, Ingredient, Unit, Step, Note, Recipe, RecipeIngredient
+
+
+app.logger.debug('loading schemas.py')
 
 class BaseSchema(ModelSchema):
     class Meta:

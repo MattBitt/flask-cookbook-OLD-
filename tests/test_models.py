@@ -220,5 +220,5 @@ class RecipeIngredientTest(ModelTest):
     
     def test_ingredient_name(self):
         ri = RecipeIngredient.query.get(1)
-        assert ri.ingredient_name == 'cauliflower'
+        assert ri.ingredient.name == 'cauliflower'
         

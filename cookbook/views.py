@@ -4,13 +4,13 @@ from cookbook.schemas import DepartmentSchema, IngredientSchema, UnitSchema, Ste
 from cookbook.schemas import NoteSchema, RecipeSchema
 from flask import jsonify, request
 from flask_classy import FlaskView, route
-
 import json
-import jsonpickle
 
+app.logger.debug('loading views.py')
 
 def get_object(obj, obj_schema, id, envelope):
     ## retrieve item from db and dump it to a json string
+    app.logger.debug('GET request for {}: id: {}'.format(envelope, id))
     try:
         new_obj = obj.query.get(id)
     except:# IntegrityError:
@@ -23,6 +23,7 @@ def get_object(obj, obj_schema, id, envelope):
         
 def get_objects(obj, obj_schema, envelope):
     ## retrieve all items from db and dump it them to a list of json strings
+    app.logger.debug('GET request for all {}'.format(envelope))
     objs = obj.query.all()
     if objs:
         obj_dict_list, errors = obj_schema(many=True).dump(objs)
@@ -38,9 +39,13 @@ def create_object(obj, obj_schema, envelope):
     ## takes in new data and converts that to a new object
     ## this new object is then saved in the database
     
+    
+    app.logger.debug("POST request for {}:".format(envelope))
     json_data = request.get_json()
     if not json_data:
+        #logger.error("No json_data for POST request")
         return jsonify({'message': 'No input data provided'}), 400
+    #logger.debug("Incoming data: {}".format(json_data))
     # Validate and deserialize input
     obj_dict, errors = obj_schema().load(json_data)
     if errors:
@@ -56,10 +61,12 @@ def create_object(obj, obj_schema, envelope):
 def update_object(obj, obj_schema, id, envelope):
     ## takes in new data and converts that to a new object
     ## the existing (id) object is updated with the fields from the newly created one
+    app.logger.debug("PUT request for {}:".format(envelope))
     json_data = request.get_json()
     if not json_data:
+        app.logger.warning("No json_data for PUT request")
         return jsonify({'message': 'No input data provided'}), 400
-    
+    app.logger.debug("Incoming data: {}".format(json_data))
     new_obj, errors = obj_schema().load(json_data, partial=True)
     if errors:
         return jsonify(errors), 422
@@ -76,6 +83,7 @@ def update_object(obj, obj_schema, id, envelope):
 
 
 def delete_object(obj, id, envelope):
+    app.logger.debug("DELETE request for {} {}:".format(envelope, id))
     try:
         new_obj = obj.query.get(id)
     except IntegrityError:
@@ -111,9 +119,10 @@ class DepartmentsView(CRUDView):
         self.obj = Department
         self.schema = DepartmentSchema
         self.desc = 'departments'
+        
     
     def index(self):
-        print "Only departmentss index"
+        #add specific stuff here before calling super
         return super(DepartmentsView, self).index()
         
         
@@ -140,8 +149,6 @@ DepartmentsView.register(app)
 IngredientsView.register(app)
 UnitsView.register(app)
 RecipesView.register(app)
-
-
 
                     
                     

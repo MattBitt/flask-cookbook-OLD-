@@ -1,6 +1,8 @@
 
-from cookbook import db
+from cookbook import db, app
 import json
+
+app.logger.debug('loading models.py')
 
 
 class CRUDModel(object):
@@ -18,7 +20,7 @@ class CRUDModel(object):
         
 class RecipeIngredient(db.Model, CRUDModel):
     __tablename__ = 'recipeingredients'
-
+    
     id = db.Column(db.Integer, primary_key=True)
     recipe_id = db.Column(db.Integer, db.ForeignKey('recipes.id'))
     ingredient_id = db.Column(db.Integer, db.ForeignKey('ingredients.id'))
@@ -136,6 +138,7 @@ class Department(db.Model, CRUDModel):
         return self.name
         
     def update_from(self, new_obj):
+        app.logger.debug('Updating {} from {}'.format(self, new_obj))
         self.name = new_obj.name
         self.save()
     
