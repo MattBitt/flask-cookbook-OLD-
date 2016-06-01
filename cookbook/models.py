@@ -49,23 +49,11 @@ class RecipeIngredient(db.Model, CRUDModel):
     # 1 bell pepper    
 
     
-    @property
-    def ingredient_name(self):
-        return Ingredient.query.get(self.ingredient_id).name
-    
-    @property
-    def recipe_name(self):
-        return Recipe.query.get(self.recipe_id).name
-    
-    @property
-    def unit_name(self):
-        return Unit.query.get(self.unit_id).name
-    
     def __repr__(self):
-        return '<RecipeIngredient {} {} {}, {} >'.format(self.qty, self.unit_name, self.ingredient_name, self.preparation)
+        return '<RecipeIngredient {} {} {}>'.format(self.qty, self.unit, self.ingredient)
 
     def __str__(self):
-        return '<RecipeIngredient {} {} {}, {} >'.format(self.qty, self.unit_name, self.ingredient_name, self.preparation)
+        return '<RecipeIngredient {} {} {}>'.format(self.qty, self.unit, self.ingredient)
 
         
 class Step(db.Model, CRUDModel):
@@ -78,7 +66,7 @@ class Step(db.Model, CRUDModel):
 
 
     def __repr__(self):
-        return '<Step {:d} {} (Recipe {})>'.format(self.order, self.step, self.recipe_id)
+        return '<Step {} {}>'.format(self.id, self.step)
 
     def __str__(self):
         return self.step
@@ -98,7 +86,7 @@ class Note(db.Model, CRUDModel):
     recipe_id = db.Column(db.Integer, db.ForeignKey('recipes.id'))
 
     def __repr__(self):
-        return '<Note {:d} {}>'.format(self.id, self.note)
+        return '<Note {} {}>'.format(self.id, self.note)
 
     def __str__(self):
         return self.note
@@ -121,7 +109,7 @@ class Ingredient(db.Model, CRUDModel):
     
    
     def __repr__(self):
-        return '<Ingredient id {}: {}>'.format(self.id, self.name)
+        return '<Ingredient {} {}>'.format(self.id, self.name)
 
     def __str__(self):
         return self.name
@@ -158,9 +146,11 @@ class Unit(db.Model, CRUDModel):
 
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String)
-
+    recipeingredients = db.relationship('RecipeIngredient', backref='unit',
+                                lazy='dynamic')    
     def __repr__(self):
         return '<Unit {} {}>'.format(self.id, self.name)
+
 
     def __str__(self):
         return self.name
@@ -192,9 +182,12 @@ class Recipe(db.Model, CRUDModel):
         return self.name
         
     def update_from(self, new_obj):
-        self.name = new_obj.name
-        self.rating = new_obj.rating
-        self.date_added = new_obj.date_added
+        if new_obj.name:
+            self.name = new_obj.name
+        if new_obj.rating:
+            self.rating = new_obj.rating
+        if new_obj.date_added:
+            self.date_added = new_obj.date_added
         self.save()
         
         

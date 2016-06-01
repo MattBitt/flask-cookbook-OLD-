@@ -2,7 +2,7 @@ from marshmallow_sqlalchemy import ModelSchema
 from marshmallow import fields, pre_load, post_load, post_dump
 
 from cookbook import db
-from cookbook.models import Department, Ingredient, Unit, Step, Note, Recipe
+from cookbook.models import Department, Ingredient, Unit, Step, Note, Recipe, RecipeIngredient
 
 class BaseSchema(ModelSchema):
     class Meta:
@@ -40,6 +40,14 @@ class NoteSchema(BaseSchema):
 class RecipeSchema(BaseSchema):
     steps = fields.Nested('StepSchema', many=True, exclude=('recipe', ))
     notes = fields.Nested('NoteSchema', many = True, exclude=('recipe',))
-    
+    recipeingredients = fields.Nested('RecipeIngredientSchema', many = True, exclude=('recipe',))
     class Meta(BaseSchema.Meta):
         model = Recipe
+        
+class RecipeIngredientSchema(BaseSchema):
+    recipe = fields.Nested('RecipeSchema', exclude=('recipeingredients', ), required=True)
+    ingredient = fields.Nested('IngredientSchema', exclude=('recipeingredients', ), required=True)
+    unit = fields.Nested('UnitSchema', exclude=('recipeingredients', ), required=True)
+    
+    class Meta(BaseSchema.Meta):
+        model = RecipeIngredient

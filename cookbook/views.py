@@ -37,6 +37,7 @@ def create_object(obj, obj_schema, envelope):
     
     ## takes in new data and converts that to a new object
     ## this new object is then saved in the database
+    
     json_data = request.get_json()
     if not json_data:
         return jsonify({'message': 'No input data provided'}), 400
@@ -63,6 +64,8 @@ def update_object(obj, obj_schema, id, envelope):
     if errors:
         return jsonify(errors), 422
     existing_obj = obj.query.get(id)
+#    if obj == Recipe:
+#        1/0
     existing_obj.update_from(new_obj)
         
     result, errors = obj_schema().dump(existing_obj)
@@ -126,50 +129,16 @@ class UnitsView(CRUDView):
         self.schema = UnitSchema
         self.desc = 'units'        
 
-class NotesView(CRUDView):
-    def __init__(self):
-        self.obj = Note
-        self.schema = NoteSchema
-        self.desc = 'notes'        
-
-class StepsView(CRUDView):
-    def __init__(self):
-        self.obj = Step
-        self.schema = StepSchema
-        self.desc = 'recipes'
-        
 class RecipesView(CRUDView):
     def __init__(self):
         self.obj = Recipe
         self.schema = RecipeSchema
         self.desc = 'recipes'
     
-    @route('/recipes/<int:id>/steps/', methods=['POST'])
-    def add_new_step_to_recipe(self, id):
-        json_data = request.get_json()
-        if not json_data:
-            return jsonify({'message': 'No input data provided'}), 400
-        # Validate and deserialize input
-        data, errors = (None, {'message': 'marshmallow gone'})
-        if errors:
-            return jsonify(errors), 422
-        data.save()
-
-        recipe = Recipe.query.get(id)
-        recipe.steps.append(data)
-        recipe.save()
-        data, errors = (None, {'message': 'marshmallow gone'})
-        #recipe_result = recipe_schema.dump(Recipe.query.get(id))
-        #step_result = steps_schema.dump(recipe.steps.all())
-        #return jsonify({"message": "Created new step in Recipe.",
-        #                'recipes' : recipe_result.data, 'steps' : step_result.data})    
-        return jsonify(errors)
-       
+      
 DepartmentsView.register(app)
 IngredientsView.register(app)
 UnitsView.register(app)
-StepsView.register(app)
-NotesView.register(app)   
 RecipesView.register(app)
 
 

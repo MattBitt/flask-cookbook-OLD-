@@ -7,7 +7,7 @@
         "recipe_id" : 1,
         "ingredient_id" : 1,
         "qty" : 4,
-        "unit_id" : 1,
+        "unit_id" : 3,
         "preparation" : "chopped"
       },
       {
