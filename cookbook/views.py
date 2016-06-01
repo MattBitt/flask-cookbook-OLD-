@@ -3,6 +3,7 @@ from cookbook.models import Ingredient, Department, Unit, Step, Note, Recipe
 from cookbook.schemas import DepartmentSchema, IngredientSchema, UnitSchema, StepSchema
 from cookbook.schemas import NoteSchema, RecipeSchema
 from flask import jsonify, request
+from flask_classy import FlaskView, route
 
 import json
 import jsonpickle
@@ -83,161 +84,96 @@ def delete_object(obj, id, envelope):
 @app.route('/index')
 def index():
     return "Hello, World!"
-  
-############## Department Routes ####################
-@app.route('/departments/<int:id>', methods=['GET'])
-def get_department(id):
-    return get_object(Department, DepartmentSchema, id, 'department')
+
+
+class CRUDView(FlaskView):
+    def index(self):
+        return get_objects(self.obj, self.schema, self.desc)
+
+    def get(self, id):
+        return get_object(self.obj, self.schema, id, self.desc)
+
+    def post(self):
+        return create_object(self.obj, self.schema, self.desc)
     
-@app.route('/departments/', methods=['GET'])
-def get_departments():   
-    return get_objects(Department, DepartmentSchema, 'departments')
+    def put(self, id):
+        return update_object(self.obj, self.schema, id, self.desc)
 
-@app.route('/departments/', methods=['POST'])
-def create_department():
-    return create_object(Department, DepartmentSchema, 'departments')
+    def delete(self, id):
+        return delete_object(self.obj, id, self.desc)
 
-@app.route('/departments/<int:id>', methods=['PUT'])
-def update_department(id):
-    return update_object(Department, DepartmentSchema, id, 'departments')
-                    
-@app.route('/departments/<int:id>', methods=['DELETE'])
-def delete_department(id):
-    return delete_object(Department, id, 'department')
-
-
+        
+class DepartmentsView(CRUDView):
+    def __init__(self):
+        self.obj = Department
+        self.schema = DepartmentSchema
+        self.desc = 'departments'
     
+    def index(self):
+        print "Only departmentss index"
+        return super(DepartmentsView, self).index()
+        
+        
+class IngredientsView(CRUDView):
+    def __init__(self):
+        self.obj = Ingredient
+        self.schema = IngredientSchema
+        self.desc = 'ingredients'
+
+class UnitsView(CRUDView):
+    def __init__(self):
+        self.obj = Unit
+        self.schema = UnitSchema
+        self.desc = 'units'        
+
+class NotesView(CRUDView):
+    def __init__(self):
+        self.obj = Note
+        self.schema = NoteSchema
+        self.desc = 'notes'        
+
+class StepsView(CRUDView):
+    def __init__(self):
+        self.obj = Step
+        self.schema = StepSchema
+        self.desc = 'recipes'
+        
+class RecipesView(CRUDView):
+    def __init__(self):
+        self.obj = Recipe
+        self.schema = RecipeSchema
+        self.desc = 'recipes'
     
-    
-############## Ingredient Routes ####################    
-@app.route('/ingredients/', methods=['GET'])
-def get_ingredients():   
-    return get_objects(Ingredient, IngredientSchema, 'ingredients')
+    @route('/recipes/<int:id>/steps/', methods=['POST'])
+    def add_new_step_to_recipe(self, id):
+        json_data = request.get_json()
+        if not json_data:
+            return jsonify({'message': 'No input data provided'}), 400
+        # Validate and deserialize input
+        data, errors = (None, {'message': 'marshmallow gone'})
+        if errors:
+            return jsonify(errors), 422
+        data.save()
 
-@app.route('/ingredients/', methods=['POST'])
-def create_ingredient():
-    return create_object(Ingredient, IngredientSchema,'ingredients')
-
-@app.route('/ingredients/<int:id>', methods=['PUT'])
-def update_ingredient(id):
-    return update_object(Ingredient, IngredientSchema,id, 'ingredients')
-                    
-@app.route('/ingredients/<int:id>', methods=['GET'])
-def get_ingredient(id):
-    return get_object(Ingredient, IngredientSchema,id, 'ingredients')
-
-@app.route('/ingredients/<int:id>', methods=['DELETE'])
-def delete_ingredient(id):
-    return delete_object(Ingredient, id, 'ingredient')
-
-
-############## Unit Routes ####################    
-@app.route('/units/', methods=['GET'])
-def get_units():   
-    return get_objects(Unit, UnitSchema,'units')
-                    
-@app.route('/units/<int:id>', methods=['GET'])
-def get_unit(id):
-    return get_object(Unit, id, UnitSchema,'units')
-
-@app.route('/units/', methods=['POST'])
-def create_unit():
-    return create_object(Unit, UnitSchema,'units')
-
-@app.route('/units/<int:id>', methods=['PUT'])
-def update_unit(id):
-    return update_object(Unit, UnitSchema, id,'units')
-
-@app.route('/units/<int:id>', methods=['DELETE'])
-def delete_unit(id):
-    return delete_object(Unit, id, 'unit')
+        recipe = Recipe.query.get(id)
+        recipe.steps.append(data)
+        recipe.save()
+        data, errors = (None, {'message': 'marshmallow gone'})
+        #recipe_result = recipe_schema.dump(Recipe.query.get(id))
+        #step_result = steps_schema.dump(recipe.steps.all())
+        #return jsonify({"message": "Created new step in Recipe.",
+        #                'recipes' : recipe_result.data, 'steps' : step_result.data})    
+        return jsonify(errors)
+       
+DepartmentsView.register(app)
+IngredientsView.register(app)
+UnitsView.register(app)
+StepsView.register(app)
+NotesView.register(app)   
+RecipesView.register(app)
 
 
-############## Step Routes ####################    
-@app.route('/steps/', methods=['GET'])
-def get_steps():   
-    return get_objects(Step, StepSchema,'steps')
-                    
-@app.route('/steps/<int:id>', methods=['GET'])
-def get_step(id):
-    return get_object(Step, id, StepSchema,'steps')
 
-@app.route('/steps/', methods=['POST'])
-def create_step():
-    return create_object(Step, StepSchema,'steps')
-
-@app.route('/steps/<int:id>', methods=['PUT'])
-def update_step(id):
-    return update_object(Step, StepSchema,id, 'steps')
-
-@app.route('/steps/<int:id>', methods=['DELETE'])
-def delete_step(id):
-    return delete_object(Step, id, 'step')
-
-    
-############## Note Routes ####################    
-@app.route('/notes/', methods=['GET'])
-def get_notes():   
-    return get_objects(Note, NoteSchema,'notes')
-                    
-@app.route('/notes/<int:id>', methods=['GET'])
-def get_note(id):
-    return get_object(Note, NoteSchema,id, 'notes')
-
-@app.route('/notes/', methods=['POST'])
-def create_note():
-    return create_object(Note, NoteSchema,'notes')
-
-@app.route('/notes/<int:id>', methods=['PUT'])
-def update_note(id):
-    return update_object(Note, NoteSchema,id, 'notes')
-
-@app.route('/notes/<int:id>', methods=['DELETE'])
-def delete_note(id):
-    return delete_object(Note, id, 'note')
- 
-############## Recipe Routes ####################    
-@app.route('/recipes/', methods=['GET'])
-def get_recipes():   
-    return get_objects(Recipe, RecipeSchema,'recipes')
-                    
-@app.route('/recipes/<int:id>', methods=['GET'])
-def get_recipe(id):
-    return get_object(Recipe, RecipeSchema,id, 'recipes')
-
-@app.route('/recipes/', methods=['POST'])
-def create_recipe():
-    return create_object(Recipe, RecipeSchema,'recipes')
-
-@app.route('/recipes/<int:id>', methods=['PUT'])
-def update_recipe(id):
-    return update_object(Recipe, RecipeSchema,id, 'recipes')
-
-@app.route('/recipes/<int:id>', methods=['DELETE'])
-def delete_recipe(id):
-    return delete_object(Recipe, id, 'recipe') 
-
-
-@app.route('/recipes/<int:id>/steps/', methods=['POST'])
-def add_new_step_to_recipe(id):
-    json_data = request.get_json()
-    if not json_data:
-        return jsonify({'message': 'No input data provided'}), 400
-    # Validate and deserialize input
-    data, errors = (None, {'message': 'marshmallow gone'})
-    if errors:
-        return jsonify(errors), 422
-    data.save()
-
-    recipe = Recipe.query.get(id)
-    recipe.steps.append(data)
-    recipe.save()
-    data, errors = (None, {'message': 'marshmallow gone'})
-    #recipe_result = recipe_schema.dump(Recipe.query.get(id))
-    #step_result = steps_schema.dump(recipe.steps.all())
-    #return jsonify({"message": "Created new step in Recipe.",
-    #                'recipes' : recipe_result.data, 'steps' : step_result.data})    
-    return jsonify(errors)
                     
                     
 ###############  Do i ever need this?? ###################    
