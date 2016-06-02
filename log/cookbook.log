@@ -1,0 +1,2025 @@
+2016-06-02 08:27:50,210 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 08:27:50,213 | models | <module> | DEBUG | loading models.py 
+2016-06-02 08:27:50,388 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-02 08:27:50,417 | views | <module> | DEBUG | loading views.py 
+2016-06-02 08:27:52,339 | views | create_object | DEBUG | POST request for departments: 
+2016-06-02 08:27:52,358 | views | get_objects | DEBUG | GET request for all departments 
+2016-06-02 08:27:52,394 | views | delete_object | DEBUG | DELETE request for departments 1: 
+2016-06-02 08:27:52,401 | views | get_object | DEBUG | GET request for departments: id: 1 
+2016-06-02 08:27:52,431 | views | get_objects | DEBUG | GET request for all departments 
+2016-06-02 08:27:52,486 | views | get_object | DEBUG | GET request for departments: id: 15 
+2016-06-02 08:27:52,515 | views | get_object | DEBUG | GET request for departments: id: 1 
+2016-06-02 08:27:52,555 | views | update_object | DEBUG | PUT request for departments: 
+2016-06-02 08:27:52,558 | views | update_object | DEBUG | Incoming data: {u'name': u'floral'} 
+2016-06-02 08:27:52,562 | models | update_from | DEBUG | Updating Produce from floral 
+2016-06-02 08:27:52,595 | views | create_object | DEBUG | POST request for ingredients: 
+2016-06-02 08:27:52,625 | views | create_object | DEBUG | POST request for ingredients: 
+2016-06-02 08:27:52,634 | views | get_objects | DEBUG | GET request for all ingredients 
+2016-06-02 08:27:52,677 | views | delete_object | DEBUG | DELETE request for ingredients 1: 
+2016-06-02 08:27:52,684 | views | get_object | DEBUG | GET request for ingredients: id: 1 
+2016-06-02 08:27:52,714 | views | get_objects | DEBUG | GET request for all ingredients 
+2016-06-02 08:27:52,783 | views | get_object | DEBUG | GET request for ingredients: id: 15 
+2016-06-02 08:27:52,812 | views | get_object | DEBUG | GET request for ingredients: id: 1 
+2016-06-02 08:27:52,852 | views | update_object | DEBUG | PUT request for ingredients: 
+2016-06-02 08:27:52,855 | views | update_object | DEBUG | Incoming data: {u'department': {u'name': u'Meat', u'id': 3}} 
+2016-06-02 08:27:52,894 | views | update_object | DEBUG | PUT request for ingredients: 
+2016-06-02 08:27:52,897 | views | update_object | DEBUG | Incoming data: {u'name': u'watermelon'} 
+2016-06-02 08:27:52,936 | views | create_object | DEBUG | POST request for recipes: 
+2016-06-02 08:27:52,996 | views | create_object | DEBUG | POST request for recipes: 
+2016-06-02 08:27:53,013 | views | get_objects | DEBUG | GET request for all recipes 
+2016-06-02 08:27:53,073 | views | delete_object | DEBUG | DELETE request for recipes 1: 
+2016-06-02 08:27:53,085 | views | get_object | DEBUG | GET request for recipes: id: 1 
+2016-06-02 08:27:53,115 | views | get_objects | DEBUG | GET request for all recipes 
+2016-06-02 08:27:53,236 | views | get_object | DEBUG | GET request for recipes: id: 15 
+2016-06-02 08:27:53,265 | views | get_object | DEBUG | GET request for recipes: id: 1 
+2016-06-02 08:27:53,354 | views | update_object | DEBUG | PUT request for recipes: 
+2016-06-02 08:27:53,357 | views | update_object | DEBUG | Incoming data: {u'name': u'Lasagna'} 
+2016-06-02 08:27:53,408 | views | create_object | DEBUG | POST request for units: 
+2016-06-02 08:27:53,417 | views | get_objects | DEBUG | GET request for all units 
+2016-06-02 08:27:53,453 | views | delete_object | DEBUG | DELETE request for units 1: 
+2016-06-02 08:27:53,460 | views | get_object | DEBUG | GET request for units: id: 1 
+2016-06-02 08:27:53,490 | views | get_objects | DEBUG | GET request for all units 
+2016-06-02 08:27:53,543 | views | get_object | DEBUG | GET request for units: id: 15 
+2016-06-02 08:27:53,575 | views | get_object | DEBUG | GET request for units: id: 1 
+2016-06-02 08:27:53,609 | views | update_object | DEBUG | PUT request for units: 
+2016-06-02 08:27:53,611 | views | update_object | DEBUG | Incoming data: {u'name': u'liter'} 
+2016-06-02 08:28:21,970 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 08:28:21,974 | models | <module> | DEBUG | loading models.py 
+2016-06-02 08:28:22,069 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-02 08:28:22,095 | views | <module> | DEBUG | loading views.py 
+2016-06-02 08:28:23,986 | views | create_object | DEBUG | POST request for departments: 
+2016-06-02 08:28:24,000 | views | get_objects | DEBUG | GET request for all departments 
+2016-06-02 08:28:24,038 | views | delete_object | DEBUG | DELETE request for departments 1: 
+2016-06-02 08:28:24,046 | views | get_object | DEBUG | GET request for departments: id: 1 
+2016-06-02 08:28:24,075 | views | get_objects | DEBUG | GET request for all departments 
+2016-06-02 08:28:24,128 | views | get_object | DEBUG | GET request for departments: id: 15 
+2016-06-02 08:28:24,157 | views | get_object | DEBUG | GET request for departments: id: 1 
+2016-06-02 08:28:24,197 | views | update_object | DEBUG | PUT request for departments: 
+2016-06-02 08:28:24,200 | views | update_object | DEBUG | Incoming data: {u'name': u'floral'} 
+2016-06-02 08:28:24,204 | models | update_from | DEBUG | Updating Produce from floral 
+2016-06-02 08:28:24,237 | views | create_object | DEBUG | POST request for ingredients: 
+2016-06-02 08:28:24,266 | views | create_object | DEBUG | POST request for ingredients: 
+2016-06-02 08:28:24,279 | views | get_objects | DEBUG | GET request for all ingredients 
+2016-06-02 08:28:24,319 | views | delete_object | DEBUG | DELETE request for ingredients 1: 
+2016-06-02 08:28:24,326 | views | get_object | DEBUG | GET request for ingredients: id: 1 
+2016-06-02 08:28:24,355 | views | get_objects | DEBUG | GET request for all ingredients 
+2016-06-02 08:28:24,424 | views | get_object | DEBUG | GET request for ingredients: id: 15 
+2016-06-02 08:28:24,454 | views | get_object | DEBUG | GET request for ingredients: id: 1 
+2016-06-02 08:28:24,493 | views | update_object | DEBUG | PUT request for ingredients: 
+2016-06-02 08:28:24,496 | views | update_object | DEBUG | Incoming data: {u'department': {u'name': u'Meat', u'id': 3}} 
+2016-06-02 08:28:24,535 | views | update_object | DEBUG | PUT request for ingredients: 
+2016-06-02 08:28:24,538 | views | update_object | DEBUG | Incoming data: {u'name': u'watermelon'} 
+2016-06-02 08:28:24,572 | views | create_object | DEBUG | POST request for recipes: 
+2016-06-02 08:28:24,618 | views | create_object | DEBUG | POST request for recipes: 
+2016-06-02 08:28:24,635 | views | get_objects | DEBUG | GET request for all recipes 
+2016-06-02 08:28:24,697 | views | delete_object | DEBUG | DELETE request for recipes 1: 
+2016-06-02 08:28:24,709 | views | get_object | DEBUG | GET request for recipes: id: 1 
+2016-06-02 08:28:24,739 | views | get_objects | DEBUG | GET request for all recipes 
+2016-06-02 08:28:24,855 | views | get_object | DEBUG | GET request for recipes: id: 15 
+2016-06-02 08:28:24,884 | views | get_object | DEBUG | GET request for recipes: id: 1 
+2016-06-02 08:28:24,973 | views | update_object | DEBUG | PUT request for recipes: 
+2016-06-02 08:28:24,976 | views | update_object | DEBUG | Incoming data: {u'name': u'Lasagna'} 
+2016-06-02 08:28:25,028 | views | create_object | DEBUG | POST request for units: 
+2016-06-02 08:28:25,035 | views | get_objects | DEBUG | GET request for all units 
+2016-06-02 08:28:25,071 | views | delete_object | DEBUG | DELETE request for units 1: 
+2016-06-02 08:28:25,078 | views | get_object | DEBUG | GET request for units: id: 1 
+2016-06-02 08:28:25,107 | views | get_objects | DEBUG | GET request for all units 
+2016-06-02 08:28:25,158 | views | get_object | DEBUG | GET request for units: id: 15 
+2016-06-02 08:28:25,188 | views | get_object | DEBUG | GET request for units: id: 1 
+2016-06-02 08:28:25,221 | views | update_object | DEBUG | PUT request for units: 
+2016-06-02 08:28:25,224 | views | update_object | DEBUG | Incoming data: {u'name': u'liter'} 
+2016-06-02 08:50:29,019 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 08:50:29,040 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 08:50:29,657 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 08:51:11,622 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 08:51:11,631 | models | <module> | DEBUG | loading models.py 
+2016-06-02 08:51:11,730 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-02 08:51:11,759 | views | <module> | DEBUG | loading views.py 
+2016-06-02 08:51:13,697 | views | create_object | DEBUG | POST request for departments: 
+2016-06-02 08:51:13,713 | views | get_objects | DEBUG | GET request for all departments 
+2016-06-02 08:51:13,749 | views | delete_object | DEBUG | DELETE request for departments 1: 
+2016-06-02 08:51:13,756 | views | get_object | DEBUG | GET request for departments: id: 1 
+2016-06-02 08:51:13,786 | views | get_objects | DEBUG | GET request for all departments 
+2016-06-02 08:51:13,839 | views | get_object | DEBUG | GET request for departments: id: 15 
+2016-06-02 08:51:13,869 | views | get_object | DEBUG | GET request for departments: id: 1 
+2016-06-02 08:51:13,910 | views | update_object | DEBUG | PUT request for departments: 
+2016-06-02 08:51:13,911 | views | update_object | DEBUG | Incoming data: {u'name': u'floral'} 
+2016-06-02 08:51:13,915 | models | update_from | DEBUG | Updating Produce from floral 
+2016-06-02 08:51:13,948 | views | create_object | DEBUG | POST request for ingredients: 
+2016-06-02 08:51:13,977 | views | create_object | DEBUG | POST request for ingredients: 
+2016-06-02 08:51:13,989 | views | get_objects | DEBUG | GET request for all ingredients 
+2016-06-02 08:51:14,029 | views | delete_object | DEBUG | DELETE request for ingredients 1: 
+2016-06-02 08:51:14,036 | views | get_object | DEBUG | GET request for ingredients: id: 1 
+2016-06-02 08:51:14,065 | views | get_objects | DEBUG | GET request for all ingredients 
+2016-06-02 08:51:14,140 | views | get_object | DEBUG | GET request for ingredients: id: 15 
+2016-06-02 08:51:14,173 | views | get_object | DEBUG | GET request for ingredients: id: 1 
+2016-06-02 08:51:14,216 | views | update_object | DEBUG | PUT request for ingredients: 
+2016-06-02 08:51:14,219 | views | update_object | DEBUG | Incoming data: {u'department': {u'name': u'Meat', u'id': 3}} 
+2016-06-02 08:51:14,259 | views | update_object | DEBUG | PUT request for ingredients: 
+2016-06-02 08:51:14,262 | views | update_object | DEBUG | Incoming data: {u'name': u'watermelon'} 
+2016-06-02 08:51:14,296 | views | create_object | DEBUG | POST request for recipes: 
+2016-06-02 08:51:14,342 | views | create_object | DEBUG | POST request for recipes: 
+2016-06-02 08:51:14,359 | views | get_objects | DEBUG | GET request for all recipes 
+2016-06-02 08:51:14,421 | views | delete_object | DEBUG | DELETE request for recipes 1: 
+2016-06-02 08:51:14,433 | views | get_object | DEBUG | GET request for recipes: id: 1 
+2016-06-02 08:51:14,461 | views | get_objects | DEBUG | GET request for all recipes 
+2016-06-02 08:51:14,578 | views | get_object | DEBUG | GET request for recipes: id: 15 
+2016-06-02 08:51:14,608 | views | get_object | DEBUG | GET request for recipes: id: 1 
+2016-06-02 08:51:14,697 | views | update_object | DEBUG | PUT request for recipes: 
+2016-06-02 08:51:14,700 | views | update_object | DEBUG | Incoming data: {u'name': u'Lasagna'} 
+2016-06-02 08:51:14,752 | views | create_object | DEBUG | POST request for units: 
+2016-06-02 08:51:14,759 | views | get_objects | DEBUG | GET request for all units 
+2016-06-02 08:51:14,795 | views | delete_object | DEBUG | DELETE request for units 1: 
+2016-06-02 08:51:14,801 | views | get_object | DEBUG | GET request for units: id: 1 
+2016-06-02 08:51:14,829 | views | get_objects | DEBUG | GET request for all units 
+2016-06-02 08:51:14,882 | views | get_object | DEBUG | GET request for units: id: 15 
+2016-06-02 08:51:14,911 | views | get_object | DEBUG | GET request for units: id: 1 
+2016-06-02 08:51:14,946 | views | update_object | DEBUG | PUT request for units: 
+2016-06-02 08:51:14,948 | views | update_object | DEBUG | Incoming data: {u'name': u'liter'} 
+2016-06-02 08:52:59,924 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 08:52:59,931 | models | <module> | DEBUG | loading models.py 
+2016-06-02 08:53:00,035 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-02 08:53:00,065 | views | <module> | DEBUG | loading views.py 
+2016-06-02 08:53:01,947 | views | create_object | DEBUG | POST request for departments: 
+2016-06-02 08:53:01,963 | views | get_objects | DEBUG | GET request for all departments 
+2016-06-02 08:53:01,999 | views | delete_object | DEBUG | DELETE request for departments 1: 
+2016-06-02 08:53:02,006 | views | get_object | DEBUG | GET request for departments: id: 1 
+2016-06-02 08:53:02,009 | views | get_object | DEBUG | No departments found with id 1. 
+2016-06-02 08:53:02,039 | views | get_objects | DEBUG | GET request for all departments 
+2016-06-02 08:53:02,094 | views | get_object | DEBUG | GET request for departments: id: 15 
+2016-06-02 08:53:02,096 | views | get_object | DEBUG | No departments found with id 15. 
+2016-06-02 08:53:02,125 | views | get_object | DEBUG | GET request for departments: id: 1 
+2016-06-02 08:53:02,164 | views | update_object | DEBUG | PUT request for departments: 
+2016-06-02 08:53:02,167 | views | update_object | DEBUG | Incoming data: {u'name': u'floral'} 
+2016-06-02 08:53:02,171 | models | update_from | DEBUG | Updating Produce from floral 
+2016-06-02 08:53:02,204 | views | create_object | DEBUG | POST request for ingredients: 
+2016-06-02 08:53:02,233 | views | create_object | DEBUG | POST request for ingredients: 
+2016-06-02 08:53:02,244 | views | get_objects | DEBUG | GET request for all ingredients 
+2016-06-02 08:53:02,285 | views | delete_object | DEBUG | DELETE request for ingredients 1: 
+2016-06-02 08:53:02,292 | views | get_object | DEBUG | GET request for ingredients: id: 1 
+2016-06-02 08:53:02,296 | views | get_object | DEBUG | No ingredients found with id 1. 
+2016-06-02 08:53:02,323 | views | get_objects | DEBUG | GET request for all ingredients 
+2016-06-02 08:53:02,392 | views | get_object | DEBUG | GET request for ingredients: id: 15 
+2016-06-02 08:53:02,397 | views | get_object | DEBUG | No ingredients found with id 15. 
+2016-06-02 08:53:02,424 | views | get_object | DEBUG | GET request for ingredients: id: 1 
+2016-06-02 08:53:02,463 | views | update_object | DEBUG | PUT request for ingredients: 
+2016-06-02 08:53:02,467 | views | update_object | DEBUG | Incoming data: {u'department': {u'name': u'Meat', u'id': 3}} 
+2016-06-02 08:53:02,505 | views | update_object | DEBUG | PUT request for ingredients: 
+2016-06-02 08:53:02,507 | views | update_object | DEBUG | Incoming data: {u'name': u'watermelon'} 
+2016-06-02 08:53:02,542 | views | create_object | DEBUG | POST request for recipes: 
+2016-06-02 08:53:02,588 | views | create_object | DEBUG | POST request for recipes: 
+2016-06-02 08:53:02,605 | views | get_objects | DEBUG | GET request for all recipes 
+2016-06-02 08:53:02,665 | views | delete_object | DEBUG | DELETE request for recipes 1: 
+2016-06-02 08:53:02,678 | views | get_object | DEBUG | GET request for recipes: id: 1 
+2016-06-02 08:53:02,681 | views | get_object | DEBUG | No recipes found with id 1. 
+2016-06-02 08:53:02,710 | views | get_objects | DEBUG | GET request for all recipes 
+2016-06-02 08:53:02,828 | views | get_object | DEBUG | GET request for recipes: id: 15 
+2016-06-02 08:53:02,832 | views | get_object | DEBUG | No recipes found with id 15. 
+2016-06-02 08:53:02,859 | views | get_object | DEBUG | GET request for recipes: id: 1 
+2016-06-02 08:53:02,947 | views | update_object | DEBUG | PUT request for recipes: 
+2016-06-02 08:53:02,950 | views | update_object | DEBUG | Incoming data: {u'name': u'Lasagna'} 
+2016-06-02 08:53:03,003 | views | create_object | DEBUG | POST request for units: 
+2016-06-02 08:53:03,009 | views | get_objects | DEBUG | GET request for all units 
+2016-06-02 08:53:03,045 | views | delete_object | DEBUG | DELETE request for units 1: 
+2016-06-02 08:53:03,052 | views | get_object | DEBUG | GET request for units: id: 1 
+2016-06-02 08:53:03,055 | views | get_object | DEBUG | No units found with id 1. 
+2016-06-02 08:53:03,082 | views | get_objects | DEBUG | GET request for all units 
+2016-06-02 08:53:03,135 | views | get_object | DEBUG | GET request for units: id: 15 
+2016-06-02 08:53:03,138 | views | get_object | DEBUG | No units found with id 15. 
+2016-06-02 08:53:03,167 | views | get_object | DEBUG | GET request for units: id: 1 
+2016-06-02 08:53:03,200 | views | update_object | DEBUG | PUT request for units: 
+2016-06-02 08:53:03,203 | views | update_object | DEBUG | Incoming data: {u'name': u'liter'} 
+2016-06-02 08:54:16,569 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 08:54:16,578 | models | <module> | DEBUG | loading models.py 
+2016-06-02 08:54:16,687 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-02 08:54:16,717 | views | <module> | DEBUG | loading views.py 
+2016-06-02 08:54:18,619 | views | create_object | DEBUG | POST request for departments: 
+2016-06-02 08:54:18,635 | views | get_objects | DEBUG | GET request for all departments 
+2016-06-02 08:54:18,674 | views | delete_object | DEBUG | DELETE request for departments 1: 
+2016-06-02 08:54:18,681 | views | get_object | DEBUG | GET request for departments: id: 1 
+2016-06-02 08:54:31,917 | views | get_objects | DEBUG | GET request for all departments 
+2016-06-02 08:54:31,970 | views | get_object | DEBUG | GET request for departments: id: 15 
+2016-06-02 08:56:35,371 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 08:56:35,380 | models | <module> | DEBUG | loading models.py 
+2016-06-02 08:56:35,476 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-02 08:56:35,506 | views | <module> | DEBUG | loading views.py 
+2016-06-02 08:56:37,407 | views | create_object | DEBUG | POST request for departments: 
+2016-06-02 08:56:37,423 | views | get_objects | DEBUG | GET request for all departments 
+2016-06-02 08:56:37,459 | views | delete_object | DEBUG | DELETE request for departments 1: 
+2016-06-02 08:56:37,467 | views | get_object | DEBUG | GET request for departments: id: 1 
+2016-06-02 08:56:37,470 | views | get_object | DEBUG | 404 Error.  No departments found with id 1. 
+2016-06-02 08:56:37,499 | views | get_objects | DEBUG | GET request for all departments 
+2016-06-02 08:56:37,552 | views | get_object | DEBUG | GET request for departments: id: 15 
+2016-06-02 08:56:37,555 | views | get_object | DEBUG | 404 Error.  No departments found with id 15. 
+2016-06-02 08:56:37,584 | views | get_object | DEBUG | GET request for departments: id: 1 
+2016-06-02 08:56:37,622 | views | update_object | DEBUG | PUT request for departments: 
+2016-06-02 08:56:37,625 | views | update_object | DEBUG | Incoming data: {u'name': u'floral'} 
+2016-06-02 08:56:37,628 | models | update_from | DEBUG | Updating Produce from floral 
+2016-06-02 08:56:37,663 | views | create_object | DEBUG | POST request for ingredients: 
+2016-06-02 08:56:37,693 | views | create_object | DEBUG | POST request for ingredients: 
+2016-06-02 08:56:37,703 | views | get_objects | DEBUG | GET request for all ingredients 
+2016-06-02 08:56:37,744 | views | delete_object | DEBUG | DELETE request for ingredients 1: 
+2016-06-02 08:56:37,753 | views | get_object | DEBUG | GET request for ingredients: id: 1 
+2016-06-02 08:56:37,755 | views | get_object | DEBUG | 404 Error.  No ingredients found with id 1. 
+2016-06-02 08:56:37,783 | views | get_objects | DEBUG | GET request for all ingredients 
+2016-06-02 08:56:37,852 | views | get_object | DEBUG | GET request for ingredients: id: 15 
+2016-06-02 08:56:37,855 | views | get_object | DEBUG | 404 Error.  No ingredients found with id 15. 
+2016-06-02 08:56:37,884 | views | get_object | DEBUG | GET request for ingredients: id: 1 
+2016-06-02 08:56:37,924 | views | update_object | DEBUG | PUT request for ingredients: 
+2016-06-02 08:56:37,927 | views | update_object | DEBUG | Incoming data: {u'department': {u'name': u'Meat', u'id': 3}} 
+2016-06-02 08:56:37,964 | views | update_object | DEBUG | PUT request for ingredients: 
+2016-06-02 08:56:37,967 | views | update_object | DEBUG | Incoming data: {u'name': u'watermelon'} 
+2016-06-02 08:56:38,002 | views | create_object | DEBUG | POST request for recipes: 
+2016-06-02 08:56:38,048 | views | create_object | DEBUG | POST request for recipes: 
+2016-06-02 08:56:38,065 | views | get_objects | DEBUG | GET request for all recipes 
+2016-06-02 08:56:38,125 | views | delete_object | DEBUG | DELETE request for recipes 1: 
+2016-06-02 08:56:38,137 | views | get_object | DEBUG | GET request for recipes: id: 1 
+2016-06-02 08:56:38,140 | views | get_object | DEBUG | 404 Error.  No recipes found with id 1. 
+2016-06-02 08:56:38,167 | views | get_objects | DEBUG | GET request for all recipes 
+2016-06-02 08:56:38,286 | views | get_object | DEBUG | GET request for recipes: id: 15 
+2016-06-02 08:56:38,289 | views | get_object | DEBUG | 404 Error.  No recipes found with id 15. 
+2016-06-02 08:56:38,318 | views | get_object | DEBUG | GET request for recipes: id: 1 
+2016-06-02 08:56:38,405 | views | update_object | DEBUG | PUT request for recipes: 
+2016-06-02 08:56:38,408 | views | update_object | DEBUG | Incoming data: {u'name': u'Lasagna'} 
+2016-06-02 08:56:38,460 | views | create_object | DEBUG | POST request for units: 
+2016-06-02 08:56:38,467 | views | get_objects | DEBUG | GET request for all units 
+2016-06-02 08:56:38,502 | views | delete_object | DEBUG | DELETE request for units 1: 
+2016-06-02 08:56:38,507 | views | get_object | DEBUG | GET request for units: id: 1 
+2016-06-02 08:56:38,510 | views | get_object | DEBUG | 404 Error.  No units found with id 1. 
+2016-06-02 08:56:38,539 | views | get_objects | DEBUG | GET request for all units 
+2016-06-02 08:56:38,592 | views | get_object | DEBUG | GET request for units: id: 15 
+2016-06-02 08:56:38,595 | views | get_object | DEBUG | 404 Error.  No units found with id 15. 
+2016-06-02 08:56:38,622 | views | get_object | DEBUG | GET request for units: id: 1 
+2016-06-02 08:56:38,657 | views | update_object | DEBUG | PUT request for units: 
+2016-06-02 08:56:38,660 | views | update_object | DEBUG | Incoming data: {u'name': u'liter'} 
+2016-06-02 08:58:57,812 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 08:58:57,819 | models | <module> | DEBUG | loading models.py 
+2016-06-02 08:58:57,917 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-02 08:58:57,944 | views | <module> | DEBUG | loading views.py 
+2016-06-02 08:58:59,815 | views | create_object | DEBUG | POST request for departments: 
+2016-06-02 08:58:59,831 | views | get_objects | DEBUG | GET request for all departments 
+2016-06-02 08:58:59,867 | views | delete_object | DEBUG | DELETE request for departments 1: 
+2016-06-02 08:58:59,875 | views | get_object | DEBUG | GET request for departments: id: 1 
+2016-06-02 09:01:24,884 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 09:01:24,892 | models | <module> | DEBUG | loading models.py 
+2016-06-02 09:01:24,989 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-02 09:01:25,016 | views | <module> | DEBUG | loading views.py 
+2016-06-02 09:01:26,910 | views | create_object | DEBUG | POST request for departments: 
+2016-06-02 09:01:26,927 | views | get_objects | DEBUG | GET request for all departments 
+2016-06-02 09:01:26,963 | views | delete_object | DEBUG | DELETE request for departments 1: 
+2016-06-02 09:01:26,970 | views | get_object | DEBUG | GET request for departments: id: 1 
+2016-06-02 09:01:26,973 | views | get_object | DEBUG | 404 Error.  No departments found with id 1. 
+2016-06-02 09:01:27,003 | views | get_objects | DEBUG | GET request for all departments 
+2016-06-02 09:01:27,055 | views | get_object | DEBUG | GET request for departments: id: 15 
+2016-06-02 09:01:27,059 | views | get_object | DEBUG | 404 Error.  No departments found with id 15. 
+2016-06-02 09:01:27,088 | views | get_object | DEBUG | GET request for departments: id: 1 
+2016-06-02 09:01:27,091 | views | get_object | DEBUG | departments id:1 found. 
+2016-06-02 09:01:27,130 | views | update_object | DEBUG | PUT request for departments: 
+2016-06-02 09:01:27,132 | views | update_object | DEBUG | Incoming data: {u'name': u'floral'} 
+2016-06-02 09:01:27,137 | models | update_from | DEBUG | Updating Produce from floral 
+2016-06-02 09:01:27,170 | views | create_object | DEBUG | POST request for ingredients: 
+2016-06-02 09:01:27,200 | views | create_object | DEBUG | POST request for ingredients: 
+2016-06-02 09:01:27,210 | views | get_objects | DEBUG | GET request for all ingredients 
+2016-06-02 09:01:27,252 | views | delete_object | DEBUG | DELETE request for ingredients 1: 
+2016-06-02 09:01:27,259 | views | get_object | DEBUG | GET request for ingredients: id: 1 
+2016-06-02 09:01:27,262 | views | get_object | DEBUG | 404 Error.  No ingredients found with id 1. 
+2016-06-02 09:01:27,290 | views | get_objects | DEBUG | GET request for all ingredients 
+2016-06-02 09:01:27,359 | views | get_object | DEBUG | GET request for ingredients: id: 15 
+2016-06-02 09:01:27,362 | views | get_object | DEBUG | 404 Error.  No ingredients found with id 15. 
+2016-06-02 09:01:27,391 | views | get_object | DEBUG | GET request for ingredients: id: 1 
+2016-06-02 09:01:27,394 | views | get_object | DEBUG | ingredients id:1 found. 
+2016-06-02 09:01:27,433 | views | update_object | DEBUG | PUT request for ingredients: 
+2016-06-02 09:01:27,434 | views | update_object | DEBUG | Incoming data: {u'department': {u'name': u'Meat', u'id': 3}} 
+2016-06-02 09:01:27,474 | views | update_object | DEBUG | PUT request for ingredients: 
+2016-06-02 09:01:27,484 | views | update_object | DEBUG | Incoming data: {u'name': u'watermelon'} 
+2016-06-02 09:01:27,526 | views | create_object | DEBUG | POST request for recipes: 
+2016-06-02 09:01:27,572 | views | create_object | DEBUG | POST request for recipes: 
+2016-06-02 09:01:27,589 | views | get_objects | DEBUG | GET request for all recipes 
+2016-06-02 09:01:27,651 | views | delete_object | DEBUG | DELETE request for recipes 1: 
+2016-06-02 09:01:27,663 | views | get_object | DEBUG | GET request for recipes: id: 1 
+2016-06-02 09:01:27,667 | views | get_object | DEBUG | 404 Error.  No recipes found with id 1. 
+2016-06-02 09:01:27,694 | views | get_objects | DEBUG | GET request for all recipes 
+2016-06-02 09:01:27,815 | views | get_object | DEBUG | GET request for recipes: id: 15 
+2016-06-02 09:01:27,819 | views | get_object | DEBUG | 404 Error.  No recipes found with id 15. 
+2016-06-02 09:01:27,846 | views | get_object | DEBUG | GET request for recipes: id: 1 
+2016-06-02 09:01:27,849 | views | get_object | DEBUG | recipes id:1 found. 
+2016-06-02 09:01:27,938 | views | update_object | DEBUG | PUT request for recipes: 
+2016-06-02 09:01:27,941 | views | update_object | DEBUG | Incoming data: {u'name': u'Lasagna'} 
+2016-06-02 09:01:27,993 | views | create_object | DEBUG | POST request for units: 
+2016-06-02 09:01:28,000 | views | get_objects | DEBUG | GET request for all units 
+2016-06-02 09:01:28,036 | views | delete_object | DEBUG | DELETE request for units 1: 
+2016-06-02 09:01:28,042 | views | get_object | DEBUG | GET request for units: id: 1 
+2016-06-02 09:01:28,046 | views | get_object | DEBUG | 404 Error.  No units found with id 1. 
+2016-06-02 09:01:28,075 | views | get_objects | DEBUG | GET request for all units 
+2016-06-02 09:01:28,127 | views | get_object | DEBUG | GET request for units: id: 15 
+2016-06-02 09:01:28,130 | views | get_object | DEBUG | 404 Error.  No units found with id 15. 
+2016-06-02 09:01:28,157 | views | get_object | DEBUG | GET request for units: id: 1 
+2016-06-02 09:01:28,161 | views | get_object | DEBUG | units id:1 found. 
+2016-06-02 09:01:28,194 | views | update_object | DEBUG | PUT request for units: 
+2016-06-02 09:01:28,197 | views | update_object | DEBUG | Incoming data: {u'name': u'liter'} 
+2016-06-02 09:03:29,933 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 09:03:29,937 | models | <module> | DEBUG | loading models.py 
+2016-06-02 09:03:30,040 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-02 09:03:30,069 | views | <module> | DEBUG | loading views.py 
+2016-06-02 09:03:32,062 | views | create_object | DEBUG | POST request for departments: 
+2016-06-02 09:03:32,078 | views | get_objects | DEBUG | GET request for all departments 
+2016-06-02 09:03:32,118 | test_views | test_delete_item | DEBUG | test deleting item 
+2016-06-02 09:03:32,121 | views | delete_object | DEBUG | DELETE request for departments 1: 
+2016-06-02 09:03:32,130 | views | get_object | DEBUG | GET request for departments: id: 1 
+2016-06-02 09:03:32,134 | views | get_object | DEBUG | 404 Error.  No departments found with id 1. 
+2016-06-02 09:03:32,167 | views | get_objects | DEBUG | GET request for all departments 
+2016-06-02 09:03:32,223 | views | get_object | DEBUG | GET request for departments: id: 15 
+2016-06-02 09:03:32,227 | views | get_object | DEBUG | 404 Error.  No departments found with id 15. 
+2016-06-02 09:03:32,256 | views | get_object | DEBUG | GET request for departments: id: 1 
+2016-06-02 09:03:32,260 | views | get_object | DEBUG | departments id:1 found. 
+2016-06-02 09:03:32,299 | views | update_object | DEBUG | PUT request for departments: 
+2016-06-02 09:03:32,302 | views | update_object | DEBUG | Incoming data: {u'name': u'floral'} 
+2016-06-02 09:03:32,305 | models | update_from | DEBUG | Updating Produce from floral 
+2016-06-02 09:03:32,341 | views | create_object | DEBUG | POST request for ingredients: 
+2016-06-02 09:03:32,369 | views | create_object | DEBUG | POST request for ingredients: 
+2016-06-02 09:03:32,380 | views | get_objects | DEBUG | GET request for all ingredients 
+2016-06-02 09:03:32,421 | test_views | test_delete_item | DEBUG | test deleting item 
+2016-06-02 09:03:32,424 | views | delete_object | DEBUG | DELETE request for ingredients 1: 
+2016-06-02 09:03:32,430 | views | get_object | DEBUG | GET request for ingredients: id: 1 
+2016-06-02 09:03:32,434 | views | get_object | DEBUG | 404 Error.  No ingredients found with id 1. 
+2016-06-02 09:03:32,461 | views | get_objects | DEBUG | GET request for all ingredients 
+2016-06-02 09:03:32,529 | views | get_object | DEBUG | GET request for ingredients: id: 15 
+2016-06-02 09:03:32,533 | views | get_object | DEBUG | 404 Error.  No ingredients found with id 15. 
+2016-06-02 09:03:32,562 | views | get_object | DEBUG | GET request for ingredients: id: 1 
+2016-06-02 09:03:32,565 | views | get_object | DEBUG | ingredients id:1 found. 
+2016-06-02 09:03:32,604 | views | update_object | DEBUG | PUT request for ingredients: 
+2016-06-02 09:03:32,605 | views | update_object | DEBUG | Incoming data: {u'department': {u'name': u'Meat', u'id': 3}} 
+2016-06-02 09:03:32,644 | views | update_object | DEBUG | PUT request for ingredients: 
+2016-06-02 09:03:32,647 | views | update_object | DEBUG | Incoming data: {u'name': u'watermelon'} 
+2016-06-02 09:03:32,683 | views | create_object | DEBUG | POST request for recipes: 
+2016-06-02 09:03:32,729 | views | create_object | DEBUG | POST request for recipes: 
+2016-06-02 09:03:32,746 | views | get_objects | DEBUG | GET request for all recipes 
+2016-06-02 09:03:32,805 | test_views | test_delete_item | DEBUG | test deleting item 
+2016-06-02 09:03:32,809 | views | delete_object | DEBUG | DELETE request for recipes 1: 
+2016-06-02 09:03:32,821 | views | get_object | DEBUG | GET request for recipes: id: 1 
+2016-06-02 09:03:32,823 | views | get_object | DEBUG | 404 Error.  No recipes found with id 1. 
+2016-06-02 09:03:32,851 | views | get_objects | DEBUG | GET request for all recipes 
+2016-06-02 09:03:32,969 | views | get_object | DEBUG | GET request for recipes: id: 15 
+2016-06-02 09:03:32,973 | views | get_object | DEBUG | 404 Error.  No recipes found with id 15. 
+2016-06-02 09:03:33,000 | views | get_object | DEBUG | GET request for recipes: id: 1 
+2016-06-02 09:03:33,003 | views | get_object | DEBUG | recipes id:1 found. 
+2016-06-02 09:03:33,091 | views | update_object | DEBUG | PUT request for recipes: 
+2016-06-02 09:03:33,094 | views | update_object | DEBUG | Incoming data: {u'name': u'Lasagna'} 
+2016-06-02 09:03:33,144 | views | create_object | DEBUG | POST request for units: 
+2016-06-02 09:03:33,151 | views | get_objects | DEBUG | GET request for all units 
+2016-06-02 09:03:33,186 | test_views | test_delete_item | DEBUG | test deleting item 
+2016-06-02 09:03:33,190 | views | delete_object | DEBUG | DELETE request for units 1: 
+2016-06-02 09:03:33,196 | views | get_object | DEBUG | GET request for units: id: 1 
+2016-06-02 09:03:33,198 | views | get_object | DEBUG | 404 Error.  No units found with id 1. 
+2016-06-02 09:03:33,226 | views | get_objects | DEBUG | GET request for all units 
+2016-06-02 09:03:33,279 | views | get_object | DEBUG | GET request for units: id: 15 
+2016-06-02 09:03:33,282 | views | get_object | DEBUG | 404 Error.  No units found with id 15. 
+2016-06-02 09:03:33,311 | views | get_object | DEBUG | GET request for units: id: 1 
+2016-06-02 09:03:33,313 | views | get_object | DEBUG | units id:1 found. 
+2016-06-02 09:03:33,346 | views | update_object | DEBUG | PUT request for units: 
+2016-06-02 09:03:33,348 | views | update_object | DEBUG | Incoming data: {u'name': u'liter'} 
+2016-06-02 09:05:13,424 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 09:05:13,431 | models | <module> | DEBUG | loading models.py 
+2016-06-02 09:05:13,532 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-02 09:05:13,565 | views | <module> | DEBUG | loading views.py 
+2016-06-02 09:05:15,451 | views | create_object | DEBUG | POST request for departments: 
+2016-06-02 09:05:15,467 | views | get_objects | DEBUG | GET request for all departments 
+2016-06-02 09:05:15,506 | views | delete_object | DEBUG | DELETE request for departments 1: 
+2016-06-02 09:05:15,513 | views | get_object | DEBUG | GET request for departments: id: 1 
+2016-06-02 09:05:15,519 | views | get_object | DEBUG | 404 Error.  No departments found with id 1. 
+2016-06-02 09:05:15,552 | views | get_objects | DEBUG | GET request for all departments 
+2016-06-02 09:05:15,609 | views | get_object | DEBUG | GET request for departments: id: 15 
+2016-06-02 09:05:15,614 | views | get_object | DEBUG | 404 Error.  No departments found with id 15. 
+2016-06-02 09:05:15,644 | views | get_object | DEBUG | GET request for departments: id: 1 
+2016-06-02 09:05:15,647 | views | get_object | DEBUG | departments id:1 found. 
+2016-06-02 09:05:15,687 | views | update_object | DEBUG | PUT request for departments: 
+2016-06-02 09:05:15,690 | views | update_object | DEBUG | Incoming data: {u'name': u'floral'} 
+2016-06-02 09:05:15,694 | models | update_from | DEBUG | Updating Produce from floral 
+2016-06-02 09:05:15,727 | views | create_object | DEBUG | POST request for ingredients: 
+2016-06-02 09:05:15,756 | views | create_object | DEBUG | POST request for ingredients: 
+2016-06-02 09:05:15,766 | views | get_objects | DEBUG | GET request for all ingredients 
+2016-06-02 09:05:15,808 | views | delete_object | DEBUG | DELETE request for ingredients 1: 
+2016-06-02 09:05:15,815 | views | get_object | DEBUG | GET request for ingredients: id: 1 
+2016-06-02 09:05:15,819 | views | get_object | DEBUG | 404 Error.  No ingredients found with id 1. 
+2016-06-02 09:05:15,846 | views | get_objects | DEBUG | GET request for all ingredients 
+2016-06-02 09:05:15,915 | views | get_object | DEBUG | GET request for ingredients: id: 15 
+2016-06-02 09:05:15,920 | views | get_object | DEBUG | 404 Error.  No ingredients found with id 15. 
+2016-06-02 09:05:15,947 | views | get_object | DEBUG | GET request for ingredients: id: 1 
+2016-06-02 09:05:15,950 | views | get_object | DEBUG | ingredients id:1 found. 
+2016-06-02 09:05:15,990 | views | update_object | DEBUG | PUT request for ingredients: 
+2016-06-02 09:05:15,993 | views | update_object | DEBUG | Incoming data: {u'department': {u'name': u'Meat', u'id': 3}} 
+2016-06-02 09:05:16,030 | views | update_object | DEBUG | PUT request for ingredients: 
+2016-06-02 09:05:16,033 | views | update_object | DEBUG | Incoming data: {u'name': u'watermelon'} 
+2016-06-02 09:05:16,069 | views | create_object | DEBUG | POST request for recipes: 
+2016-06-02 09:05:16,115 | views | create_object | DEBUG | POST request for recipes: 
+2016-06-02 09:05:16,131 | views | get_objects | DEBUG | GET request for all recipes 
+2016-06-02 09:05:16,191 | views | delete_object | DEBUG | DELETE request for recipes 1: 
+2016-06-02 09:05:16,203 | views | get_object | DEBUG | GET request for recipes: id: 1 
+2016-06-02 09:05:16,207 | views | get_object | DEBUG | 404 Error.  No recipes found with id 1. 
+2016-06-02 09:05:16,234 | views | get_objects | DEBUG | GET request for all recipes 
+2016-06-02 09:05:16,352 | views | get_object | DEBUG | GET request for recipes: id: 15 
+2016-06-02 09:05:16,357 | views | get_object | DEBUG | 404 Error.  No recipes found with id 15. 
+2016-06-02 09:05:16,384 | views | get_object | DEBUG | GET request for recipes: id: 1 
+2016-06-02 09:05:16,388 | views | get_object | DEBUG | recipes id:1 found. 
+2016-06-02 09:05:16,476 | views | update_object | DEBUG | PUT request for recipes: 
+2016-06-02 09:05:16,477 | views | update_object | DEBUG | Incoming data: {u'name': u'Lasagna'} 
+2016-06-02 09:05:16,529 | views | create_object | DEBUG | POST request for units: 
+2016-06-02 09:05:16,536 | views | get_objects | DEBUG | GET request for all units 
+2016-06-02 09:05:16,571 | views | delete_object | DEBUG | DELETE request for units 1: 
+2016-06-02 09:05:16,578 | views | get_object | DEBUG | GET request for units: id: 1 
+2016-06-02 09:05:16,581 | views | get_object | DEBUG | 404 Error.  No units found with id 1. 
+2016-06-02 09:05:16,609 | views | get_objects | DEBUG | GET request for all units 
+2016-06-02 09:05:16,661 | views | get_object | DEBUG | GET request for units: id: 15 
+2016-06-02 09:05:16,665 | views | get_object | DEBUG | 404 Error.  No units found with id 15. 
+2016-06-02 09:05:16,694 | views | get_object | DEBUG | GET request for units: id: 1 
+2016-06-02 09:05:16,697 | views | get_object | DEBUG | units id:1 found. 
+2016-06-02 09:05:16,730 | views | update_object | DEBUG | PUT request for units: 
+2016-06-02 09:05:16,733 | views | update_object | DEBUG | Incoming data: {u'name': u'liter'} 
+2016-06-02 09:08:40,223 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 09:08:46,204 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 09:08:48,305 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 09:08:49,506 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 09:09:07,960 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 09:09:07,969 | models | <module> | DEBUG | loading models.py 
+2016-06-02 09:09:08,065 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-02 09:09:08,121 | views | <module> | DEBUG | loading views.py 
+2016-06-02 09:09:10,015 | views | create_object | DEBUG | POST request for departments: 
+2016-06-02 09:09:10,030 | views | get_objects | DEBUG | GET request for all departments 
+2016-06-02 09:09:10,066 | views | delete_object | DEBUG | DELETE request for departments 1: 
+2016-06-02 09:09:54,078 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 09:09:54,082 | models | <module> | DEBUG | loading models.py 
+2016-06-02 09:09:54,174 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-02 09:09:54,201 | views | <module> | DEBUG | loading views.py 
+2016-06-02 09:09:56,072 | views | create_object | DEBUG | POST request for departments: 
+2016-06-02 09:09:56,088 | views | get_objects | DEBUG | GET request for all departments 
+2016-06-02 09:09:56,124 | views | delete_object | DEBUG | DELETE request for departments 1: 
+2016-06-02 09:10:13,072 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 09:10:13,079 | models | <module> | DEBUG | loading models.py 
+2016-06-02 09:10:13,176 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-02 09:10:13,203 | views | <module> | DEBUG | loading views.py 
+2016-06-02 09:10:15,108 | views | create_object | DEBUG | POST request for departments: 
+2016-06-02 09:10:15,125 | views | get_objects | DEBUG | GET request for all departments 
+2016-06-02 09:10:15,161 | views | delete_object | DEBUG | DELETE request for departments 1: 
+2016-06-02 09:10:15,168 | views | get | DEBUG | GET request for departments: id: 1 
+2016-06-02 09:10:15,173 | views | get | DEBUG | 404 Error.  No departments found with id 1. 
+2016-06-02 09:10:15,200 | views | get_objects | DEBUG | GET request for all departments 
+2016-06-02 09:10:15,255 | views | get | DEBUG | GET request for departments: id: 15 
+2016-06-02 09:10:15,259 | views | get | DEBUG | 404 Error.  No departments found with id 15. 
+2016-06-02 09:10:15,286 | views | get | DEBUG | GET request for departments: id: 1 
+2016-06-02 09:10:15,289 | views | get | DEBUG | departments id:1 found. 
+2016-06-02 09:10:15,328 | views | update_object | DEBUG | PUT request for departments: 
+2016-06-02 09:10:15,332 | views | update_object | DEBUG | Incoming data: {u'name': u'floral'} 
+2016-06-02 09:10:15,335 | models | update_from | DEBUG | Updating Produce from floral 
+2016-06-02 09:10:15,368 | views | create_object | DEBUG | POST request for ingredients: 
+2016-06-02 09:10:15,397 | views | create_object | DEBUG | POST request for ingredients: 
+2016-06-02 09:10:15,407 | views | get_objects | DEBUG | GET request for all ingredients 
+2016-06-02 09:10:15,448 | views | delete_object | DEBUG | DELETE request for ingredients 1: 
+2016-06-02 09:10:15,457 | views | get | DEBUG | GET request for ingredients: id: 1 
+2016-06-02 09:10:15,460 | views | get | DEBUG | 404 Error.  No ingredients found with id 1. 
+2016-06-02 09:10:15,489 | views | get_objects | DEBUG | GET request for all ingredients 
+2016-06-02 09:10:15,559 | views | get | DEBUG | GET request for ingredients: id: 15 
+2016-06-02 09:10:15,562 | views | get | DEBUG | 404 Error.  No ingredients found with id 15. 
+2016-06-02 09:10:15,591 | views | get | DEBUG | GET request for ingredients: id: 1 
+2016-06-02 09:10:15,595 | views | get | DEBUG | ingredients id:1 found. 
+2016-06-02 09:10:15,632 | views | update_object | DEBUG | PUT request for ingredients: 
+2016-06-02 09:10:15,635 | views | update_object | DEBUG | Incoming data: {u'department': {u'name': u'Meat', u'id': 3}} 
+2016-06-02 09:10:15,676 | views | update_object | DEBUG | PUT request for ingredients: 
+2016-06-02 09:10:15,677 | views | update_object | DEBUG | Incoming data: {u'name': u'watermelon'} 
+2016-06-02 09:10:15,713 | views | create_object | DEBUG | POST request for recipes: 
+2016-06-02 09:10:15,760 | views | create_object | DEBUG | POST request for recipes: 
+2016-06-02 09:10:15,776 | views | get_objects | DEBUG | GET request for all recipes 
+2016-06-02 09:10:15,838 | views | delete_object | DEBUG | DELETE request for recipes 1: 
+2016-06-02 09:10:15,849 | views | get | DEBUG | GET request for recipes: id: 1 
+2016-06-02 09:10:15,852 | views | get | DEBUG | 404 Error.  No recipes found with id 1. 
+2016-06-02 09:10:15,881 | views | get_objects | DEBUG | GET request for all recipes 
+2016-06-02 09:10:15,999 | views | get | DEBUG | GET request for recipes: id: 15 
+2016-06-02 09:10:16,002 | views | get | DEBUG | 404 Error.  No recipes found with id 15. 
+2016-06-02 09:10:16,029 | views | get | DEBUG | GET request for recipes: id: 1 
+2016-06-02 09:10:16,032 | views | get | DEBUG | recipes id:1 found. 
+2016-06-02 09:10:16,119 | views | update_object | DEBUG | PUT request for recipes: 
+2016-06-02 09:10:16,121 | views | update_object | DEBUG | Incoming data: {u'name': u'Lasagna'} 
+2016-06-02 09:10:16,173 | views | create_object | DEBUG | POST request for units: 
+2016-06-02 09:10:16,180 | views | get_objects | DEBUG | GET request for all units 
+2016-06-02 09:10:16,216 | views | delete_object | DEBUG | DELETE request for units 1: 
+2016-06-02 09:10:16,221 | views | get | DEBUG | GET request for units: id: 1 
+2016-06-02 09:10:16,226 | views | get | DEBUG | 404 Error.  No units found with id 1. 
+2016-06-02 09:10:16,253 | views | get_objects | DEBUG | GET request for all units 
+2016-06-02 09:10:16,305 | views | get | DEBUG | GET request for units: id: 15 
+2016-06-02 09:10:16,309 | views | get | DEBUG | 404 Error.  No units found with id 15. 
+2016-06-02 09:10:16,336 | views | get | DEBUG | GET request for units: id: 1 
+2016-06-02 09:10:16,339 | views | get | DEBUG | units id:1 found. 
+2016-06-02 09:10:16,372 | views | update_object | DEBUG | PUT request for units: 
+2016-06-02 09:10:16,375 | views | update_object | DEBUG | Incoming data: {u'name': u'liter'} 
+2016-06-02 09:11:01,513 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 09:11:01,522 | models | <module> | DEBUG | loading models.py 
+2016-06-02 09:11:01,622 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-02 09:11:01,654 | views | <module> | DEBUG | loading views.py 
+2016-06-02 09:11:03,627 | views | create_object | DEBUG | POST request for departments: 
+2016-06-02 09:11:03,642 | views | get_objects | DEBUG | GET request for all departments 
+2016-06-02 09:11:03,680 | views | delete_object | DEBUG | DELETE request for departments 1: 
+2016-06-02 09:11:03,687 | views | get | DEBUG | GET request for departments: id: 1 
+2016-06-02 09:11:21,341 | views | get_objects | DEBUG | GET request for all departments 
+2016-06-02 09:11:21,394 | views | get | DEBUG | GET request for departments: id: 15 
+2016-06-02 09:11:22,960 | views | get | DEBUG | GET request for departments: id: 1 
+2016-06-02 09:11:23,934 | views | update_object | DEBUG | PUT request for departments: 
+2016-06-02 09:11:23,936 | views | update_object | DEBUG | Incoming data: {u'name': u'floral'} 
+2016-06-02 09:11:23,940 | models | update_from | DEBUG | Updating Produce from floral 
+2016-06-02 09:11:23,973 | views | create_object | DEBUG | POST request for ingredients: 
+2016-06-02 09:11:24,003 | views | create_object | DEBUG | POST request for ingredients: 
+2016-06-02 09:11:24,013 | views | get_objects | DEBUG | GET request for all ingredients 
+2016-06-02 09:11:24,053 | views | delete_object | DEBUG | DELETE request for ingredients 1: 
+2016-06-02 09:11:24,061 | views | get | DEBUG | GET request for ingredients: id: 1 
+2016-06-02 09:11:24,851 | views | get_objects | DEBUG | GET request for all ingredients 
+2016-06-02 09:11:24,921 | views | get | DEBUG | GET request for ingredients: id: 15 
+2016-06-02 09:11:25,572 | views | get | DEBUG | GET request for ingredients: id: 1 
+2016-06-02 09:11:26,091 | views | update_object | DEBUG | PUT request for ingredients: 
+2016-06-02 09:11:26,094 | views | update_object | DEBUG | Incoming data: {u'department': {u'name': u'Meat', u'id': 3}} 
+2016-06-02 09:11:26,131 | views | update_object | DEBUG | PUT request for ingredients: 
+2016-06-02 09:11:26,134 | views | update_object | DEBUG | Incoming data: {u'name': u'watermelon'} 
+2016-06-02 09:11:26,170 | views | create_object | DEBUG | POST request for recipes: 
+2016-06-02 09:11:26,214 | views | create_object | DEBUG | POST request for recipes: 
+2016-06-02 09:11:26,232 | views | get_objects | DEBUG | GET request for all recipes 
+2016-06-02 09:11:26,292 | views | delete_object | DEBUG | DELETE request for recipes 1: 
+2016-06-02 09:11:26,303 | views | get | DEBUG | GET request for recipes: id: 1 
+2016-06-02 09:11:33,112 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 09:11:33,119 | models | <module> | DEBUG | loading models.py 
+2016-06-02 09:11:33,216 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-02 09:11:33,250 | views | <module> | DEBUG | loading views.py 
+2016-06-02 09:11:35,134 | views | create_object | DEBUG | POST request for departments: 
+2016-06-02 09:11:35,150 | views | get_objects | DEBUG | GET request for all departments 
+2016-06-02 09:11:35,187 | views | delete_object | DEBUG | DELETE request for departments 1: 
+2016-06-02 09:11:35,194 | views | get | DEBUG | GET request for departments: id: 1 
+2016-06-02 09:11:35,197 | views | get | DEBUG | 404 Error.  No departments found with id 1. 
+2016-06-02 09:11:35,226 | views | get_objects | DEBUG | GET request for all departments 
+2016-06-02 09:11:35,279 | views | get | DEBUG | GET request for departments: id: 15 
+2016-06-02 09:11:35,282 | views | get | DEBUG | 404 Error.  No departments found with id 15. 
+2016-06-02 09:11:35,311 | views | get | DEBUG | GET request for departments: id: 1 
+2016-06-02 09:11:35,315 | views | get | DEBUG | departments id:1 found. 
+2016-06-02 09:11:35,352 | views | update_object | DEBUG | PUT request for departments: 
+2016-06-02 09:11:35,355 | views | update_object | DEBUG | Incoming data: {u'name': u'floral'} 
+2016-06-02 09:11:35,358 | models | update_from | DEBUG | Updating Produce from floral 
+2016-06-02 09:11:35,391 | views | create_object | DEBUG | POST request for ingredients: 
+2016-06-02 09:11:35,421 | views | create_object | DEBUG | POST request for ingredients: 
+2016-06-02 09:11:35,431 | views | get_objects | DEBUG | GET request for all ingredients 
+2016-06-02 09:11:35,471 | views | delete_object | DEBUG | DELETE request for ingredients 1: 
+2016-06-02 09:11:35,480 | views | get | DEBUG | GET request for ingredients: id: 1 
+2016-06-02 09:11:35,483 | views | get | DEBUG | 404 Error.  No ingredients found with id 1. 
+2016-06-02 09:11:35,510 | views | get_objects | DEBUG | GET request for all ingredients 
+2016-06-02 09:11:35,579 | views | get | DEBUG | GET request for ingredients: id: 15 
+2016-06-02 09:11:35,582 | views | get | DEBUG | 404 Error.  No ingredients found with id 15. 
+2016-06-02 09:11:35,611 | views | get | DEBUG | GET request for ingredients: id: 1 
+2016-06-02 09:11:35,615 | views | get | DEBUG | ingredients id:1 found. 
+2016-06-02 09:11:35,651 | views | update_object | DEBUG | PUT request for ingredients: 
+2016-06-02 09:11:35,654 | views | update_object | DEBUG | Incoming data: {u'department': {u'name': u'Meat', u'id': 3}} 
+2016-06-02 09:11:35,696 | views | update_object | DEBUG | PUT request for ingredients: 
+2016-06-02 09:11:35,698 | views | update_object | DEBUG | Incoming data: {u'name': u'watermelon'} 
+2016-06-02 09:11:35,733 | views | create_object | DEBUG | POST request for recipes: 
+2016-06-02 09:11:35,779 | views | create_object | DEBUG | POST request for recipes: 
+2016-06-02 09:11:35,796 | views | get_objects | DEBUG | GET request for all recipes 
+2016-06-02 09:11:35,855 | views | delete_object | DEBUG | DELETE request for recipes 1: 
+2016-06-02 09:11:35,868 | views | get | DEBUG | GET request for recipes: id: 1 
+2016-06-02 09:11:35,871 | views | get | DEBUG | 404 Error.  No recipes found with id 1. 
+2016-06-02 09:11:35,900 | views | get_objects | DEBUG | GET request for all recipes 
+2016-06-02 09:11:36,016 | views | get | DEBUG | GET request for recipes: id: 15 
+2016-06-02 09:11:36,019 | views | get | DEBUG | 404 Error.  No recipes found with id 15. 
+2016-06-02 09:11:36,048 | views | get | DEBUG | GET request for recipes: id: 1 
+2016-06-02 09:11:36,052 | views | get | DEBUG | recipes id:1 found. 
+2016-06-02 09:11:36,138 | views | update_object | DEBUG | PUT request for recipes: 
+2016-06-02 09:11:36,141 | views | update_object | DEBUG | Incoming data: {u'name': u'Lasagna'} 
+2016-06-02 09:11:36,191 | views | create_object | DEBUG | POST request for units: 
+2016-06-02 09:11:36,198 | views | get_objects | DEBUG | GET request for all units 
+2016-06-02 09:11:36,233 | views | delete_object | DEBUG | DELETE request for units 1: 
+2016-06-02 09:11:36,240 | views | get | DEBUG | GET request for units: id: 1 
+2016-06-02 09:11:36,243 | views | get | DEBUG | 404 Error.  No units found with id 1. 
+2016-06-02 09:11:36,272 | views | get_objects | DEBUG | GET request for all units 
+2016-06-02 09:11:36,323 | views | get | DEBUG | GET request for units: id: 15 
+2016-06-02 09:11:36,326 | views | get | DEBUG | 404 Error.  No units found with id 15. 
+2016-06-02 09:11:36,355 | views | get | DEBUG | GET request for units: id: 1 
+2016-06-02 09:11:36,358 | views | get | DEBUG | units id:1 found. 
+2016-06-02 09:11:36,391 | views | update_object | DEBUG | PUT request for units: 
+2016-06-02 09:11:36,394 | views | update_object | DEBUG | Incoming data: {u'name': u'liter'} 
+2016-06-02 09:11:56,969 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 09:11:56,976 | models | <module> | DEBUG | loading models.py 
+2016-06-02 09:11:57,072 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-02 09:11:57,099 | views | <module> | DEBUG | loading views.py 
+2016-06-02 09:11:58,990 | views | create_object | DEBUG | POST request for departments: 
+2016-06-02 09:11:59,006 | views | get_objects | DEBUG | GET request for all departments 
+2016-06-02 09:11:59,042 | views | delete_object | DEBUG | DELETE request for departments 1: 
+2016-06-02 09:11:59,049 | views | get | DEBUG | GET request for departments: id: 1 
+2016-06-02 09:11:59,052 | views | get | DEBUG | 404 Error.  No departments found with id 1. 
+2016-06-02 09:11:59,082 | views | get_objects | DEBUG | GET request for all departments 
+2016-06-02 09:11:59,135 | views | get | DEBUG | GET request for departments: id: 15 
+2016-06-02 09:11:59,138 | views | get | DEBUG | 404 Error.  No departments found with id 15. 
+2016-06-02 09:11:59,167 | views | get | DEBUG | GET request for departments: id: 1 
+2016-06-02 09:12:35,046 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 09:12:35,053 | models | <module> | DEBUG | loading models.py 
+2016-06-02 09:12:35,157 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-02 09:12:35,186 | views | <module> | DEBUG | loading views.py 
+2016-06-02 09:12:37,062 | views | create_object | DEBUG | POST request for departments: 
+2016-06-02 09:12:37,076 | views | get_objects | DEBUG | GET request for all departments 
+2016-06-02 09:12:37,112 | views | delete_object | DEBUG | DELETE request for departments 1: 
+2016-06-02 09:12:37,121 | views | get | DEBUG | GET request for departments: id: 1 
+2016-06-02 09:12:37,124 | views | get | DEBUG | 404 Error.  No departments found with id 1. 
+2016-06-02 09:12:37,153 | views | get_objects | DEBUG | GET request for all departments 
+2016-06-02 09:12:37,206 | views | get | DEBUG | GET request for departments: id: 15 
+2016-06-02 09:12:37,210 | views | get | DEBUG | 404 Error.  No departments found with id 15. 
+2016-06-02 09:12:37,237 | views | get | DEBUG | GET request for departments: id: 1 
+2016-06-02 09:12:37,240 | views | get | DEBUG | departments id:1 found. 
+2016-06-02 09:13:40,661 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 09:13:40,671 | models | <module> | DEBUG | loading models.py 
+2016-06-02 09:13:40,769 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-02 09:13:40,796 | views | <module> | DEBUG | loading views.py 
+2016-06-02 09:13:42,681 | views | create_object | DEBUG | POST request for departments: 
+2016-06-02 09:13:42,697 | views | get_objects | DEBUG | GET request for all departments 
+2016-06-02 09:13:42,734 | views | delete_object | DEBUG | DELETE request for departments 1: 
+2016-06-02 09:13:42,743 | views | get | DEBUG | GET request for departments: id: 1 
+2016-06-02 09:13:42,746 | views | get | DEBUG | 404 Error.  No departments found with id 1. 
+2016-06-02 09:13:42,773 | views | get_objects | DEBUG | GET request for all departments 
+2016-06-02 09:13:42,828 | views | get | DEBUG | GET request for departments: id: 15 
+2016-06-02 09:13:42,831 | views | get | DEBUG | 404 Error.  No departments found with id 15. 
+2016-06-02 09:13:42,858 | views | get | DEBUG | GET request for departments: id: 1 
+2016-06-02 09:13:42,861 | views | get | DEBUG | departments id:1 found. 
+2016-06-02 09:13:42,900 | views | update_object | DEBUG | PUT request for departments: 
+2016-06-02 09:13:42,903 | views | update_object | DEBUG | Incoming data: {u'name': u'floral'} 
+2016-06-02 09:13:42,905 | models | update_from | DEBUG | Updating Produce from floral 
+2016-06-02 09:13:42,940 | views | create_object | DEBUG | POST request for ingredients: 
+2016-06-02 09:13:42,970 | views | create_object | DEBUG | POST request for ingredients: 
+2016-06-02 09:13:42,980 | views | get_objects | DEBUG | GET request for all ingredients 
+2016-06-02 09:13:43,020 | views | delete_object | DEBUG | DELETE request for ingredients 1: 
+2016-06-02 09:13:43,028 | views | get | DEBUG | GET request for ingredients: id: 1 
+2016-06-02 09:13:43,030 | views | get | DEBUG | 404 Error.  No ingredients found with id 1. 
+2016-06-02 09:13:43,059 | views | get_objects | DEBUG | GET request for all ingredients 
+2016-06-02 09:13:43,128 | views | get | DEBUG | GET request for ingredients: id: 15 
+2016-06-02 09:13:43,131 | views | get | DEBUG | 404 Error.  No ingredients found with id 15. 
+2016-06-02 09:13:43,160 | views | get | DEBUG | GET request for ingredients: id: 1 
+2016-06-02 09:13:43,164 | views | get | DEBUG | ingredients id:1 found. 
+2016-06-02 09:13:43,200 | views | update_object | DEBUG | PUT request for ingredients: 
+2016-06-02 09:13:43,203 | views | update_object | DEBUG | Incoming data: {u'department': {u'name': u'Meat', u'id': 3}} 
+2016-06-02 09:13:43,242 | views | update_object | DEBUG | PUT request for ingredients: 
+2016-06-02 09:13:43,244 | views | update_object | DEBUG | Incoming data: {u'name': u'watermelon'} 
+2016-06-02 09:13:43,279 | views | create_object | DEBUG | POST request for recipes: 
+2016-06-02 09:13:43,325 | views | create_object | DEBUG | POST request for recipes: 
+2016-06-02 09:13:43,342 | views | get_objects | DEBUG | GET request for all recipes 
+2016-06-02 09:13:43,401 | views | delete_object | DEBUG | DELETE request for recipes 1: 
+2016-06-02 09:13:43,414 | views | get | DEBUG | GET request for recipes: id: 1 
+2016-06-02 09:13:43,417 | views | get | DEBUG | 404 Error.  No recipes found with id 1. 
+2016-06-02 09:13:43,446 | views | get_objects | DEBUG | GET request for all recipes 
+2016-06-02 09:13:43,562 | views | get | DEBUG | GET request for recipes: id: 15 
+2016-06-02 09:13:43,565 | views | get | DEBUG | 404 Error.  No recipes found with id 15. 
+2016-06-02 09:13:43,594 | views | get | DEBUG | GET request for recipes: id: 1 
+2016-06-02 09:13:43,598 | views | get | DEBUG | recipes id:1 found. 
+2016-06-02 09:13:43,686 | views | update_object | DEBUG | PUT request for recipes: 
+2016-06-02 09:13:43,687 | views | update_object | DEBUG | Incoming data: {u'name': u'Lasagna'} 
+2016-06-02 09:13:43,740 | views | create_object | DEBUG | POST request for units: 
+2016-06-02 09:13:43,747 | views | get_objects | DEBUG | GET request for all units 
+2016-06-02 09:13:43,782 | views | delete_object | DEBUG | DELETE request for units 1: 
+2016-06-02 09:13:43,789 | views | get | DEBUG | GET request for units: id: 1 
+2016-06-02 09:13:43,792 | views | get | DEBUG | 404 Error.  No units found with id 1. 
+2016-06-02 09:13:43,821 | views | get_objects | DEBUG | GET request for all units 
+2016-06-02 09:13:43,872 | views | get | DEBUG | GET request for units: id: 15 
+2016-06-02 09:13:43,875 | views | get | DEBUG | 404 Error.  No units found with id 15. 
+2016-06-02 09:13:43,904 | views | get | DEBUG | GET request for units: id: 1 
+2016-06-02 09:13:43,907 | views | get | DEBUG | units id:1 found. 
+2016-06-02 09:13:43,940 | views | update_object | DEBUG | PUT request for units: 
+2016-06-02 09:13:43,943 | views | update_object | DEBUG | Incoming data: {u'name': u'liter'} 
+2016-06-02 09:14:50,543 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 09:14:50,552 | models | <module> | DEBUG | loading models.py 
+2016-06-02 09:14:50,648 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-02 09:14:50,680 | views | <module> | DEBUG | loading views.py 
+2016-06-02 09:14:52,566 | views | create_object | DEBUG | POST request for departments: 
+2016-06-02 09:14:52,582 | views | get_objects | DEBUG | GET request for all departments 
+2016-06-02 09:14:52,618 | views | delete_object | DEBUG | DELETE request for departments 1: 
+2016-06-02 09:14:52,627 | views | get | DEBUG | GET request for departments: id: 1 
+2016-06-02 09:14:52,630 | views | get | DEBUG | 404 Error.  No departments found with id 1. 
+2016-06-02 09:14:52,658 | views | get_objects | DEBUG | GET request for all departments 
+2016-06-02 09:14:52,713 | views | get | DEBUG | GET request for departments: id: 15 
+2016-06-02 09:14:52,717 | views | get | DEBUG | 404 Error.  No departments found with id 15. 
+2016-06-02 09:14:52,744 | views | get | DEBUG | GET request for departments: id: 1 
+2016-06-02 09:14:52,749 | views | get | DEBUG | departments id:1 found. 
+2016-06-02 09:14:52,786 | views | update_object | DEBUG | PUT request for departments: 
+2016-06-02 09:14:52,789 | views | update_object | DEBUG | Incoming data: {u'name': u'floral'} 
+2016-06-02 09:14:52,792 | models | update_from | DEBUG | Updating Produce from floral 
+2016-06-02 09:14:52,826 | views | create_object | DEBUG | POST request for ingredients: 
+2016-06-02 09:14:52,855 | views | create_object | DEBUG | POST request for ingredients: 
+2016-06-02 09:14:52,865 | views | get_objects | DEBUG | GET request for all ingredients 
+2016-06-02 09:14:52,907 | views | delete_object | DEBUG | DELETE request for ingredients 1: 
+2016-06-02 09:14:52,914 | views | get | DEBUG | GET request for ingredients: id: 1 
+2016-06-02 09:14:52,917 | views | get | DEBUG | 404 Error.  No ingredients found with id 1. 
+2016-06-02 09:14:52,946 | views | get_objects | DEBUG | GET request for all ingredients 
+2016-06-02 09:14:53,016 | views | get | DEBUG | GET request for ingredients: id: 15 
+2016-06-02 09:14:53,019 | views | get | DEBUG | 404 Error.  No ingredients found with id 15. 
+2016-06-02 09:14:53,048 | views | get | DEBUG | GET request for ingredients: id: 1 
+2016-06-02 09:14:53,051 | views | get | DEBUG | ingredients id:1 found. 
+2016-06-02 09:14:53,088 | views | update_object | DEBUG | PUT request for ingredients: 
+2016-06-02 09:14:53,092 | views | update_object | DEBUG | Incoming data: {u'department': {u'name': u'Meat', u'id': 3}} 
+2016-06-02 09:14:53,130 | views | update_object | DEBUG | PUT request for ingredients: 
+2016-06-02 09:14:53,132 | views | update_object | DEBUG | Incoming data: {u'name': u'watermelon'} 
+2016-06-02 09:14:53,167 | views | create_object | DEBUG | POST request for recipes: 
+2016-06-02 09:14:53,213 | views | create_object | DEBUG | POST request for recipes: 
+2016-06-02 09:14:53,230 | views | get_objects | DEBUG | GET request for all recipes 
+2016-06-02 09:14:53,289 | views | delete_object | DEBUG | DELETE request for recipes 1: 
+2016-06-02 09:14:53,302 | views | get | DEBUG | GET request for recipes: id: 1 
+2016-06-02 09:14:53,305 | views | get | DEBUG | 404 Error.  No recipes found with id 1. 
+2016-06-02 09:14:53,332 | views | get_objects | DEBUG | GET request for all recipes 
+2016-06-02 09:14:53,450 | views | get | DEBUG | GET request for recipes: id: 15 
+2016-06-02 09:14:53,454 | views | get | DEBUG | 404 Error.  No recipes found with id 15. 
+2016-06-02 09:14:53,483 | views | get | DEBUG | GET request for recipes: id: 1 
+2016-06-02 09:14:53,486 | views | get | DEBUG | recipes id:1 found. 
+2016-06-02 09:14:53,572 | views | update_object | DEBUG | PUT request for recipes: 
+2016-06-02 09:14:53,575 | views | update_object | DEBUG | Incoming data: {u'name': u'Lasagna'} 
+2016-06-02 09:14:53,627 | views | create_object | DEBUG | POST request for units: 
+2016-06-02 09:14:53,634 | views | get_objects | DEBUG | GET request for all units 
+2016-06-02 09:14:53,670 | views | delete_object | DEBUG | DELETE request for units 1: 
+2016-06-02 09:14:53,677 | views | get | DEBUG | GET request for units: id: 1 
+2016-06-02 09:14:53,680 | views | get | DEBUG | 404 Error.  No units found with id 1. 
+2016-06-02 09:14:53,709 | views | get_objects | DEBUG | GET request for all units 
+2016-06-02 09:14:53,760 | views | get | DEBUG | GET request for units: id: 15 
+2016-06-02 09:14:53,763 | views | get | DEBUG | 404 Error.  No units found with id 15. 
+2016-06-02 09:14:53,792 | views | get | DEBUG | GET request for units: id: 1 
+2016-06-02 09:14:53,796 | views | get | DEBUG | units id:1 found. 
+2016-06-02 09:14:53,828 | views | update_object | DEBUG | PUT request for units: 
+2016-06-02 09:14:53,831 | views | update_object | DEBUG | Incoming data: {u'name': u'liter'} 
+2016-06-02 11:31:09,368 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 11:31:09,378 | models | <module> | DEBUG | loading models.py 
+2016-06-02 11:31:09,579 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-02 11:31:09,609 | views | <module> | DEBUG | loading views.py 
+2016-06-02 11:32:47,463 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 11:32:47,470 | models | <module> | DEBUG | loading models.py 
+2016-06-02 11:32:47,566 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-02 11:32:47,595 | views | <module> | DEBUG | loading views.py 
+2016-06-02 11:32:49,526 | views | post | DEBUG | POST request for departments: 
+2016-06-02 11:32:49,529 | views | post | DEBUG | Incoming data: {u'name': u'hba'} 
+2016-06-02 11:33:26,954 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 11:33:26,963 | models | <module> | DEBUG | loading models.py 
+2016-06-02 11:33:27,059 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-02 11:33:27,086 | views | <module> | DEBUG | loading views.py 
+2016-06-02 11:33:28,983 | views | post | DEBUG | POST request for departments: 
+2016-06-02 11:33:28,986 | views | post | DEBUG | Incoming data: {u'name': u'hba'} 
+2016-06-02 11:33:29,002 | views | index | DEBUG | GET request for all departments 
+2016-06-02 11:33:45,253 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 11:33:45,260 | models | <module> | DEBUG | loading models.py 
+2016-06-02 11:33:45,361 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-02 11:33:45,388 | views | <module> | DEBUG | loading views.py 
+2016-06-02 11:33:47,272 | views | post | DEBUG | POST request for departments: 
+2016-06-02 11:33:47,275 | views | post | DEBUG | Incoming data: {u'name': u'hba'} 
+2016-06-02 11:33:47,290 | views | index | DEBUG | GET request for all departments 
+2016-06-02 11:33:47,326 | views | delete | DEBUG | DELETE request for departments 1: 
+2016-06-02 11:33:47,335 | views | get | DEBUG | GET request for departments: id: 1 
+2016-06-02 11:33:47,338 | views | get | DEBUG | 404 Error.  No departments found with id 1. 
+2016-06-02 11:33:47,367 | views | index | DEBUG | GET request for all departments 
+2016-06-02 11:33:47,421 | views | get | DEBUG | GET request for departments: id: 15 
+2016-06-02 11:33:47,424 | views | get | DEBUG | 404 Error.  No departments found with id 15. 
+2016-06-02 11:33:47,453 | views | get | DEBUG | GET request for departments: id: 1 
+2016-06-02 11:33:47,456 | views | get | DEBUG | departments id:1 found. 
+2016-06-02 11:33:47,496 | views | put | DEBUG | PUT request for departments: 
+2016-06-02 11:33:47,500 | views | put | DEBUG | Incoming data: {u'name': u'floral'} 
+2016-06-02 11:33:47,503 | models | update_from | DEBUG | Updating Produce from floral 
+2016-06-02 11:34:07,388 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 11:34:07,397 | models | <module> | DEBUG | loading models.py 
+2016-06-02 11:34:07,493 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-02 11:34:07,523 | views | <module> | DEBUG | loading views.py 
+2016-06-02 11:34:09,414 | views | post | DEBUG | POST request for departments: 
+2016-06-02 11:34:09,417 | views | post | DEBUG | Incoming data: {u'name': u'hba'} 
+2016-06-02 11:34:09,433 | views | index | DEBUG | GET request for all departments 
+2016-06-02 11:34:09,469 | views | delete | DEBUG | DELETE request for departments 1: 
+2016-06-02 11:34:09,476 | views | get | DEBUG | GET request for departments: id: 1 
+2016-06-02 11:34:09,480 | views | get | DEBUG | 404 Error.  No departments found with id 1. 
+2016-06-02 11:34:09,507 | views | index | DEBUG | GET request for all departments 
+2016-06-02 11:34:09,562 | views | get | DEBUG | GET request for departments: id: 15 
+2016-06-02 11:34:09,565 | views | get | DEBUG | 404 Error.  No departments found with id 15. 
+2016-06-02 11:34:09,592 | views | get | DEBUG | GET request for departments: id: 1 
+2016-06-02 11:34:09,595 | views | get | DEBUG | departments id:1 found. 
+2016-06-02 11:34:09,634 | views | put | DEBUG | PUT request for departments: 
+2016-06-02 11:34:09,638 | views | put | DEBUG | Incoming data: {u'name': u'floral'} 
+2016-06-02 11:34:09,641 | models | update_from | DEBUG | Updating Produce from floral 
+2016-06-02 11:34:09,674 | views | post | DEBUG | POST request for ingredients: 
+2016-06-02 11:34:09,677 | views | post | DEBUG | Incoming data: {u'name': u'ground pork'} 
+2016-06-02 11:34:09,680 | views | post | DEBUG | Error loading schema ingredients: {'department': [u'Missing data for required field.']} 
+2016-06-02 11:34:09,709 | views | post | DEBUG | POST request for ingredients: 
+2016-06-02 11:34:09,710 | views | post | DEBUG | Incoming data: {u'department': {u'id': 2, u'name': u'Meat'}, u'name': u'ground pork'} 
+2016-06-02 11:34:09,721 | views | index | DEBUG | GET request for all ingredients 
+2016-06-02 11:34:09,763 | views | delete | DEBUG | DELETE request for ingredients 1: 
+2016-06-02 11:34:09,769 | views | get | DEBUG | GET request for ingredients: id: 1 
+2016-06-02 11:34:09,773 | views | get | DEBUG | 404 Error.  No ingredients found with id 1. 
+2016-06-02 11:34:09,801 | views | index | DEBUG | GET request for all ingredients 
+2016-06-02 11:34:09,869 | views | get | DEBUG | GET request for ingredients: id: 15 
+2016-06-02 11:34:09,874 | views | get | DEBUG | 404 Error.  No ingredients found with id 15. 
+2016-06-02 11:34:09,901 | views | get | DEBUG | GET request for ingredients: id: 1 
+2016-06-02 11:34:09,904 | views | get | DEBUG | ingredients id:1 found. 
+2016-06-02 11:34:09,941 | views | put | DEBUG | PUT request for ingredients: 
+2016-06-02 11:34:09,944 | views | put | DEBUG | Incoming data: {u'department': {u'name': u'Meat', u'id': 3}} 
+2016-06-02 11:34:09,983 | views | put | DEBUG | PUT request for ingredients: 
+2016-06-02 11:34:09,986 | views | put | DEBUG | Incoming data: {u'name': u'watermelon'} 
+2016-06-02 11:34:10,020 | views | post | DEBUG | POST request for recipes: 
+2016-06-02 11:34:10,023 | views | post | DEBUG | Incoming data: {u'rating': 5, u'notes': [{u'note': u'Dont forget the liver'}, {u'note': u'and fish sauce'}], u'steps': [{u'step': u'Combine meat, seasonings', u'order': 1}, {u'step': u'Shape into loaf pan', u'order': 2}, {u'step': u'Bake for 1 hour', u'order': 3}], u'name': u'Meatloaf'} 
+2016-06-02 11:34:10,069 | views | post | DEBUG | POST request for recipes: 
+2016-06-02 11:34:10,072 | views | post | DEBUG | Incoming data: {u'rating': 5, u'notes': [{u'note': u'use old el paso'}], u'steps': [{u'step': u'brown beef', u'order': 1}, {u'step': u'add seasoning', u'order': 2}, {u'step': u'cook unitl done', u'order': 3}], u'name': u'Burrito'} 
+2016-06-02 11:34:10,089 | views | index | DEBUG | GET request for all recipes 
+2016-06-02 11:34:10,151 | views | delete | DEBUG | DELETE request for recipes 1: 
+2016-06-02 11:34:10,163 | views | get | DEBUG | GET request for recipes: id: 1 
+2016-06-02 11:34:10,167 | views | get | DEBUG | 404 Error.  No recipes found with id 1. 
+2016-06-02 11:34:10,194 | views | index | DEBUG | GET request for all recipes 
+2016-06-02 11:34:10,312 | views | get | DEBUG | GET request for recipes: id: 15 
+2016-06-02 11:34:10,315 | views | get | DEBUG | 404 Error.  No recipes found with id 15. 
+2016-06-02 11:34:10,344 | views | get | DEBUG | GET request for recipes: id: 1 
+2016-06-02 11:34:10,346 | views | get | DEBUG | recipes id:1 found. 
+2016-06-02 11:34:10,434 | views | put | DEBUG | PUT request for recipes: 
+2016-06-02 11:34:10,437 | views | put | DEBUG | Incoming data: {u'name': u'Lasagna'} 
+2016-06-02 11:34:10,487 | views | post | DEBUG | POST request for units: 
+2016-06-02 11:34:10,490 | views | post | DEBUG | Incoming data: {u'name': u'pound'} 
+2016-06-02 11:34:10,496 | views | index | DEBUG | GET request for all units 
+2016-06-02 11:34:10,532 | views | delete | DEBUG | DELETE request for units 1: 
+2016-06-02 11:34:10,539 | views | get | DEBUG | GET request for units: id: 1 
+2016-06-02 11:34:10,542 | views | get | DEBUG | 404 Error.  No units found with id 1. 
+2016-06-02 11:34:10,571 | views | index | DEBUG | GET request for all units 
+2016-06-02 11:34:10,625 | views | get | DEBUG | GET request for units: id: 15 
+2016-06-02 11:34:10,628 | views | get | DEBUG | 404 Error.  No units found with id 15. 
+2016-06-02 11:34:10,657 | views | get | DEBUG | GET request for units: id: 1 
+2016-06-02 11:34:10,661 | views | get | DEBUG | units id:1 found. 
+2016-06-02 11:34:10,694 | views | put | DEBUG | PUT request for units: 
+2016-06-02 11:34:10,697 | views | put | DEBUG | Incoming data: {u'name': u'liter'} 
+2016-06-02 11:34:30,069 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 11:34:30,072 | models | <module> | DEBUG | loading models.py 
+2016-06-02 11:34:30,165 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-02 11:34:30,193 | views | <module> | DEBUG | loading views.py 
+2016-06-02 11:34:30,301 | views | post | DEBUG | POST request for departments: 
+2016-06-02 11:34:30,303 | views | post | DEBUG | Incoming data: {u'name': u'hba'} 
+2016-06-02 11:34:30,321 | views | index | DEBUG | GET request for all departments 
+2016-06-02 11:34:30,358 | views | delete | DEBUG | DELETE request for departments 1: 
+2016-06-02 11:34:30,365 | views | get | DEBUG | GET request for departments: id: 1 
+2016-06-02 11:34:30,368 | views | get | DEBUG | 404 Error.  No departments found with id 1. 
+2016-06-02 11:34:30,397 | views | index | DEBUG | GET request for all departments 
+2016-06-02 11:34:30,450 | views | get | DEBUG | GET request for departments: id: 15 
+2016-06-02 11:34:30,454 | views | get | DEBUG | 404 Error.  No departments found with id 15. 
+2016-06-02 11:34:30,482 | views | get | DEBUG | GET request for departments: id: 1 
+2016-06-02 11:34:30,486 | views | get | DEBUG | departments id:1 found. 
+2016-06-02 11:34:30,523 | views | put | DEBUG | PUT request for departments: 
+2016-06-02 11:34:30,526 | views | put | DEBUG | Incoming data: {u'name': u'floral'} 
+2016-06-02 11:34:30,529 | models | update_from | DEBUG | Updating Produce from floral 
+2016-06-02 11:34:30,563 | views | post | DEBUG | POST request for ingredients: 
+2016-06-02 11:34:30,565 | views | post | DEBUG | Incoming data: {u'name': u'ground pork'} 
+2016-06-02 11:34:30,569 | views | post | DEBUG | Error loading schema ingredients: {'department': [u'Missing data for required field.']} 
+2016-06-02 11:34:30,596 | views | post | DEBUG | POST request for ingredients: 
+2016-06-02 11:34:30,599 | views | post | DEBUG | Incoming data: {u'department': {u'id': 2, u'name': u'Meat'}, u'name': u'ground pork'} 
+2016-06-02 11:34:30,611 | views | index | DEBUG | GET request for all ingredients 
+2016-06-02 11:34:30,651 | views | delete | DEBUG | DELETE request for ingredients 1: 
+2016-06-02 11:34:30,665 | views | get | DEBUG | GET request for ingredients: id: 1 
+2016-06-02 11:34:30,681 | views | get | DEBUG | 404 Error.  No ingredients found with id 1. 
+2016-06-02 11:34:30,711 | views | index | DEBUG | GET request for all ingredients 
+2016-06-02 11:34:30,780 | views | get | DEBUG | GET request for ingredients: id: 15 
+2016-06-02 11:34:30,785 | views | get | DEBUG | 404 Error.  No ingredients found with id 15. 
+2016-06-02 11:34:30,812 | views | get | DEBUG | GET request for ingredients: id: 1 
+2016-06-02 11:34:30,816 | views | get | DEBUG | ingredients id:1 found. 
+2016-06-02 11:34:30,855 | views | put | DEBUG | PUT request for ingredients: 
+2016-06-02 11:34:30,858 | views | put | DEBUG | Incoming data: {u'department': {u'name': u'Meat', u'id': 3}} 
+2016-06-02 11:34:30,898 | views | put | DEBUG | PUT request for ingredients: 
+2016-06-02 11:34:30,901 | views | put | DEBUG | Incoming data: {u'name': u'watermelon'} 
+2016-06-02 11:34:30,936 | views | post | DEBUG | POST request for recipes: 
+2016-06-02 11:34:30,938 | views | post | DEBUG | Incoming data: {u'rating': 5, u'notes': [{u'note': u'Dont forget the liver'}, {u'note': u'and fish sauce'}], u'steps': [{u'step': u'Combine meat, seasonings', u'order': 1}, {u'step': u'Shape into loaf pan', u'order': 2}, {u'step': u'Bake for 1 hour', u'order': 3}], u'name': u'Meatloaf'} 
+2016-06-02 11:34:30,986 | views | post | DEBUG | POST request for recipes: 
+2016-06-02 11:34:30,989 | views | post | DEBUG | Incoming data: {u'rating': 5, u'notes': [{u'note': u'use old el paso'}], u'steps': [{u'step': u'brown beef', u'order': 1}, {u'step': u'add seasoning', u'order': 2}, {u'step': u'cook unitl done', u'order': 3}], u'name': u'Burrito'} 
+2016-06-02 11:34:31,006 | views | index | DEBUG | GET request for all recipes 
+2016-06-02 11:34:31,066 | views | delete | DEBUG | DELETE request for recipes 1: 
+2016-06-02 11:34:31,078 | views | get | DEBUG | GET request for recipes: id: 1 
+2016-06-02 11:34:31,082 | views | get | DEBUG | 404 Error.  No recipes found with id 1. 
+2016-06-02 11:34:31,111 | views | index | DEBUG | GET request for all recipes 
+2016-06-02 11:34:31,230 | views | get | DEBUG | GET request for recipes: id: 15 
+2016-06-02 11:34:31,234 | views | get | DEBUG | 404 Error.  No recipes found with id 15. 
+2016-06-02 11:34:31,263 | views | get | DEBUG | GET request for recipes: id: 1 
+2016-06-02 11:34:31,266 | views | get | DEBUG | recipes id:1 found. 
+2016-06-02 11:34:31,354 | views | put | DEBUG | PUT request for recipes: 
+2016-06-02 11:34:31,355 | views | put | DEBUG | Incoming data: {u'name': u'Lasagna'} 
+2016-06-02 11:34:31,407 | views | post | DEBUG | POST request for units: 
+2016-06-02 11:34:31,410 | views | post | DEBUG | Incoming data: {u'name': u'pound'} 
+2016-06-02 11:34:31,417 | views | index | DEBUG | GET request for all units 
+2016-06-02 11:34:31,453 | views | delete | DEBUG | DELETE request for units 1: 
+2016-06-02 11:34:31,460 | views | get | DEBUG | GET request for units: id: 1 
+2016-06-02 11:34:31,463 | views | get | DEBUG | 404 Error.  No units found with id 1. 
+2016-06-02 11:34:31,492 | views | index | DEBUG | GET request for all units 
+2016-06-02 11:34:31,543 | views | get | DEBUG | GET request for units: id: 15 
+2016-06-02 11:34:31,548 | views | get | DEBUG | 404 Error.  No units found with id 15. 
+2016-06-02 11:34:31,575 | views | get | DEBUG | GET request for units: id: 1 
+2016-06-02 11:34:31,579 | views | get | DEBUG | units id:1 found. 
+2016-06-02 11:34:31,612 | views | put | DEBUG | PUT request for units: 
+2016-06-02 11:34:31,615 | views | put | DEBUG | Incoming data: {u'name': u'liter'} 
+2016-06-02 11:45:06,802 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 11:45:06,809 | models | <module> | DEBUG | loading models.py 
+2016-06-02 11:45:06,907 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-02 11:45:06,936 | views | <module> | DEBUG | loading views.py 
+2016-06-02 11:45:07,048 | views | post | DEBUG | POST request for departments: 
+2016-06-02 11:45:07,051 | views | post | DEBUG | Incoming data: {u'name': u'hba'} 
+2016-06-02 11:45:07,069 | views | index | DEBUG | GET request for all departments 
+2016-06-02 11:45:07,108 | views | delete | DEBUG | DELETE request for departments 1: 
+2016-06-02 11:45:07,115 | views | get | DEBUG | GET request for departments: id: 1 
+2016-06-02 11:45:07,118 | views | get | DEBUG | 404 Error.  No departments found with id 1. 
+2016-06-02 11:45:07,157 | views | index | DEBUG | GET request for all departments 
+2016-06-02 11:45:07,217 | views | get | DEBUG | GET request for departments: id: 15 
+2016-06-02 11:45:07,224 | views | get | DEBUG | 404 Error.  No departments found with id 15. 
+2016-06-02 11:45:07,256 | views | get | DEBUG | GET request for departments: id: 1 
+2016-06-02 11:45:07,276 | views | get | DEBUG | departments id:1 found. 
+2016-06-02 11:45:07,322 | views | put | DEBUG | PUT request for departments: 
+2016-06-02 11:45:07,331 | views | put | DEBUG | Incoming data: {u'name': u'floral'} 
+2016-06-02 11:45:07,357 | models | update_from | DEBUG | Updating Produce from floral 
+2016-06-02 11:45:07,398 | views | post | DEBUG | POST request for ingredients: 
+2016-06-02 11:45:07,403 | views | post | DEBUG | Incoming data: {u'name': u'ground pork'} 
+2016-06-02 11:45:07,407 | views | post | DEBUG | Error loading schema ingredients: {'department': [u'Missing data for required field.']} 
+2016-06-02 11:45:07,438 | views | post | DEBUG | POST request for ingredients: 
+2016-06-02 11:45:07,441 | views | post | DEBUG | Incoming data: {u'department': {u'id': 2, u'name': u'Meat'}, u'name': u'ground pork'} 
+2016-06-02 11:45:07,453 | views | index | DEBUG | GET request for all ingredients 
+2016-06-02 11:45:07,500 | views | delete | DEBUG | DELETE request for ingredients 1: 
+2016-06-02 11:45:07,507 | views | get | DEBUG | GET request for ingredients: id: 1 
+2016-06-02 11:45:07,510 | views | get | DEBUG | 404 Error.  No ingredients found with id 1. 
+2016-06-02 11:45:07,543 | views | index | DEBUG | GET request for all ingredients 
+2016-06-02 11:45:07,619 | views | get | DEBUG | GET request for ingredients: id: 15 
+2016-06-02 11:45:07,624 | views | get | DEBUG | 404 Error.  No ingredients found with id 15. 
+2016-06-02 11:45:07,653 | views | get | DEBUG | GET request for ingredients: id: 1 
+2016-06-02 11:45:07,657 | views | get | DEBUG | ingredients id:1 found. 
+2016-06-02 11:45:07,713 | views | put | DEBUG | PUT request for ingredients: 
+2016-06-02 11:45:07,714 | views | put | DEBUG | Incoming data: {u'department': {u'name': u'Meat', u'id': 3}} 
+2016-06-02 11:45:07,755 | views | put | DEBUG | PUT request for ingredients: 
+2016-06-02 11:45:07,757 | views | put | DEBUG | Incoming data: {u'name': u'watermelon'} 
+2016-06-02 11:45:07,792 | views | post | DEBUG | POST request for recipes: 
+2016-06-02 11:45:07,796 | views | post | DEBUG | Incoming data: {u'rating': 5, u'notes': [{u'note': u'Dont forget the liver'}, {u'note': u'and fish sauce'}], u'steps': [{u'step': u'Combine meat, seasonings', u'order': 1}, {u'step': u'Shape into loaf pan', u'order': 2}, {u'step': u'Bake for 1 hour', u'order': 3}], u'name': u'Meatloaf'} 
+2016-06-02 11:45:07,845 | views | post | DEBUG | POST request for recipes: 
+2016-06-02 11:45:07,848 | views | post | DEBUG | Incoming data: {u'rating': 5, u'notes': [{u'note': u'use old el paso'}], u'steps': [{u'step': u'brown beef', u'order': 1}, {u'step': u'add seasoning', u'order': 2}, {u'step': u'cook unitl done', u'order': 3}], u'name': u'Burrito'} 
+2016-06-02 11:45:07,865 | views | index | DEBUG | GET request for all recipes 
+2016-06-02 11:45:07,927 | views | delete | DEBUG | DELETE request for recipes 1: 
+2016-06-02 11:45:07,938 | views | get | DEBUG | GET request for recipes: id: 1 
+2016-06-02 11:45:07,943 | views | get | DEBUG | 404 Error.  No recipes found with id 1. 
+2016-06-02 11:45:07,970 | views | index | DEBUG | GET request for all recipes 
+2016-06-02 11:45:08,092 | views | get | DEBUG | GET request for recipes: id: 15 
+2016-06-02 11:45:08,095 | views | get | DEBUG | 404 Error.  No recipes found with id 15. 
+2016-06-02 11:45:08,125 | views | get | DEBUG | GET request for recipes: id: 1 
+2016-06-02 11:45:08,130 | views | get | DEBUG | recipes id:1 found. 
+2016-06-02 11:45:08,223 | views | put | DEBUG | PUT request for recipes: 
+2016-06-02 11:45:08,226 | views | put | DEBUG | Incoming data: {u'name': u'Lasagna'} 
+2016-06-02 11:45:08,283 | views | post | DEBUG | POST request for units: 
+2016-06-02 11:45:08,286 | views | post | DEBUG | Incoming data: {u'name': u'pound'} 
+2016-06-02 11:45:08,293 | views | index | DEBUG | GET request for all units 
+2016-06-02 11:45:08,332 | views | delete | DEBUG | DELETE request for units 1: 
+2016-06-02 11:45:08,339 | views | get | DEBUG | GET request for units: id: 1 
+2016-06-02 11:45:08,344 | views | get | DEBUG | 404 Error.  No units found with id 1. 
+2016-06-02 11:45:08,372 | views | index | DEBUG | GET request for all units 
+2016-06-02 11:45:08,428 | views | get | DEBUG | GET request for units: id: 15 
+2016-06-02 11:45:08,434 | views | get | DEBUG | 404 Error.  No units found with id 15. 
+2016-06-02 11:45:08,464 | views | get | DEBUG | GET request for units: id: 1 
+2016-06-02 11:45:08,467 | views | get | DEBUG | units id:1 found. 
+2016-06-02 11:45:08,505 | views | put | DEBUG | PUT request for units: 
+2016-06-02 11:45:08,507 | views | put | DEBUG | Incoming data: {u'name': u'liter'} 
+2016-06-02 11:55:39,209 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 11:55:39,217 | models | <module> | DEBUG | loading models.py 
+2016-06-02 11:55:39,311 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-02 11:55:39,338 | views | <module> | DEBUG | loading views.py 
+2016-06-02 11:55:39,447 | views | post | DEBUG | POST request for departments: 
+2016-06-02 11:55:39,450 | views | post | DEBUG | Incoming data: {u'name': u'hba'} 
+2016-06-02 11:55:39,467 | views | index | DEBUG | GET request for all departments 
+2016-06-02 11:55:39,505 | views | delete | DEBUG | DELETE request for departments 1: 
+2016-06-02 11:55:39,513 | views | get | DEBUG | GET request for departments: id: 1 
+2016-06-02 11:55:39,516 | views | get | DEBUG | 404 Error.  No departments found with id 1. 
+2016-06-02 11:55:39,543 | views | index | DEBUG | GET request for all departments 
+2016-06-02 11:55:39,598 | views | get | DEBUG | GET request for departments: id: 15 
+2016-06-02 11:55:39,601 | views | get | DEBUG | 404 Error.  No departments found with id 15. 
+2016-06-02 11:55:39,631 | views | get | DEBUG | GET request for departments: id: 1 
+2016-06-02 11:55:39,634 | views | get | DEBUG | departments id:1 found. 
+2016-06-02 11:55:39,683 | views | put | DEBUG | PUT request for departments: 
+2016-06-02 11:55:39,686 | views | put | DEBUG | Incoming data: {u'name': u'floral'} 
+2016-06-02 11:55:39,690 | models | update_from | DEBUG | Updating Produce from floral 
+2016-06-02 11:55:39,724 | views | post | DEBUG | POST request for ingredients: 
+2016-06-02 11:55:39,726 | views | post | DEBUG | Incoming data: {u'name': u'ground pork'} 
+2016-06-02 11:55:39,730 | views | post | DEBUG | Error loading schema ingredients: {'department': [u'Missing data for required field.']} 
+2016-06-02 11:55:39,759 | views | post | DEBUG | POST request for ingredients: 
+2016-06-02 11:55:39,762 | views | post | DEBUG | Incoming data: {u'department': {u'id': 2, u'name': u'Meat'}, u'name': u'ground pork'} 
+2016-06-02 11:55:39,773 | views | index | DEBUG | GET request for all ingredients 
+2016-06-02 11:55:39,813 | views | delete | DEBUG | DELETE request for ingredients 1: 
+2016-06-02 11:55:39,822 | views | get | DEBUG | GET request for ingredients: id: 1 
+2016-06-02 11:55:39,825 | views | get | DEBUG | 404 Error.  No ingredients found with id 1. 
+2016-06-02 11:55:39,852 | views | index | DEBUG | GET request for all ingredients 
+2016-06-02 11:55:39,924 | views | get | DEBUG | GET request for ingredients: id: 15 
+2016-06-02 11:55:39,927 | views | get | DEBUG | 404 Error.  No ingredients found with id 15. 
+2016-06-02 11:55:39,956 | views | get | DEBUG | GET request for ingredients: id: 1 
+2016-06-02 11:55:39,960 | views | get | DEBUG | ingredients id:1 found. 
+2016-06-02 11:55:39,996 | views | put | DEBUG | PUT request for ingredients: 
+2016-06-02 11:55:40,000 | views | put | DEBUG | Incoming data: {u'department': {u'name': u'Meat', u'id': 3}} 
+2016-06-02 11:55:40,039 | views | put | DEBUG | PUT request for ingredients: 
+2016-06-02 11:55:40,040 | views | put | DEBUG | Incoming data: {u'name': u'watermelon'} 
+2016-06-02 11:55:40,075 | views | post | DEBUG | POST request for recipes: 
+2016-06-02 11:55:40,078 | views | post | DEBUG | Incoming data: {u'rating': 5, u'notes': [{u'note': u'Dont forget the liver'}, {u'note': u'and fish sauce'}], u'steps': [{u'step': u'Combine meat, seasonings', u'order': 1}, {u'step': u'Shape into loaf pan', u'order': 2}, {u'step': u'Bake for 1 hour', u'order': 3}], u'name': u'Meatloaf'} 
+2016-06-02 11:55:40,125 | views | post | DEBUG | POST request for recipes: 
+2016-06-02 11:55:40,128 | views | post | DEBUG | Incoming data: {u'rating': 5, u'notes': [{u'note': u'use old el paso'}], u'steps': [{u'step': u'brown beef', u'order': 1}, {u'step': u'add seasoning', u'order': 2}, {u'step': u'cook unitl done', u'order': 3}], u'name': u'Burrito'} 
+2016-06-02 11:55:40,144 | views | index | DEBUG | GET request for all recipes 
+2016-06-02 11:55:40,204 | views | delete | DEBUG | DELETE request for recipes 1: 
+2016-06-02 11:55:40,217 | views | get | DEBUG | GET request for recipes: id: 1 
+2016-06-02 11:55:40,220 | views | get | DEBUG | 404 Error.  No recipes found with id 1. 
+2016-06-02 11:55:40,247 | views | index | DEBUG | GET request for all recipes 
+2016-06-02 11:55:40,365 | views | get | DEBUG | GET request for recipes: id: 15 
+2016-06-02 11:55:40,368 | views | get | DEBUG | 404 Error.  No recipes found with id 15. 
+2016-06-02 11:55:40,397 | views | get | DEBUG | GET request for recipes: id: 1 
+2016-06-02 11:55:40,401 | views | get | DEBUG | recipes id:1 found. 
+2016-06-02 11:55:40,486 | views | put | DEBUG | PUT request for recipes: 
+2016-06-02 11:55:40,489 | views | put | DEBUG | Incoming data: {u'name': u'Lasagna'} 
+2016-06-02 11:55:40,539 | views | post | DEBUG | POST request for units: 
+2016-06-02 11:55:40,542 | views | post | DEBUG | Incoming data: {u'name': u'pound'} 
+2016-06-02 11:55:40,549 | views | index | DEBUG | GET request for all units 
+2016-06-02 11:55:40,584 | views | delete | DEBUG | DELETE request for units 1: 
+2016-06-02 11:55:40,592 | views | get | DEBUG | GET request for units: id: 1 
+2016-06-02 11:55:40,595 | views | get | DEBUG | 404 Error.  No units found with id 1. 
+2016-06-02 11:55:40,622 | views | index | DEBUG | GET request for all units 
+2016-06-02 11:55:40,676 | views | get | DEBUG | GET request for units: id: 15 
+2016-06-02 11:55:40,678 | views | get | DEBUG | 404 Error.  No units found with id 15. 
+2016-06-02 11:55:40,707 | views | get | DEBUG | GET request for units: id: 1 
+2016-06-02 11:55:40,710 | views | get | DEBUG | units id:1 found. 
+2016-06-02 11:55:40,744 | views | put | DEBUG | PUT request for units: 
+2016-06-02 11:55:40,746 | views | put | DEBUG | Incoming data: {u'name': u'liter'} 
+2016-06-02 12:42:50,413 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 12:42:50,421 | models | <module> | DEBUG | loading models.py 
+2016-06-02 12:42:50,515 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-02 12:42:50,546 | views | <module> | DEBUG | loading views.py 
+2016-06-02 12:42:50,688 | views | post | DEBUG | POST request for departments: 
+2016-06-02 12:42:50,691 | views | post | DEBUG | Incoming data: {u'name': u'hba'} 
+2016-06-02 12:42:50,723 | views | index | DEBUG | GET request for all departments 
+2016-06-02 12:42:50,724 | views | index | DEBUG | {} 
+2016-06-02 12:42:50,762 | views | delete | DEBUG | DELETE request for departments 1: 
+2016-06-02 12:42:50,769 | views | get | DEBUG | GET request for departments: id: 1 
+2016-06-02 12:42:50,773 | views | get | DEBUG | 404 Error.  No departments found with id 1. 
+2016-06-02 12:42:50,802 | views | index | DEBUG | GET request for all departments 
+2016-06-02 12:42:50,805 | views | index | DEBUG | {} 
+2016-06-02 12:42:50,859 | views | get | DEBUG | GET request for departments: id: 15 
+2016-06-02 12:42:50,864 | views | get | DEBUG | 404 Error.  No departments found with id 15. 
+2016-06-02 12:42:50,891 | views | get | DEBUG | GET request for departments: id: 1 
+2016-06-02 12:42:50,894 | views | get | DEBUG | departments id:1 found. 
+2016-06-02 12:42:50,933 | views | put | DEBUG | PUT request for departments: 
+2016-06-02 12:42:50,934 | views | put | DEBUG | Incoming data: {u'name': u'floral'} 
+2016-06-02 12:42:50,938 | models | update_from | DEBUG | Updating Produce from floral 
+2016-06-02 12:42:50,971 | views | post | DEBUG | POST request for ingredients: 
+2016-06-02 12:42:50,974 | views | post | DEBUG | Incoming data: {u'name': u'ground pork'} 
+2016-06-02 12:42:50,977 | views | post | DEBUG | Error loading schema ingredients: {'department': [u'Missing data for required field.']} 
+2016-06-02 12:42:51,006 | views | post | DEBUG | POST request for ingredients: 
+2016-06-02 12:42:51,007 | views | post | DEBUG | Incoming data: {u'department': {u'id': 2, u'name': u'Meat'}, u'name': u'ground pork'} 
+2016-06-02 12:42:56,785 | views | delete | DEBUG | DELETE request for ingredients 1: 
+2016-06-02 12:42:56,792 | views | get | DEBUG | GET request for ingredients: id: 1 
+2016-06-02 12:42:56,796 | views | get | DEBUG | 404 Error.  No ingredients found with id 1. 
+2016-06-02 12:45:33,306 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 12:45:33,315 | models | <module> | DEBUG | loading models.py 
+2016-06-02 12:45:33,418 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-02 12:45:33,453 | views | <module> | DEBUG | loading views.py 
+2016-06-02 12:45:48,752 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 12:45:48,759 | models | <module> | DEBUG | loading models.py 
+2016-06-02 12:45:48,854 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-02 12:45:48,904 | views | <module> | DEBUG | loading views.py 
+2016-06-02 12:45:49,023 | views | post | DEBUG | POST request for departments: 
+2016-06-02 12:45:49,026 | views | post | DEBUG | Incoming data: {u'name': u'hba'} 
+2016-06-02 12:46:00,374 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 12:46:00,381 | models | <module> | DEBUG | loading models.py 
+2016-06-02 12:46:00,480 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-02 12:46:00,513 | views | <module> | DEBUG | loading views.py 
+2016-06-02 12:46:00,630 | views | post | DEBUG | POST request for departments: 
+2016-06-02 12:46:00,632 | views | post | DEBUG | Incoming data: {u'name': u'hba'} 
+2016-06-02 12:46:00,651 | views | index | DEBUG | GET request for all departments 
+2016-06-02 12:46:00,654 | views | index | DEBUG | {} 
+2016-06-02 12:46:00,693 | views | delete | DEBUG | DELETE request for departments 1: 
+2016-06-02 12:46:00,700 | views | get | DEBUG | GET request for departments: id: 1 
+2016-06-02 12:46:00,703 | views | get | DEBUG | 404 Error.  No departments found with id 1. 
+2016-06-02 12:46:00,733 | views | index | DEBUG | GET request for all departments 
+2016-06-02 12:46:00,736 | views | index | DEBUG | {} 
+2016-06-02 12:46:00,790 | views | get | DEBUG | GET request for departments: id: 15 
+2016-06-02 12:46:00,793 | views | get | DEBUG | 404 Error.  No departments found with id 15. 
+2016-06-02 12:46:00,822 | views | get | DEBUG | GET request for departments: id: 1 
+2016-06-02 12:46:00,826 | views | get | DEBUG | departments id:1 found. 
+2016-06-02 12:46:00,865 | views | put | DEBUG | PUT request for departments: 
+2016-06-02 12:46:00,868 | views | put | DEBUG | Incoming data: {u'name': u'floral'} 
+2016-06-02 12:46:00,871 | models | update_from | DEBUG | Updating Produce from floral 
+2016-06-02 12:46:00,905 | views | post | DEBUG | POST request for ingredients: 
+2016-06-02 12:46:00,907 | views | post | DEBUG | Incoming data: {u'name': u'ground pork'} 
+2016-06-02 12:46:00,911 | views | post | DEBUG | Error loading schema ingredients: {'department': [u'Missing data for required field.']} 
+2016-06-02 12:46:00,938 | views | post | DEBUG | POST request for ingredients: 
+2016-06-02 12:46:00,941 | views | post | DEBUG | Incoming data: {u'department': {u'id': 2, u'name': u'Meat'}, u'name': u'ground pork'} 
+2016-06-02 12:46:00,953 | views | index | DEBUG | GET request for all ingredients 
+2016-06-02 12:46:00,956 | views | index | DEBUG | {} 
+2016-06-02 12:46:00,996 | views | delete | DEBUG | DELETE request for ingredients 1: 
+2016-06-02 12:46:01,003 | views | get | DEBUG | GET request for ingredients: id: 1 
+2016-06-02 12:46:01,006 | views | get | DEBUG | 404 Error.  No ingredients found with id 1. 
+2016-06-02 12:46:01,036 | views | index | DEBUG | GET request for all ingredients 
+2016-06-02 12:46:01,038 | views | index | DEBUG | {} 
+2016-06-02 12:46:01,107 | views | get | DEBUG | GET request for ingredients: id: 15 
+2016-06-02 12:46:01,111 | views | get | DEBUG | 404 Error.  No ingredients found with id 15. 
+2016-06-02 12:46:01,138 | views | get | DEBUG | GET request for ingredients: id: 1 
+2016-06-02 12:46:01,142 | views | get | DEBUG | ingredients id:1 found. 
+2016-06-02 12:46:01,180 | views | put | DEBUG | PUT request for ingredients: 
+2016-06-02 12:46:01,184 | views | put | DEBUG | Incoming data: {u'department': {u'name': u'Meat', u'id': 3}} 
+2016-06-02 12:46:01,221 | views | put | DEBUG | PUT request for ingredients: 
+2016-06-02 12:46:01,223 | views | put | DEBUG | Incoming data: {u'name': u'watermelon'} 
+2016-06-02 12:46:01,259 | views | post | DEBUG | POST request for recipes: 
+2016-06-02 12:46:01,260 | views | post | DEBUG | Incoming data: {u'rating': 5, u'notes': [{u'note': u'Dont forget the liver'}, {u'note': u'and fish sauce'}], u'steps': [{u'step': u'Combine meat, seasonings', u'order': 1}, {u'step': u'Shape into loaf pan', u'order': 2}, {u'step': u'Bake for 1 hour', u'order': 3}], u'name': u'Meatloaf'} 
+2016-06-02 12:46:01,309 | views | post | DEBUG | POST request for recipes: 
+2016-06-02 12:46:01,312 | views | post | DEBUG | Incoming data: {u'rating': 5, u'notes': [{u'note': u'use old el paso'}], u'steps': [{u'step': u'brown beef', u'order': 1}, {u'step': u'add seasoning', u'order': 2}, {u'step': u'cook unitl done', u'order': 3}], u'name': u'Burrito'} 
+2016-06-02 12:46:01,329 | views | index | DEBUG | GET request for all recipes 
+2016-06-02 12:46:01,332 | views | index | DEBUG | {} 
+2016-06-02 12:46:01,392 | views | delete | DEBUG | DELETE request for recipes 1: 
+2016-06-02 12:46:01,404 | views | get | DEBUG | GET request for recipes: id: 1 
+2016-06-02 12:46:01,407 | views | get | DEBUG | 404 Error.  No recipes found with id 1. 
+2016-06-02 12:46:01,437 | views | index | DEBUG | GET request for all recipes 
+2016-06-02 12:46:01,438 | views | index | DEBUG | {} 
+2016-06-02 12:46:01,556 | views | get | DEBUG | GET request for recipes: id: 15 
+2016-06-02 12:46:01,559 | views | get | DEBUG | 404 Error.  No recipes found with id 15. 
+2016-06-02 12:46:01,588 | views | get | DEBUG | GET request for recipes: id: 1 
+2016-06-02 12:46:01,592 | views | get | DEBUG | recipes id:1 found. 
+2016-06-02 12:46:01,680 | views | put | DEBUG | PUT request for recipes: 
+2016-06-02 12:46:01,683 | views | put | DEBUG | Incoming data: {u'name': u'Lasagna'} 
+2016-06-02 12:46:01,733 | views | post | DEBUG | POST request for units: 
+2016-06-02 12:46:01,736 | views | post | DEBUG | Incoming data: {u'name': u'pound'} 
+2016-06-02 12:46:01,744 | views | index | DEBUG | GET request for all units 
+2016-06-02 12:46:01,746 | views | index | DEBUG | {} 
+2016-06-02 12:46:01,783 | views | delete | DEBUG | DELETE request for units 1: 
+2016-06-02 12:46:01,790 | views | get | DEBUG | GET request for units: id: 1 
+2016-06-02 12:46:01,793 | views | get | DEBUG | 404 Error.  No units found with id 1. 
+2016-06-02 12:46:01,822 | views | index | DEBUG | GET request for all units 
+2016-06-02 12:46:01,825 | views | index | DEBUG | {} 
+2016-06-02 12:46:01,878 | views | get | DEBUG | GET request for units: id: 15 
+2016-06-02 12:46:01,881 | views | get | DEBUG | 404 Error.  No units found with id 15. 
+2016-06-02 12:46:01,910 | views | get | DEBUG | GET request for units: id: 1 
+2016-06-02 12:46:01,913 | views | get | DEBUG | units id:1 found. 
+2016-06-02 12:46:01,946 | views | put | DEBUG | PUT request for units: 
+2016-06-02 12:46:01,947 | views | put | DEBUG | Incoming data: {u'name': u'liter'} 
+2016-06-02 12:47:40,233 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 12:47:40,236 | models | <module> | DEBUG | loading models.py 
+2016-06-02 12:47:40,341 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-02 12:47:40,375 | views | <module> | DEBUG | loading views.py 
+2016-06-02 12:47:40,499 | views | post | DEBUG | POST request for departments: 
+2016-06-02 12:47:40,500 | views | post | DEBUG | Incoming data: {u'name': u'hba'} 
+2016-06-02 12:47:40,520 | views | index | DEBUG | GET request for all departments 
+2016-06-02 12:47:40,523 | views | index | DEBUG | {} 
+2016-06-02 12:47:40,562 | views | delete | DEBUG | DELETE request for departments 1: 
+2016-06-02 12:47:40,571 | views | get | DEBUG | GET request for departments: id: 1 
+2016-06-02 12:47:40,573 | views | get | DEBUG | 404 Error.  No departments found with id 1. 
+2016-06-02 12:47:40,607 | views | index | DEBUG | GET request for all departments 
+2016-06-02 12:47:40,608 | views | index | DEBUG | {} 
+2016-06-02 12:47:40,670 | views | get | DEBUG | GET request for departments: id: 15 
+2016-06-02 12:47:40,674 | views | get | DEBUG | 404 Error.  No departments found with id 15. 
+2016-06-02 12:47:40,703 | views | get | DEBUG | GET request for departments: id: 1 
+2016-06-02 12:47:40,707 | views | get | DEBUG | departments id:1 found. 
+2016-06-02 12:47:40,750 | views | index | DEBUG | GET request for all departments 
+2016-06-02 12:47:40,752 | views | index | DEBUG | {'q': u'asdf'} 
+2016-06-02 12:47:40,788 | views | put | DEBUG | PUT request for departments: 
+2016-06-02 12:47:40,789 | views | put | DEBUG | Incoming data: {u'name': u'floral'} 
+2016-06-02 12:47:40,793 | models | update_from | DEBUG | Updating Produce from floral 
+2016-06-02 12:47:40,828 | views | post | DEBUG | POST request for ingredients: 
+2016-06-02 12:47:40,829 | views | post | DEBUG | Incoming data: {u'name': u'ground pork'} 
+2016-06-02 12:47:40,832 | views | post | DEBUG | Error loading schema ingredients: {'department': [u'Missing data for required field.']} 
+2016-06-02 12:47:40,861 | views | post | DEBUG | POST request for ingredients: 
+2016-06-02 12:47:40,865 | views | post | DEBUG | Incoming data: {u'department': {u'id': 2, u'name': u'Meat'}, u'name': u'ground pork'} 
+2016-06-02 12:47:40,877 | views | index | DEBUG | GET request for all ingredients 
+2016-06-02 12:47:40,880 | views | index | DEBUG | {} 
+2016-06-02 12:47:40,926 | views | delete | DEBUG | DELETE request for ingredients 1: 
+2016-06-02 12:47:40,934 | views | get | DEBUG | GET request for ingredients: id: 1 
+2016-06-02 12:47:40,937 | views | get | DEBUG | 404 Error.  No ingredients found with id 1. 
+2016-06-02 12:47:40,970 | views | index | DEBUG | GET request for all ingredients 
+2016-06-02 12:47:40,971 | views | index | DEBUG | {} 
+2016-06-02 12:47:41,063 | views | get | DEBUG | GET request for ingredients: id: 15 
+2016-06-02 12:47:41,068 | views | get | DEBUG | 404 Error.  No ingredients found with id 15. 
+2016-06-02 12:47:41,098 | views | get | DEBUG | GET request for ingredients: id: 1 
+2016-06-02 12:47:41,101 | views | get | DEBUG | ingredients id:1 found. 
+2016-06-02 12:47:41,140 | views | put | DEBUG | PUT request for ingredients: 
+2016-06-02 12:47:41,141 | views | put | DEBUG | Incoming data: {u'department': {u'name': u'Meat', u'id': 3}} 
+2016-06-02 12:47:41,180 | views | put | DEBUG | PUT request for ingredients: 
+2016-06-02 12:47:41,184 | views | put | DEBUG | Incoming data: {u'name': u'watermelon'} 
+2016-06-02 12:47:41,219 | views | post | DEBUG | POST request for recipes: 
+2016-06-02 12:47:41,221 | views | post | DEBUG | Incoming data: {u'rating': 5, u'notes': [{u'note': u'Dont forget the liver'}, {u'note': u'and fish sauce'}], u'steps': [{u'step': u'Combine meat, seasonings', u'order': 1}, {u'step': u'Shape into loaf pan', u'order': 2}, {u'step': u'Bake for 1 hour', u'order': 3}], u'name': u'Meatloaf'} 
+2016-06-02 12:47:41,270 | views | post | DEBUG | POST request for recipes: 
+2016-06-02 12:47:41,273 | views | post | DEBUG | Incoming data: {u'rating': 5, u'notes': [{u'note': u'use old el paso'}], u'steps': [{u'step': u'brown beef', u'order': 1}, {u'step': u'add seasoning', u'order': 2}, {u'step': u'cook unitl done', u'order': 3}], u'name': u'Burrito'} 
+2016-06-02 12:47:41,290 | views | index | DEBUG | GET request for all recipes 
+2016-06-02 12:47:41,292 | views | index | DEBUG | {} 
+2016-06-02 12:47:41,352 | views | delete | DEBUG | DELETE request for recipes 1: 
+2016-06-02 12:47:41,365 | views | get | DEBUG | GET request for recipes: id: 1 
+2016-06-02 12:47:41,368 | views | get | DEBUG | 404 Error.  No recipes found with id 1. 
+2016-06-02 12:47:41,398 | views | index | DEBUG | GET request for all recipes 
+2016-06-02 12:47:41,401 | views | index | DEBUG | {} 
+2016-06-02 12:47:41,517 | views | get | DEBUG | GET request for recipes: id: 15 
+2016-06-02 12:47:41,522 | views | get | DEBUG | 404 Error.  No recipes found with id 15. 
+2016-06-02 12:47:41,549 | views | get | DEBUG | GET request for recipes: id: 1 
+2016-06-02 12:47:41,553 | views | get | DEBUG | recipes id:1 found. 
+2016-06-02 12:47:41,640 | views | put | DEBUG | PUT request for recipes: 
+2016-06-02 12:47:41,641 | views | put | DEBUG | Incoming data: {u'name': u'Lasagna'} 
+2016-06-02 12:47:41,696 | views | post | DEBUG | POST request for units: 
+2016-06-02 12:47:41,698 | views | post | DEBUG | Incoming data: {u'name': u'pound'} 
+2016-06-02 12:47:41,707 | views | index | DEBUG | GET request for all units 
+2016-06-02 12:47:41,709 | views | index | DEBUG | {} 
+2016-06-02 12:47:41,743 | views | delete | DEBUG | DELETE request for units 1: 
+2016-06-02 12:47:41,750 | views | get | DEBUG | GET request for units: id: 1 
+2016-06-02 12:47:41,753 | views | get | DEBUG | 404 Error.  No units found with id 1. 
+2016-06-02 12:47:41,782 | views | index | DEBUG | GET request for all units 
+2016-06-02 12:47:41,786 | views | index | DEBUG | {} 
+2016-06-02 12:47:41,838 | views | get | DEBUG | GET request for units: id: 15 
+2016-06-02 12:47:41,841 | views | get | DEBUG | 404 Error.  No units found with id 15. 
+2016-06-02 12:47:41,868 | views | get | DEBUG | GET request for units: id: 1 
+2016-06-02 12:47:41,872 | views | get | DEBUG | units id:1 found. 
+2016-06-02 12:47:41,904 | views | put | DEBUG | PUT request for units: 
+2016-06-02 12:47:41,907 | views | put | DEBUG | Incoming data: {u'name': u'liter'} 
+2016-06-02 12:48:34,282 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 12:48:34,289 | models | <module> | DEBUG | loading models.py 
+2016-06-02 12:48:34,384 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-02 12:48:34,421 | views | <module> | DEBUG | loading views.py 
+2016-06-02 12:48:34,559 | views | post | DEBUG | POST request for departments: 
+2016-06-02 12:48:34,561 | views | post | DEBUG | Incoming data: {u'name': u'hba'} 
+2016-06-02 12:48:34,579 | views | index | DEBUG | GET request for all departments 
+2016-06-02 12:48:34,582 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 12:48:34,618 | views | delete | DEBUG | DELETE request for departments 1: 
+2016-06-02 12:48:34,627 | views | get | DEBUG | GET request for departments: id: 1 
+2016-06-02 12:48:34,630 | views | get | DEBUG | 404 Error.  No departments found with id 1. 
+2016-06-02 12:48:34,660 | views | index | DEBUG | GET request for all departments 
+2016-06-02 12:48:34,661 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 12:48:34,717 | views | get | DEBUG | GET request for departments: id: 15 
+2016-06-02 12:48:34,720 | views | get | DEBUG | 404 Error.  No departments found with id 15. 
+2016-06-02 12:48:34,750 | views | get | DEBUG | GET request for departments: id: 1 
+2016-06-02 12:48:34,753 | views | get | DEBUG | departments id:1 found. 
+2016-06-02 12:48:34,793 | views | index | DEBUG | GET request for all departments 
+2016-06-02 12:48:34,796 | views | index | DEBUG | Arguments passed in:  {'q': u'asdf'} 
+2016-06-02 12:48:34,838 | views | put | DEBUG | PUT request for departments: 
+2016-06-02 12:48:34,851 | views | put | DEBUG | Incoming data: {u'name': u'floral'} 
+2016-06-02 12:48:34,855 | models | update_from | DEBUG | Updating Produce from floral 
+2016-06-02 12:48:34,888 | views | post | DEBUG | POST request for ingredients: 
+2016-06-02 12:48:34,891 | views | post | DEBUG | Incoming data: {u'name': u'ground pork'} 
+2016-06-02 12:48:34,894 | views | post | DEBUG | Error loading schema ingredients: {'department': [u'Missing data for required field.']} 
+2016-06-02 12:48:34,924 | views | post | DEBUG | POST request for ingredients: 
+2016-06-02 12:48:34,926 | views | post | DEBUG | Incoming data: {u'department': {u'id': 2, u'name': u'Meat'}, u'name': u'ground pork'} 
+2016-06-02 12:48:34,938 | views | index | DEBUG | GET request for all ingredients 
+2016-06-02 12:48:34,940 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 12:48:34,982 | views | delete | DEBUG | DELETE request for ingredients 1: 
+2016-06-02 12:48:34,990 | views | get | DEBUG | GET request for ingredients: id: 1 
+2016-06-02 12:48:34,993 | views | get | DEBUG | 404 Error.  No ingredients found with id 1. 
+2016-06-02 12:48:35,022 | views | index | DEBUG | GET request for all ingredients 
+2016-06-02 12:48:35,025 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 12:48:35,094 | views | get | DEBUG | GET request for ingredients: id: 15 
+2016-06-02 12:48:35,098 | views | get | DEBUG | 404 Error.  No ingredients found with id 15. 
+2016-06-02 12:48:35,127 | views | get | DEBUG | GET request for ingredients: id: 1 
+2016-06-02 12:48:35,131 | views | get | DEBUG | ingredients id:1 found. 
+2016-06-02 12:48:35,168 | views | put | DEBUG | PUT request for ingredients: 
+2016-06-02 12:48:35,171 | views | put | DEBUG | Incoming data: {u'department': {u'name': u'Meat', u'id': 3}} 
+2016-06-02 12:48:35,210 | views | put | DEBUG | PUT request for ingredients: 
+2016-06-02 12:48:35,211 | views | put | DEBUG | Incoming data: {u'name': u'watermelon'} 
+2016-06-02 12:48:35,246 | views | post | DEBUG | POST request for recipes: 
+2016-06-02 12:48:35,249 | views | post | DEBUG | Incoming data: {u'rating': 5, u'notes': [{u'note': u'Dont forget the liver'}, {u'note': u'and fish sauce'}], u'steps': [{u'step': u'Combine meat, seasonings', u'order': 1}, {u'step': u'Shape into loaf pan', u'order': 2}, {u'step': u'Bake for 1 hour', u'order': 3}], u'name': u'Meatloaf'} 
+2016-06-02 12:48:35,296 | views | post | DEBUG | POST request for recipes: 
+2016-06-02 12:48:35,299 | views | post | DEBUG | Incoming data: {u'rating': 5, u'notes': [{u'note': u'use old el paso'}], u'steps': [{u'step': u'brown beef', u'order': 1}, {u'step': u'add seasoning', u'order': 2}, {u'step': u'cook unitl done', u'order': 3}], u'name': u'Burrito'} 
+2016-06-02 12:48:35,316 | views | index | DEBUG | GET request for all recipes 
+2016-06-02 12:48:35,319 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 12:48:35,381 | views | delete | DEBUG | DELETE request for recipes 1: 
+2016-06-02 12:48:35,392 | views | get | DEBUG | GET request for recipes: id: 1 
+2016-06-02 12:48:35,397 | views | get | DEBUG | 404 Error.  No recipes found with id 1. 
+2016-06-02 12:48:35,426 | views | index | DEBUG | GET request for all recipes 
+2016-06-02 12:48:35,428 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 12:48:35,546 | views | get | DEBUG | GET request for recipes: id: 15 
+2016-06-02 12:48:35,551 | views | get | DEBUG | 404 Error.  No recipes found with id 15. 
+2016-06-02 12:48:35,579 | views | get | DEBUG | GET request for recipes: id: 1 
+2016-06-02 12:48:35,582 | views | get | DEBUG | recipes id:1 found. 
+2016-06-02 12:48:35,678 | views | put | DEBUG | PUT request for recipes: 
+2016-06-02 12:48:35,681 | views | put | DEBUG | Incoming data: {u'name': u'Lasagna'} 
+2016-06-02 12:48:35,734 | views | post | DEBUG | POST request for units: 
+2016-06-02 12:48:35,737 | views | post | DEBUG | Incoming data: {u'name': u'pound'} 
+2016-06-02 12:48:35,746 | views | index | DEBUG | GET request for all units 
+2016-06-02 12:48:35,749 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 12:48:35,786 | views | delete | DEBUG | DELETE request for units 1: 
+2016-06-02 12:48:35,792 | views | get | DEBUG | GET request for units: id: 1 
+2016-06-02 12:48:35,796 | views | get | DEBUG | 404 Error.  No units found with id 1. 
+2016-06-02 12:48:35,825 | views | index | DEBUG | GET request for all units 
+2016-06-02 12:48:35,828 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 12:48:35,881 | views | get | DEBUG | GET request for units: id: 15 
+2016-06-02 12:48:35,884 | views | get | DEBUG | 404 Error.  No units found with id 15. 
+2016-06-02 12:48:35,913 | views | get | DEBUG | GET request for units: id: 1 
+2016-06-02 12:48:35,915 | views | get | DEBUG | units id:1 found. 
+2016-06-02 12:48:35,948 | views | put | DEBUG | PUT request for units: 
+2016-06-02 12:48:35,951 | views | put | DEBUG | Incoming data: {u'name': u'liter'} 
+2016-06-02 12:49:22,062 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 12:49:22,072 | models | <module> | DEBUG | loading models.py 
+2016-06-02 12:49:22,167 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-02 12:49:22,200 | views | <module> | DEBUG | loading views.py 
+2016-06-02 12:49:22,309 | views | post | DEBUG | POST request for departments: 
+2016-06-02 12:49:22,312 | views | post | DEBUG | Incoming data: {u'name': u'hba'} 
+2016-06-02 12:49:22,329 | views | index | DEBUG | GET request for all departments 
+2016-06-02 12:49:22,332 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 12:49:22,368 | views | delete | DEBUG | DELETE request for departments 1: 
+2016-06-02 12:49:22,377 | views | get | DEBUG | GET request for departments: id: 1 
+2016-06-02 12:49:22,380 | views | get | DEBUG | 404 Error.  No departments found with id 1. 
+2016-06-02 12:49:22,408 | views | index | DEBUG | GET request for all departments 
+2016-06-02 12:49:22,411 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 12:49:22,464 | views | get | DEBUG | GET request for departments: id: 15 
+2016-06-02 12:49:22,469 | views | get | DEBUG | 404 Error.  No departments found with id 15. 
+2016-06-02 12:49:22,496 | views | get | DEBUG | GET request for departments: id: 1 
+2016-06-02 12:49:22,500 | views | get | DEBUG | departments id:1 found. 
+2016-06-02 12:49:22,539 | views | index | DEBUG | GET request for all departments 
+2016-06-02 12:49:22,542 | views | index | DEBUG | Arguments passed in:  {'q': u'asdf'} 
+2016-06-02 12:49:22,576 | views | put | DEBUG | PUT request for departments: 
+2016-06-02 12:49:22,579 | views | put | DEBUG | Incoming data: {u'name': u'floral'} 
+2016-06-02 12:49:22,582 | models | update_from | DEBUG | Updating Produce from floral 
+2016-06-02 12:49:22,615 | views | post | DEBUG | POST request for ingredients: 
+2016-06-02 12:49:22,618 | views | post | DEBUG | Incoming data: {u'name': u'ground pork'} 
+2016-06-02 12:49:22,621 | views | post | DEBUG | Error loading schema ingredients: {'department': [u'Missing data for required field.']} 
+2016-06-02 12:49:22,650 | views | post | DEBUG | POST request for ingredients: 
+2016-06-02 12:49:22,651 | views | post | DEBUG | Incoming data: {u'department': {u'id': 2, u'name': u'Meat'}, u'name': u'ground pork'} 
+2016-06-02 12:49:22,664 | views | index | DEBUG | GET request for all ingredients 
+2016-06-02 12:49:22,667 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 12:49:22,709 | views | delete | DEBUG | DELETE request for ingredients 1: 
+2016-06-02 12:49:22,716 | views | get | DEBUG | GET request for ingredients: id: 1 
+2016-06-02 12:49:22,719 | views | get | DEBUG | 404 Error.  No ingredients found with id 1. 
+2016-06-02 12:49:22,747 | views | index | DEBUG | GET request for all ingredients 
+2016-06-02 12:49:22,750 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 12:49:22,819 | views | get | DEBUG | GET request for ingredients: id: 15 
+2016-06-02 12:49:22,822 | views | get | DEBUG | 404 Error.  No ingredients found with id 15. 
+2016-06-02 12:49:22,851 | views | get | DEBUG | GET request for ingredients: id: 1 
+2016-06-02 12:49:22,855 | views | get | DEBUG | ingredients id:1 found. 
+2016-06-02 12:49:22,891 | views | put | DEBUG | PUT request for ingredients: 
+2016-06-02 12:49:22,894 | views | put | DEBUG | Incoming data: {u'department': {u'name': u'Meat', u'id': 3}} 
+2016-06-02 12:49:22,933 | views | put | DEBUG | PUT request for ingredients: 
+2016-06-02 12:49:22,936 | views | put | DEBUG | Incoming data: {u'name': u'watermelon'} 
+2016-06-02 12:49:22,970 | views | post | DEBUG | POST request for recipes: 
+2016-06-02 12:49:22,973 | views | post | DEBUG | Incoming data: {u'rating': 5, u'notes': [{u'note': u'Dont forget the liver'}, {u'note': u'and fish sauce'}], u'steps': [{u'step': u'Combine meat, seasonings', u'order': 1}, {u'step': u'Shape into loaf pan', u'order': 2}, {u'step': u'Bake for 1 hour', u'order': 3}], u'name': u'Meatloaf'} 
+2016-06-02 12:49:23,020 | views | post | DEBUG | POST request for recipes: 
+2016-06-02 12:49:23,023 | views | post | DEBUG | Incoming data: {u'rating': 5, u'notes': [{u'note': u'use old el paso'}], u'steps': [{u'step': u'brown beef', u'order': 1}, {u'step': u'add seasoning', u'order': 2}, {u'step': u'cook unitl done', u'order': 3}], u'name': u'Burrito'} 
+2016-06-02 12:49:23,040 | views | index | DEBUG | GET request for all recipes 
+2016-06-02 12:49:23,042 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 12:49:23,102 | views | delete | DEBUG | DELETE request for recipes 1: 
+2016-06-02 12:49:23,115 | views | get | DEBUG | GET request for recipes: id: 1 
+2016-06-02 12:49:23,118 | views | get | DEBUG | 404 Error.  No recipes found with id 1. 
+2016-06-02 12:49:23,148 | views | index | DEBUG | GET request for all recipes 
+2016-06-02 12:49:23,150 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 12:49:23,267 | views | get | DEBUG | GET request for recipes: id: 15 
+2016-06-02 12:49:23,270 | views | get | DEBUG | 404 Error.  No recipes found with id 15. 
+2016-06-02 12:49:23,299 | views | get | DEBUG | GET request for recipes: id: 1 
+2016-06-02 12:49:23,302 | views | get | DEBUG | recipes id:1 found. 
+2016-06-02 12:49:23,390 | views | put | DEBUG | PUT request for recipes: 
+2016-06-02 12:49:23,391 | views | put | DEBUG | Incoming data: {u'name': u'Lasagna'} 
+2016-06-02 12:49:23,444 | views | post | DEBUG | POST request for units: 
+2016-06-02 12:49:23,447 | views | post | DEBUG | Incoming data: {u'name': u'pound'} 
+2016-06-02 12:49:23,454 | views | index | DEBUG | GET request for all units 
+2016-06-02 12:49:23,457 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 12:49:23,492 | views | delete | DEBUG | DELETE request for units 1: 
+2016-06-02 12:49:23,499 | views | get | DEBUG | GET request for units: id: 1 
+2016-06-02 12:49:23,502 | views | get | DEBUG | 404 Error.  No units found with id 1. 
+2016-06-02 12:49:23,530 | views | index | DEBUG | GET request for all units 
+2016-06-02 12:49:23,533 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 12:49:23,585 | views | get | DEBUG | GET request for units: id: 15 
+2016-06-02 12:49:23,588 | views | get | DEBUG | 404 Error.  No units found with id 15. 
+2016-06-02 12:49:23,617 | views | get | DEBUG | GET request for units: id: 1 
+2016-06-02 12:49:23,621 | views | get | DEBUG | units id:1 found. 
+2016-06-02 12:49:23,654 | views | put | DEBUG | PUT request for units: 
+2016-06-02 12:49:23,655 | views | put | DEBUG | Incoming data: {u'name': u'liter'} 
+2016-06-02 12:55:08,858 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 12:55:08,861 | models | <module> | DEBUG | loading models.py 
+2016-06-02 12:55:08,954 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-02 12:55:08,987 | views | <module> | DEBUG | loading views.py 
+2016-06-02 12:55:09,101 | views | post | DEBUG | POST request for departments: 
+2016-06-02 12:55:09,104 | views | post | DEBUG | Incoming data: {u'name': u'hba'} 
+2016-06-02 12:55:09,122 | views | index | DEBUG | GET request for all departments 
+2016-06-02 12:55:09,125 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 12:55:09,163 | views | delete | DEBUG | DELETE request for departments 1: 
+2016-06-02 12:55:09,171 | views | get | DEBUG | GET request for departments: id: 1 
+2016-06-02 12:55:09,174 | views | get | DEBUG | 404 Error.  No departments found with id 1. 
+2016-06-02 12:55:09,203 | views | index | DEBUG | GET request for all departments 
+2016-06-02 12:55:09,207 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 12:55:09,263 | views | get | DEBUG | GET request for departments: id: 15 
+2016-06-02 12:55:09,267 | views | get | DEBUG | 404 Error.  No departments found with id 15. 
+2016-06-02 12:55:09,299 | views | get | DEBUG | GET request for departments: id: 1 
+2016-06-02 12:55:09,303 | views | get | DEBUG | departments id:1 found. 
+2016-06-02 12:55:09,345 | views | index | DEBUG | GET request for all departments 
+2016-06-02 12:55:09,348 | views | index | DEBUG | Arguments passed in:  {'q': u'asdf', 'sort': u'jkll'} 
+2016-06-02 12:55:09,385 | views | put | DEBUG | PUT request for departments: 
+2016-06-02 12:55:09,388 | views | put | DEBUG | Incoming data: {u'name': u'floral'} 
+2016-06-02 12:55:09,391 | models | update_from | DEBUG | Updating Produce from floral 
+2016-06-02 12:55:09,428 | views | post | DEBUG | POST request for ingredients: 
+2016-06-02 12:55:09,431 | views | post | DEBUG | Incoming data: {u'name': u'ground pork'} 
+2016-06-02 12:55:09,434 | views | post | DEBUG | Error loading schema ingredients: {'department': [u'Missing data for required field.']} 
+2016-06-02 12:55:09,464 | views | post | DEBUG | POST request for ingredients: 
+2016-06-02 12:55:09,467 | views | post | DEBUG | Incoming data: {u'department': {u'id': 2, u'name': u'Meat'}, u'name': u'ground pork'} 
+2016-06-02 12:55:09,480 | views | index | DEBUG | GET request for all ingredients 
+2016-06-02 12:55:09,483 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 12:55:09,525 | views | delete | DEBUG | DELETE request for ingredients 1: 
+2016-06-02 12:55:09,532 | views | get | DEBUG | GET request for ingredients: id: 1 
+2016-06-02 12:55:09,536 | views | get | DEBUG | 404 Error.  No ingredients found with id 1. 
+2016-06-02 12:55:09,568 | views | index | DEBUG | GET request for all ingredients 
+2016-06-02 12:55:09,569 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 12:55:09,648 | views | get | DEBUG | GET request for ingredients: id: 15 
+2016-06-02 12:55:09,651 | views | get | DEBUG | 404 Error.  No ingredients found with id 15. 
+2016-06-02 12:55:09,684 | views | get | DEBUG | GET request for ingredients: id: 1 
+2016-06-02 12:55:09,688 | views | get | DEBUG | ingredients id:1 found. 
+2016-06-02 12:55:09,730 | views | put | DEBUG | PUT request for ingredients: 
+2016-06-02 12:55:09,733 | views | put | DEBUG | Incoming data: {u'department': {u'name': u'Meat', u'id': 3}} 
+2016-06-02 12:55:09,773 | views | put | DEBUG | PUT request for ingredients: 
+2016-06-02 12:55:09,776 | views | put | DEBUG | Incoming data: {u'name': u'watermelon'} 
+2016-06-02 12:55:09,812 | views | post | DEBUG | POST request for recipes: 
+2016-06-02 12:55:09,813 | views | post | DEBUG | Incoming data: {u'rating': 5, u'notes': [{u'note': u'Dont forget the liver'}, {u'note': u'and fish sauce'}], u'steps': [{u'step': u'Combine meat, seasonings', u'order': 1}, {u'step': u'Shape into loaf pan', u'order': 2}, {u'step': u'Bake for 1 hour', u'order': 3}], u'name': u'Meatloaf'} 
+2016-06-02 12:55:09,862 | views | post | DEBUG | POST request for recipes: 
+2016-06-02 12:55:09,865 | views | post | DEBUG | Incoming data: {u'rating': 5, u'notes': [{u'note': u'use old el paso'}], u'steps': [{u'step': u'brown beef', u'order': 1}, {u'step': u'add seasoning', u'order': 2}, {u'step': u'cook unitl done', u'order': 3}], u'name': u'Burrito'} 
+2016-06-02 12:55:09,884 | views | index | DEBUG | GET request for all recipes 
+2016-06-02 12:55:09,887 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 12:55:09,948 | views | delete | DEBUG | DELETE request for recipes 1: 
+2016-06-02 12:55:09,960 | views | get | DEBUG | GET request for recipes: id: 1 
+2016-06-02 12:55:09,964 | views | get | DEBUG | 404 Error.  No recipes found with id 1. 
+2016-06-02 12:55:09,994 | views | index | DEBUG | GET request for all recipes 
+2016-06-02 12:55:09,996 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 12:55:10,119 | views | get | DEBUG | GET request for recipes: id: 15 
+2016-06-02 12:55:10,124 | views | get | DEBUG | 404 Error.  No recipes found with id 15. 
+2016-06-02 12:55:10,154 | views | get | DEBUG | GET request for recipes: id: 1 
+2016-06-02 12:55:10,158 | views | get | DEBUG | recipes id:1 found. 
+2016-06-02 12:55:10,255 | views | put | DEBUG | PUT request for recipes: 
+2016-06-02 12:55:10,257 | views | put | DEBUG | Incoming data: {u'name': u'Lasagna'} 
+2016-06-02 12:55:10,312 | views | post | DEBUG | POST request for units: 
+2016-06-02 12:55:10,315 | views | post | DEBUG | Incoming data: {u'name': u'pound'} 
+2016-06-02 12:55:10,323 | views | index | DEBUG | GET request for all units 
+2016-06-02 12:55:10,325 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 12:55:10,364 | views | delete | DEBUG | DELETE request for units 1: 
+2016-06-02 12:55:10,371 | views | get | DEBUG | GET request for units: id: 1 
+2016-06-02 12:55:10,375 | views | get | DEBUG | 404 Error.  No units found with id 1. 
+2016-06-02 12:55:10,407 | views | index | DEBUG | GET request for all units 
+2016-06-02 12:55:10,411 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 12:55:10,466 | views | get | DEBUG | GET request for units: id: 15 
+2016-06-02 12:55:10,470 | views | get | DEBUG | 404 Error.  No units found with id 15. 
+2016-06-02 12:55:10,500 | views | get | DEBUG | GET request for units: id: 1 
+2016-06-02 12:55:10,503 | views | get | DEBUG | units id:1 found. 
+2016-06-02 12:55:10,539 | views | put | DEBUG | PUT request for units: 
+2016-06-02 12:55:10,542 | views | put | DEBUG | Incoming data: {u'name': u'liter'} 
+2016-06-02 12:58:22,716 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 12:58:22,720 | models | <module> | DEBUG | loading models.py 
+2016-06-02 12:58:22,818 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-02 12:58:22,851 | views | <module> | DEBUG | loading views.py 
+2016-06-02 12:58:22,970 | views | post | DEBUG | POST request for departments: 
+2016-06-02 12:58:22,973 | views | post | DEBUG | Incoming data: {u'name': u'hba'} 
+2016-06-02 12:58:22,992 | views | index | DEBUG | GET request for all departments 
+2016-06-02 12:58:22,994 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 12:58:23,032 | views | delete | DEBUG | DELETE request for departments 1: 
+2016-06-02 12:58:23,039 | views | get | DEBUG | GET request for departments: id: 1 
+2016-06-02 12:58:23,042 | views | get | DEBUG | 404 Error.  No departments found with id 1. 
+2016-06-02 12:58:23,072 | views | index | DEBUG | GET request for all departments 
+2016-06-02 12:58:23,075 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 12:58:23,125 | views | get | DEBUG | GET request for departments: id: 15 
+2016-06-02 12:58:23,128 | views | get | DEBUG | 404 Error.  No departments found with id 15. 
+2016-06-02 12:58:23,161 | views | get | DEBUG | GET request for departments: id: 1 
+2016-06-02 12:58:23,191 | views | get | DEBUG | departments id:1 found. 
+2016-06-02 12:58:42,792 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 12:58:42,796 | models | <module> | DEBUG | loading models.py 
+2016-06-02 12:58:42,894 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-02 12:58:42,927 | views | <module> | DEBUG | loading views.py 
+2016-06-02 12:58:43,062 | views | post | DEBUG | POST request for departments: 
+2016-06-02 12:58:43,065 | views | post | DEBUG | Incoming data: {u'name': u'hba'} 
+2016-06-02 12:58:43,085 | views | index | DEBUG | GET request for all departments 
+2016-06-02 12:58:43,088 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 12:58:43,124 | views | delete | DEBUG | DELETE request for departments 1: 
+2016-06-02 12:58:43,131 | views | get | DEBUG | GET request for departments: id: 1 
+2016-06-02 12:58:43,134 | views | get | DEBUG | 404 Error.  No departments found with id 1. 
+2016-06-02 12:58:43,164 | views | index | DEBUG | GET request for all departments 
+2016-06-02 12:58:43,167 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 12:58:43,223 | views | get | DEBUG | GET request for departments: id: 15 
+2016-06-02 12:58:43,226 | views | get | DEBUG | 404 Error.  No departments found with id 15. 
+2016-06-02 12:58:43,253 | views | get | DEBUG | GET request for departments: id: 1 
+2016-06-02 12:58:43,256 | views | get | DEBUG | departments id:1 found. 
+2016-06-02 12:58:43,296 | views | index | DEBUG | GET request for all departments 
+2016-06-02 12:58:43,299 | views | index | DEBUG | Arguments passed in:  {'q': u'asdf', 'sort': u'jkll'} 
+2016-06-02 12:58:43,334 | views | put | DEBUG | PUT request for departments: 
+2016-06-02 12:58:43,336 | views | put | DEBUG | Incoming data: {u'name': u'floral'} 
+2016-06-02 12:58:43,339 | models | update_from | DEBUG | Updating Produce from floral 
+2016-06-02 12:58:43,374 | views | post | DEBUG | POST request for ingredients: 
+2016-06-02 12:58:43,377 | views | post | DEBUG | Incoming data: {u'name': u'ground pork'} 
+2016-06-02 12:58:43,378 | views | post | DEBUG | Error loading schema ingredients: {'department': [u'Missing data for required field.']} 
+2016-06-02 12:58:43,407 | views | post | DEBUG | POST request for ingredients: 
+2016-06-02 12:58:43,410 | views | post | DEBUG | Incoming data: {u'department': {u'id': 2, u'name': u'Meat'}, u'name': u'ground pork'} 
+2016-06-02 12:58:43,421 | views | index | DEBUG | GET request for all ingredients 
+2016-06-02 12:58:43,424 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 12:58:43,463 | views | delete | DEBUG | DELETE request for ingredients 1: 
+2016-06-02 12:58:43,471 | views | get | DEBUG | GET request for ingredients: id: 1 
+2016-06-02 12:58:43,474 | views | get | DEBUG | 404 Error.  No ingredients found with id 1. 
+2016-06-02 12:58:43,503 | views | index | DEBUG | GET request for all ingredients 
+2016-06-02 12:58:43,506 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 12:58:43,575 | views | get | DEBUG | GET request for ingredients: id: 15 
+2016-06-02 12:58:43,578 | views | get | DEBUG | 404 Error.  No ingredients found with id 15. 
+2016-06-02 12:58:43,607 | views | get | DEBUG | GET request for ingredients: id: 1 
+2016-06-02 12:58:43,611 | views | get | DEBUG | ingredients id:1 found. 
+2016-06-02 12:58:43,648 | views | put | DEBUG | PUT request for ingredients: 
+2016-06-02 12:58:43,651 | views | put | DEBUG | Incoming data: {u'department': {u'name': u'Meat', u'id': 3}} 
+2016-06-02 12:58:43,690 | views | put | DEBUG | PUT request for ingredients: 
+2016-06-02 12:58:43,694 | views | put | DEBUG | Incoming data: {u'name': u'watermelon'} 
+2016-06-02 12:58:43,729 | views | post | DEBUG | POST request for recipes: 
+2016-06-02 12:58:43,730 | views | post | DEBUG | Incoming data: {u'rating': 5, u'notes': [{u'note': u'Dont forget the liver'}, {u'note': u'and fish sauce'}], u'steps': [{u'step': u'Combine meat, seasonings', u'order': 1}, {u'step': u'Shape into loaf pan', u'order': 2}, {u'step': u'Bake for 1 hour', u'order': 3}], u'name': u'Meatloaf'} 
+2016-06-02 12:58:43,780 | views | post | DEBUG | POST request for recipes: 
+2016-06-02 12:58:43,782 | views | post | DEBUG | Incoming data: {u'rating': 5, u'notes': [{u'note': u'use old el paso'}], u'steps': [{u'step': u'brown beef', u'order': 1}, {u'step': u'add seasoning', u'order': 2}, {u'step': u'cook unitl done', u'order': 3}], u'name': u'Burrito'} 
+2016-06-02 12:58:43,801 | views | index | DEBUG | GET request for all recipes 
+2016-06-02 12:58:43,803 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 12:58:43,865 | views | delete | DEBUG | DELETE request for recipes 1: 
+2016-06-02 12:58:43,877 | views | get | DEBUG | GET request for recipes: id: 1 
+2016-06-02 12:58:43,881 | views | get | DEBUG | 404 Error.  No recipes found with id 1. 
+2016-06-02 12:58:43,910 | views | index | DEBUG | GET request for all recipes 
+2016-06-02 12:58:43,911 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 12:58:44,029 | views | get | DEBUG | GET request for recipes: id: 15 
+2016-06-02 12:58:44,032 | views | get | DEBUG | 404 Error.  No recipes found with id 15. 
+2016-06-02 12:58:44,061 | views | get | DEBUG | GET request for recipes: id: 1 
+2016-06-02 12:58:44,065 | views | get | DEBUG | recipes id:1 found. 
+2016-06-02 12:58:44,151 | views | put | DEBUG | PUT request for recipes: 
+2016-06-02 12:58:44,154 | views | put | DEBUG | Incoming data: {u'name': u'Lasagna'} 
+2016-06-02 12:58:44,204 | views | post | DEBUG | POST request for units: 
+2016-06-02 12:58:44,207 | views | post | DEBUG | Incoming data: {u'name': u'pound'} 
+2016-06-02 12:58:44,216 | views | index | DEBUG | GET request for all units 
+2016-06-02 12:58:44,217 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 12:58:44,253 | views | delete | DEBUG | DELETE request for units 1: 
+2016-06-02 12:58:44,259 | views | get | DEBUG | GET request for units: id: 1 
+2016-06-02 12:58:44,263 | views | get | DEBUG | 404 Error.  No units found with id 1. 
+2016-06-02 12:58:44,292 | views | index | DEBUG | GET request for all units 
+2016-06-02 12:58:44,293 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 12:58:44,345 | views | get | DEBUG | GET request for units: id: 15 
+2016-06-02 12:58:44,348 | views | get | DEBUG | 404 Error.  No units found with id 15. 
+2016-06-02 12:58:44,378 | views | get | DEBUG | GET request for units: id: 1 
+2016-06-02 12:58:44,381 | views | get | DEBUG | units id:1 found. 
+2016-06-02 12:58:44,414 | views | put | DEBUG | PUT request for units: 
+2016-06-02 12:58:44,415 | views | put | DEBUG | Incoming data: {u'name': u'liter'} 
+2016-06-02 13:08:24,072 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 13:08:24,081 | models | <module> | DEBUG | loading models.py 
+2016-06-02 13:08:24,190 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-02 13:08:24,234 | views | <module> | DEBUG | loading views.py 
+2016-06-02 13:08:24,367 | views | post | DEBUG | POST request for departments: 
+2016-06-02 13:08:24,368 | views | post | DEBUG | Incoming data: {u'name': u'hba'} 
+2016-06-02 13:08:24,388 | views | index | DEBUG | GET request for all departments 
+2016-06-02 13:08:24,391 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 13:08:24,430 | views | delete | DEBUG | DELETE request for departments 1: 
+2016-06-02 13:08:24,438 | views | get | DEBUG | GET request for departments: id: 1 
+2016-06-02 13:08:24,443 | views | get | DEBUG | 404 Error.  No departments found with id 1. 
+2016-06-02 13:08:24,476 | views | index | DEBUG | GET request for all departments 
+2016-06-02 13:08:24,477 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 13:08:24,538 | views | get | DEBUG | GET request for departments: id: 15 
+2016-06-02 13:08:24,540 | views | get | DEBUG | 404 Error.  No departments found with id 15. 
+2016-06-02 13:08:24,572 | views | get | DEBUG | GET request for departments: id: 1 
+2016-06-02 13:08:24,575 | views | get | DEBUG | departments id:1 found. 
+2016-06-02 13:08:24,618 | views | index | DEBUG | GET request for all departments 
+2016-06-02 13:08:24,621 | views | index | DEBUG | Arguments passed in:  {'q': u'asdf', 'sort': u'jkll'} 
+2016-06-02 13:08:24,661 | views | put | DEBUG | PUT request for departments: 
+2016-06-02 13:08:24,664 | views | put | DEBUG | Incoming data: {u'name': u'floral'} 
+2016-06-02 13:08:24,667 | models | update_from | DEBUG | Updating Produce from floral 
+2016-06-02 13:08:24,706 | views | post | DEBUG | POST request for ingredients: 
+2016-06-02 13:08:24,707 | views | post | DEBUG | Incoming data: {u'name': u'ground pork'} 
+2016-06-02 13:08:24,710 | views | post | DEBUG | Error loading schema ingredients: {'department': [u'Missing data for required field.']} 
+2016-06-02 13:08:24,743 | views | post | DEBUG | POST request for ingredients: 
+2016-06-02 13:08:24,744 | views | post | DEBUG | Incoming data: {u'department': {u'id': 2, u'name': u'Meat'}, u'name': u'ground pork'} 
+2016-06-02 13:08:24,759 | views | index | DEBUG | GET request for all ingredients 
+2016-06-02 13:08:24,760 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 13:08:24,802 | views | delete | DEBUG | DELETE request for ingredients 1: 
+2016-06-02 13:08:24,811 | views | get | DEBUG | GET request for ingredients: id: 1 
+2016-06-02 13:08:24,813 | views | get | DEBUG | 404 Error.  No ingredients found with id 1. 
+2016-06-02 13:08:24,844 | views | index | DEBUG | GET request for all ingredients 
+2016-06-02 13:08:24,846 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 13:08:24,915 | views | get | DEBUG | GET request for ingredients: id: 15 
+2016-06-02 13:08:24,920 | views | get | DEBUG | 404 Error.  No ingredients found with id 15. 
+2016-06-02 13:08:24,948 | views | get | DEBUG | GET request for ingredients: id: 1 
+2016-06-02 13:08:24,953 | views | get | DEBUG | ingredients id:1 found. 
+2016-06-02 13:08:24,990 | views | put | DEBUG | PUT request for ingredients: 
+2016-06-02 13:08:24,993 | views | put | DEBUG | Incoming data: {u'department': {u'name': u'Meat', u'id': 3}} 
+2016-06-02 13:08:25,032 | views | put | DEBUG | PUT request for ingredients: 
+2016-06-02 13:08:25,036 | views | put | DEBUG | Incoming data: {u'name': u'watermelon'} 
+2016-06-02 13:08:25,072 | views | post | DEBUG | POST request for recipes: 
+2016-06-02 13:08:25,075 | views | post | DEBUG | Incoming data: {u'rating': 5, u'notes': [{u'note': u'Dont forget the liver'}, {u'note': u'and fish sauce'}], u'steps': [{u'step': u'Combine meat, seasonings', u'order': 1}, {u'step': u'Shape into loaf pan', u'order': 2}, {u'step': u'Bake for 1 hour', u'order': 3}], u'name': u'Meatloaf'} 
+2016-06-02 13:08:25,124 | views | post | DEBUG | POST request for recipes: 
+2016-06-02 13:08:25,127 | views | post | DEBUG | Incoming data: {u'rating': 5, u'notes': [{u'note': u'use old el paso'}], u'steps': [{u'step': u'brown beef', u'order': 1}, {u'step': u'add seasoning', u'order': 2}, {u'step': u'cook unitl done', u'order': 3}], u'name': u'Burrito'} 
+2016-06-02 13:08:25,144 | views | index | DEBUG | GET request for all recipes 
+2016-06-02 13:08:25,148 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 13:08:25,209 | views | delete | DEBUG | DELETE request for recipes 1: 
+2016-06-02 13:08:25,220 | views | get | DEBUG | GET request for recipes: id: 1 
+2016-06-02 13:08:25,223 | views | get | DEBUG | 404 Error.  No recipes found with id 1. 
+2016-06-02 13:08:25,253 | views | index | DEBUG | GET request for all recipes 
+2016-06-02 13:08:25,256 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 13:08:25,385 | views | get | DEBUG | GET request for recipes: id: 15 
+2016-06-02 13:08:25,390 | views | get | DEBUG | 404 Error.  No recipes found with id 15. 
+2016-06-02 13:08:25,417 | views | get | DEBUG | GET request for recipes: id: 1 
+2016-06-02 13:08:25,421 | views | get | DEBUG | recipes id:1 found. 
+2016-06-02 13:08:25,507 | views | put | DEBUG | PUT request for recipes: 
+2016-06-02 13:08:25,509 | views | put | DEBUG | Incoming data: {u'name': u'Lasagna'} 
+2016-06-02 13:08:25,562 | views | post | DEBUG | POST request for units: 
+2016-06-02 13:08:25,563 | views | post | DEBUG | Incoming data: {u'name': u'pound'} 
+2016-06-02 13:08:25,572 | views | index | DEBUG | GET request for all units 
+2016-06-02 13:08:25,575 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 13:08:25,609 | views | delete | DEBUG | DELETE request for units 1: 
+2016-06-02 13:08:25,617 | views | get | DEBUG | GET request for units: id: 1 
+2016-06-02 13:08:25,619 | views | get | DEBUG | 404 Error.  No units found with id 1. 
+2016-06-02 13:08:25,650 | views | index | DEBUG | GET request for all units 
+2016-06-02 13:08:25,651 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 13:08:25,706 | views | get | DEBUG | GET request for units: id: 15 
+2016-06-02 13:08:25,709 | views | get | DEBUG | 404 Error.  No units found with id 15. 
+2016-06-02 13:08:25,737 | views | get | DEBUG | GET request for units: id: 1 
+2016-06-02 13:08:25,740 | views | get | DEBUG | units id:1 found. 
+2016-06-02 13:08:25,773 | views | put | DEBUG | PUT request for units: 
+2016-06-02 13:08:25,776 | views | put | DEBUG | Incoming data: {u'name': u'liter'} 
+2016-06-02 13:09:57,644 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 13:09:57,653 | models | <module> | DEBUG | loading models.py 
+2016-06-02 13:09:57,752 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-02 13:09:57,783 | views | <module> | DEBUG | loading views.py 
+2016-06-02 13:09:57,895 | views | post | DEBUG | POST request for departments: 
+2016-06-02 13:09:57,898 | views | post | DEBUG | Incoming data: {u'name': u'hba'} 
+2016-06-02 13:09:57,917 | views | index | DEBUG | GET request for all departments 
+2016-06-02 13:09:57,920 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 13:09:57,959 | views | delete | DEBUG | DELETE request for departments 1: 
+2016-06-02 13:09:57,967 | views | get | DEBUG | GET request for departments: id: 1 
+2016-06-02 13:09:57,970 | views | page_not_found | ERROR | custom 404 error function 
+2016-06-02 13:09:58,003 | views | index | DEBUG | GET request for all departments 
+2016-06-02 13:09:58,006 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 13:09:58,081 | views | get | DEBUG | GET request for departments: id: 15 
+2016-06-02 13:09:58,089 | views | page_not_found | ERROR | custom 404 error function 
+2016-06-02 13:09:58,121 | views | get | DEBUG | GET request for departments: id: 1 
+2016-06-02 13:09:58,125 | views | get | DEBUG | departments id:1 found. 
+2016-06-02 13:09:58,167 | views | index | DEBUG | GET request for all departments 
+2016-06-02 13:09:58,171 | views | index | DEBUG | Arguments passed in:  {'q': u'asdf', 'sort': u'jkll'} 
+2016-06-02 13:09:58,210 | views | put | DEBUG | PUT request for departments: 
+2016-06-02 13:09:58,211 | views | put | DEBUG | Incoming data: {u'name': u'floral'} 
+2016-06-02 13:09:58,217 | models | update_from | DEBUG | Updating Produce from floral 
+2016-06-02 13:09:58,253 | views | post | DEBUG | POST request for ingredients: 
+2016-06-02 13:09:58,256 | views | post | DEBUG | Incoming data: {u'name': u'ground pork'} 
+2016-06-02 13:09:58,259 | views | post | DEBUG | Error loading schema ingredients: {'department': [u'Missing data for required field.']} 
+2016-06-02 13:09:58,290 | views | post | DEBUG | POST request for ingredients: 
+2016-06-02 13:09:58,299 | views | post | DEBUG | Incoming data: {u'department': {u'id': 2, u'name': u'Meat'}, u'name': u'ground pork'} 
+2016-06-02 13:09:58,318 | views | index | DEBUG | GET request for all ingredients 
+2016-06-02 13:09:58,325 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 13:09:58,375 | views | delete | DEBUG | DELETE request for ingredients 1: 
+2016-06-02 13:09:58,384 | views | get | DEBUG | GET request for ingredients: id: 1 
+2016-06-02 13:09:58,390 | views | page_not_found | ERROR | custom 404 error function 
+2016-06-02 13:09:58,421 | views | index | DEBUG | GET request for all ingredients 
+2016-06-02 13:09:58,424 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 13:09:58,505 | views | get | DEBUG | GET request for ingredients: id: 15 
+2016-06-02 13:09:58,509 | views | page_not_found | ERROR | custom 404 error function 
+2016-06-02 13:09:58,540 | views | get | DEBUG | GET request for ingredients: id: 1 
+2016-06-02 13:09:58,545 | views | get | DEBUG | ingredients id:1 found. 
+2016-06-02 13:09:58,586 | views | put | DEBUG | PUT request for ingredients: 
+2016-06-02 13:09:58,589 | views | put | DEBUG | Incoming data: {u'department': {u'name': u'Meat', u'id': 3}} 
+2016-06-02 13:09:58,631 | views | put | DEBUG | PUT request for ingredients: 
+2016-06-02 13:09:58,634 | views | put | DEBUG | Incoming data: {u'name': u'watermelon'} 
+2016-06-02 13:09:58,674 | views | post | DEBUG | POST request for recipes: 
+2016-06-02 13:09:58,677 | views | post | DEBUG | Incoming data: {u'rating': 5, u'notes': [{u'note': u'Dont forget the liver'}, {u'note': u'and fish sauce'}], u'steps': [{u'step': u'Combine meat, seasonings', u'order': 1}, {u'step': u'Shape into loaf pan', u'order': 2}, {u'step': u'Bake for 1 hour', u'order': 3}], u'name': u'Meatloaf'} 
+2016-06-02 13:09:58,730 | views | post | DEBUG | POST request for recipes: 
+2016-06-02 13:09:58,732 | views | post | DEBUG | Incoming data: {u'rating': 5, u'notes': [{u'note': u'use old el paso'}], u'steps': [{u'step': u'brown beef', u'order': 1}, {u'step': u'add seasoning', u'order': 2}, {u'step': u'cook unitl done', u'order': 3}], u'name': u'Burrito'} 
+2016-06-02 13:09:58,752 | views | index | DEBUG | GET request for all recipes 
+2016-06-02 13:09:58,753 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 13:09:58,819 | views | delete | DEBUG | DELETE request for recipes 1: 
+2016-06-02 13:09:58,831 | views | get | DEBUG | GET request for recipes: id: 1 
+2016-06-02 13:09:58,835 | views | page_not_found | ERROR | custom 404 error function 
+2016-06-02 13:09:58,864 | views | index | DEBUG | GET request for all recipes 
+2016-06-02 13:09:58,867 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 13:09:58,987 | views | get | DEBUG | GET request for recipes: id: 15 
+2016-06-02 13:09:58,992 | views | page_not_found | ERROR | custom 404 error function 
+2016-06-02 13:09:59,019 | views | get | DEBUG | GET request for recipes: id: 1 
+2016-06-02 13:09:59,023 | views | get | DEBUG | recipes id:1 found. 
+2016-06-02 13:09:59,112 | views | put | DEBUG | PUT request for recipes: 
+2016-06-02 13:09:59,115 | views | put | DEBUG | Incoming data: {u'name': u'Lasagna'} 
+2016-06-02 13:09:59,170 | views | post | DEBUG | POST request for units: 
+2016-06-02 13:09:59,171 | views | post | DEBUG | Incoming data: {u'name': u'pound'} 
+2016-06-02 13:09:59,180 | views | index | DEBUG | GET request for all units 
+2016-06-02 13:09:59,183 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 13:09:59,220 | views | delete | DEBUG | DELETE request for units 1: 
+2016-06-02 13:09:59,226 | views | get | DEBUG | GET request for units: id: 1 
+2016-06-02 13:09:59,230 | views | page_not_found | ERROR | custom 404 error function 
+2016-06-02 13:09:59,263 | views | index | DEBUG | GET request for all units 
+2016-06-02 13:09:59,266 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 13:09:59,322 | views | get | DEBUG | GET request for units: id: 15 
+2016-06-02 13:09:59,326 | views | page_not_found | ERROR | custom 404 error function 
+2016-06-02 13:09:59,357 | views | get | DEBUG | GET request for units: id: 1 
+2016-06-02 13:09:59,361 | views | get | DEBUG | units id:1 found. 
+2016-06-02 13:09:59,397 | views | put | DEBUG | PUT request for units: 
+2016-06-02 13:09:59,398 | views | put | DEBUG | Incoming data: {u'name': u'liter'} 
+2016-06-02 13:10:33,262 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 13:10:33,269 | models | <module> | DEBUG | loading models.py 
+2016-06-02 13:10:33,367 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-02 13:10:33,398 | views | <module> | DEBUG | loading views.py 
+2016-06-02 13:10:33,522 | views | post | DEBUG | POST request for departments: 
+2016-06-02 13:10:33,525 | views | post | DEBUG | Incoming data: {u'name': u'hba'} 
+2016-06-02 13:10:33,543 | views | index | DEBUG | GET request for all departments 
+2016-06-02 13:10:33,546 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 13:10:33,584 | views | delete | DEBUG | DELETE request for departments 1: 
+2016-06-02 13:10:33,592 | views | get | DEBUG | GET request for departments: id: 1 
+2016-06-02 13:10:33,595 | views | get | DEBUG | 404 Error.  No departments found with id 1. 
+2016-06-02 13:10:33,625 | views | index | DEBUG | GET request for all departments 
+2016-06-02 13:10:33,627 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 13:10:33,690 | views | get | DEBUG | GET request for departments: id: 15 
+2016-06-02 13:10:33,694 | views | get | DEBUG | 404 Error.  No departments found with id 15. 
+2016-06-02 13:10:33,723 | views | get | DEBUG | GET request for departments: id: 1 
+2016-06-02 13:10:33,727 | views | get | DEBUG | departments id:1 found. 
+2016-06-02 13:10:33,769 | views | index | DEBUG | GET request for all departments 
+2016-06-02 13:10:33,770 | views | index | DEBUG | Arguments passed in:  {'q': u'asdf', 'sort': u'jkll'} 
+2016-06-02 13:10:33,806 | views | put | DEBUG | PUT request for departments: 
+2016-06-02 13:10:33,809 | views | put | DEBUG | Incoming data: {u'name': u'floral'} 
+2016-06-02 13:10:33,812 | models | update_from | DEBUG | Updating Produce from floral 
+2016-06-02 13:10:33,848 | views | post | DEBUG | POST request for ingredients: 
+2016-06-02 13:10:33,851 | views | post | DEBUG | Incoming data: {u'name': u'ground pork'} 
+2016-06-02 13:10:33,852 | views | post | DEBUG | Error loading schema ingredients: {'department': [u'Missing data for required field.']} 
+2016-06-02 13:10:33,881 | views | post | DEBUG | POST request for ingredients: 
+2016-06-02 13:10:33,884 | views | post | DEBUG | Incoming data: {u'department': {u'id': 2, u'name': u'Meat'}, u'name': u'ground pork'} 
+2016-06-02 13:10:33,897 | views | index | DEBUG | GET request for all ingredients 
+2016-06-02 13:10:33,898 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 13:10:33,938 | views | delete | DEBUG | DELETE request for ingredients 1: 
+2016-06-02 13:10:33,947 | views | get | DEBUG | GET request for ingredients: id: 1 
+2016-06-02 13:10:33,950 | views | get | DEBUG | 404 Error.  No ingredients found with id 1. 
+2016-06-02 13:10:33,979 | views | index | DEBUG | GET request for all ingredients 
+2016-06-02 13:10:33,982 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 13:10:34,052 | views | get | DEBUG | GET request for ingredients: id: 15 
+2016-06-02 13:10:34,055 | views | get | DEBUG | 404 Error.  No ingredients found with id 15. 
+2016-06-02 13:10:34,084 | views | get | DEBUG | GET request for ingredients: id: 1 
+2016-06-02 13:10:34,088 | views | get | DEBUG | ingredients id:1 found. 
+2016-06-02 13:10:34,125 | views | put | DEBUG | PUT request for ingredients: 
+2016-06-02 13:10:34,128 | views | put | DEBUG | Incoming data: {u'department': {u'name': u'Meat', u'id': 3}} 
+2016-06-02 13:10:34,167 | views | put | DEBUG | PUT request for ingredients: 
+2016-06-02 13:10:34,170 | views | put | DEBUG | Incoming data: {u'name': u'watermelon'} 
+2016-06-02 13:10:34,204 | views | post | DEBUG | POST request for recipes: 
+2016-06-02 13:10:34,207 | views | post | DEBUG | Incoming data: {u'rating': 5, u'notes': [{u'note': u'Dont forget the liver'}, {u'note': u'and fish sauce'}], u'steps': [{u'step': u'Combine meat, seasonings', u'order': 1}, {u'step': u'Shape into loaf pan', u'order': 2}, {u'step': u'Bake for 1 hour', u'order': 3}], u'name': u'Meatloaf'} 
+2016-06-02 13:10:34,255 | views | post | DEBUG | POST request for recipes: 
+2016-06-02 13:10:34,257 | views | post | DEBUG | Incoming data: {u'rating': 5, u'notes': [{u'note': u'use old el paso'}], u'steps': [{u'step': u'brown beef', u'order': 1}, {u'step': u'add seasoning', u'order': 2}, {u'step': u'cook unitl done', u'order': 3}], u'name': u'Burrito'} 
+2016-06-02 13:10:34,276 | views | index | DEBUG | GET request for all recipes 
+2016-06-02 13:10:34,279 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 13:10:34,338 | views | delete | DEBUG | DELETE request for recipes 1: 
+2016-06-02 13:10:34,349 | views | get | DEBUG | GET request for recipes: id: 1 
+2016-06-02 13:10:34,354 | views | get | DEBUG | 404 Error.  No recipes found with id 1. 
+2016-06-02 13:10:34,382 | views | index | DEBUG | GET request for all recipes 
+2016-06-02 13:10:34,384 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 13:10:34,503 | views | get | DEBUG | GET request for recipes: id: 15 
+2016-06-02 13:10:34,506 | views | get | DEBUG | 404 Error.  No recipes found with id 15. 
+2016-06-02 13:10:34,533 | views | get | DEBUG | GET request for recipes: id: 1 
+2016-06-02 13:10:34,538 | views | get | DEBUG | recipes id:1 found. 
+2016-06-02 13:10:34,625 | views | put | DEBUG | PUT request for recipes: 
+2016-06-02 13:10:34,628 | views | put | DEBUG | Incoming data: {u'name': u'Lasagna'} 
+2016-06-02 13:10:34,680 | views | post | DEBUG | POST request for units: 
+2016-06-02 13:10:34,683 | views | post | DEBUG | Incoming data: {u'name': u'pound'} 
+2016-06-02 13:10:34,690 | views | index | DEBUG | GET request for all units 
+2016-06-02 13:10:34,693 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 13:10:34,729 | views | delete | DEBUG | DELETE request for units 1: 
+2016-06-02 13:10:34,736 | views | get | DEBUG | GET request for units: id: 1 
+2016-06-02 13:10:34,739 | views | get | DEBUG | 404 Error.  No units found with id 1. 
+2016-06-02 13:10:34,767 | views | index | DEBUG | GET request for all units 
+2016-06-02 13:10:34,769 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 13:10:34,822 | views | get | DEBUG | GET request for units: id: 15 
+2016-06-02 13:10:34,825 | views | get | DEBUG | 404 Error.  No units found with id 15. 
+2016-06-02 13:10:34,854 | views | get | DEBUG | GET request for units: id: 1 
+2016-06-02 13:10:34,857 | views | get | DEBUG | units id:1 found. 
+2016-06-02 13:10:34,890 | views | put | DEBUG | PUT request for units: 
+2016-06-02 13:10:34,891 | views | put | DEBUG | Incoming data: {u'name': u'liter'} 
+2016-06-02 13:10:58,487 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 13:10:58,492 | models | <module> | DEBUG | loading models.py 
+2016-06-02 13:10:58,585 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-02 13:10:58,617 | views | <module> | DEBUG | loading views.py 
+2016-06-02 13:10:58,726 | views | post | DEBUG | POST request for departments: 
+2016-06-02 13:10:58,727 | views | post | DEBUG | Incoming data: {u'name': u'hba'} 
+2016-06-02 13:10:58,746 | views | index | DEBUG | GET request for all departments 
+2016-06-02 13:10:58,749 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 13:10:58,785 | views | delete | DEBUG | DELETE request for departments 1: 
+2016-06-02 13:10:58,792 | views | get | DEBUG | GET request for departments: id: 1 
+2016-06-02 13:10:58,796 | views | get | DEBUG | 404 Error.  No departments found with id 1. 
+2016-06-02 13:10:58,825 | views | index | DEBUG | GET request for all departments 
+2016-06-02 13:10:58,826 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 13:10:58,881 | views | get | DEBUG | GET request for departments: id: 15 
+2016-06-02 13:10:58,884 | views | get | DEBUG | 404 Error.  No departments found with id 15. 
+2016-06-02 13:10:58,914 | views | get | DEBUG | GET request for departments: id: 1 
+2016-06-02 13:10:58,917 | views | get | DEBUG | departments id:1 found. 
+2016-06-02 13:10:58,956 | views | index | DEBUG | GET request for all departments 
+2016-06-02 13:10:58,957 | views | index | DEBUG | Arguments passed in:  {'q': u'asdf', 'sort': u'jkll'} 
+2016-06-02 13:10:58,993 | views | put | DEBUG | PUT request for departments: 
+2016-06-02 13:10:58,996 | views | put | DEBUG | Incoming data: {u'name': u'floral'} 
+2016-06-02 13:10:58,999 | models | update_from | DEBUG | Updating Produce from floral 
+2016-06-02 13:10:59,032 | views | post | DEBUG | POST request for ingredients: 
+2016-06-02 13:10:59,035 | views | post | DEBUG | Incoming data: {u'name': u'ground pork'} 
+2016-06-02 13:10:59,038 | views | post | DEBUG | Error loading schema ingredients: {'department': [u'Missing data for required field.']} 
+2016-06-02 13:10:59,066 | views | post | DEBUG | POST request for ingredients: 
+2016-06-02 13:10:59,069 | views | post | DEBUG | Incoming data: {u'department': {u'id': 2, u'name': u'Meat'}, u'name': u'ground pork'} 
+2016-06-02 13:10:59,081 | views | index | DEBUG | GET request for all ingredients 
+2016-06-02 13:10:59,084 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 13:10:59,124 | views | delete | DEBUG | DELETE request for ingredients 1: 
+2016-06-02 13:10:59,131 | views | get | DEBUG | GET request for ingredients: id: 1 
+2016-06-02 13:10:59,134 | views | get | DEBUG | 404 Error.  No ingredients found with id 1. 
+2016-06-02 13:10:59,163 | views | index | DEBUG | GET request for all ingredients 
+2016-06-02 13:10:59,165 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 13:10:59,234 | views | get | DEBUG | GET request for ingredients: id: 15 
+2016-06-02 13:10:59,237 | views | get | DEBUG | 404 Error.  No ingredients found with id 15. 
+2016-06-02 13:10:59,266 | views | get | DEBUG | GET request for ingredients: id: 1 
+2016-06-02 13:10:59,269 | views | get | DEBUG | ingredients id:1 found. 
+2016-06-02 13:10:59,308 | views | put | DEBUG | PUT request for ingredients: 
+2016-06-02 13:10:59,311 | views | put | DEBUG | Incoming data: {u'department': {u'name': u'Meat', u'id': 3}} 
+2016-06-02 13:10:59,348 | views | put | DEBUG | PUT request for ingredients: 
+2016-06-02 13:10:59,351 | views | put | DEBUG | Incoming data: {u'name': u'watermelon'} 
+2016-06-02 13:10:59,385 | views | post | DEBUG | POST request for recipes: 
+2016-06-02 13:10:59,388 | views | post | DEBUG | Incoming data: {u'rating': 5, u'notes': [{u'note': u'Dont forget the liver'}, {u'note': u'and fish sauce'}], u'steps': [{u'step': u'Combine meat, seasonings', u'order': 1}, {u'step': u'Shape into loaf pan', u'order': 2}, {u'step': u'Bake for 1 hour', u'order': 3}], u'name': u'Meatloaf'} 
+2016-06-02 13:10:59,437 | views | post | DEBUG | POST request for recipes: 
+2016-06-02 13:10:59,438 | views | post | DEBUG | Incoming data: {u'rating': 5, u'notes': [{u'note': u'use old el paso'}], u'steps': [{u'step': u'brown beef', u'order': 1}, {u'step': u'add seasoning', u'order': 2}, {u'step': u'cook unitl done', u'order': 3}], u'name': u'Burrito'} 
+2016-06-02 13:10:59,457 | views | index | DEBUG | GET request for all recipes 
+2016-06-02 13:10:59,459 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 13:10:59,519 | views | delete | DEBUG | DELETE request for recipes 1: 
+2016-06-02 13:10:59,530 | views | get | DEBUG | GET request for recipes: id: 1 
+2016-06-02 13:10:59,535 | views | get | DEBUG | 404 Error.  No recipes found with id 1. 
+2016-06-02 13:10:59,563 | views | index | DEBUG | GET request for all recipes 
+2016-06-02 13:10:59,565 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 13:10:59,687 | views | get | DEBUG | GET request for recipes: id: 15 
+2016-06-02 13:10:59,691 | views | get | DEBUG | 404 Error.  No recipes found with id 15. 
+2016-06-02 13:10:59,720 | views | get | DEBUG | GET request for recipes: id: 1 
+2016-06-02 13:10:59,723 | views | get | DEBUG | recipes id:1 found. 
+2016-06-02 13:10:59,811 | views | put | DEBUG | PUT request for recipes: 
+2016-06-02 13:10:59,813 | views | put | DEBUG | Incoming data: {u'name': u'Lasagna'} 
+2016-06-02 13:10:59,865 | views | post | DEBUG | POST request for units: 
+2016-06-02 13:10:59,868 | views | post | DEBUG | Incoming data: {u'name': u'pound'} 
+2016-06-02 13:10:59,877 | views | index | DEBUG | GET request for all units 
+2016-06-02 13:10:59,878 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 13:10:59,914 | views | delete | DEBUG | DELETE request for units 1: 
+2016-06-02 13:10:59,921 | views | get | DEBUG | GET request for units: id: 1 
+2016-06-02 13:10:59,924 | views | get | DEBUG | 404 Error.  No units found with id 1. 
+2016-06-02 13:10:59,953 | views | index | DEBUG | GET request for all units 
+2016-06-02 13:10:59,956 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 13:11:00,007 | views | get | DEBUG | GET request for units: id: 15 
+2016-06-02 13:11:00,010 | views | get | DEBUG | 404 Error.  No units found with id 15. 
+2016-06-02 13:11:00,039 | views | get | DEBUG | GET request for units: id: 1 
+2016-06-02 13:11:00,042 | views | get | DEBUG | units id:1 found. 
+2016-06-02 13:11:00,075 | views | put | DEBUG | PUT request for units: 
+2016-06-02 13:11:00,076 | views | put | DEBUG | Incoming data: {u'name': u'liter'} 
+2016-06-02 14:47:50,904 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 14:47:50,908 | models | <module> | DEBUG | loading models.py 
+2016-06-02 14:47:51,006 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-02 14:47:51,042 | views | <module> | DEBUG | loading views.py 
+2016-06-02 14:48:06,341 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 14:48:06,344 | models | <module> | DEBUG | loading models.py 
+2016-06-02 14:48:06,438 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-02 14:48:06,470 | views | <module> | DEBUG | loading views.py 
+2016-06-02 14:48:20,316 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 14:48:20,319 | models | <module> | DEBUG | loading models.py 
+2016-06-02 14:48:20,417 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-02 14:48:20,448 | views | <module> | DEBUG | loading views.py 
+2016-06-02 14:49:24,681 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 14:49:24,686 | models | <module> | DEBUG | loading models.py 
+2016-06-02 14:49:24,779 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-02 14:49:24,812 | views | <module> | DEBUG | loading views.py 
+2016-06-02 14:49:39,846 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 14:49:39,851 | models | <module> | DEBUG | loading models.py 
+2016-06-02 14:49:39,943 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-02 14:49:39,974 | views | <module> | DEBUG | loading views.py 
+2016-06-02 14:53:31,700 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 14:53:31,703 | models | <module> | DEBUG | loading models.py 
+2016-06-02 14:53:31,802 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-02 14:53:31,834 | views | <module> | DEBUG | loading views.py 
+2016-06-02 14:53:53,063 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 14:53:53,068 | models | <module> | DEBUG | loading models.py 
+2016-06-02 14:53:53,161 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-02 14:53:53,194 | views | <module> | DEBUG | loading views.py 
+2016-06-02 14:58:08,721 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 14:58:08,726 | models | <module> | DEBUG | loading models.py 
+2016-06-02 14:58:08,821 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-02 14:58:08,852 | views | <module> | DEBUG | loading views.py 
+2016-06-02 14:59:47,959 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 14:59:47,970 | models | <module> | DEBUG | loading models.py 
+2016-06-02 14:59:48,084 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-02 14:59:48,118 | views | <module> | DEBUG | loading views.py 
+2016-06-02 14:59:58,250 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 14:59:58,253 | models | <module> | DEBUG | loading models.py 
+2016-06-02 14:59:58,346 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-02 14:59:58,378 | views | <module> | DEBUG | loading views.py 
+2016-06-02 15:01:19,865 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 15:01:19,872 | models | <module> | DEBUG | loading models.py 
+2016-06-02 15:01:19,967 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-02 15:01:19,999 | views | <module> | DEBUG | loading views.py 
+2016-06-02 15:02:43,450 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 15:02:43,453 | models | <module> | DEBUG | loading models.py 
+2016-06-02 15:02:43,562 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-02 15:02:43,596 | views | <module> | DEBUG | loading views.py 
+2016-06-02 15:03:08,387 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 15:03:08,391 | models | <module> | DEBUG | loading models.py 
+2016-06-02 15:03:08,484 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-02 15:03:08,516 | views | <module> | DEBUG | loading views.py 
+2016-06-02 15:04:11,740 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 15:04:11,744 | models | <module> | DEBUG | loading models.py 
+2016-06-02 15:04:11,842 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-02 15:04:11,875 | views | <module> | DEBUG | loading views.py 
+2016-06-02 15:04:13,003 | views | post | DEBUG | POST request for departments: 
+2016-06-02 15:04:13,006 | views | post | DEBUG | Incoming data: {u'name': u'hba'} 
+2016-06-02 15:04:13,022 | views | index | DEBUG | GET request for all departments 
+2016-06-02 15:04:13,023 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 15:04:13,058 | views | delete | DEBUG | DELETE request for departments 1: 
+2016-06-02 15:04:13,069 | views | get | DEBUG | GET request for departments: id: 1 
+2016-06-02 15:04:13,072 | views | get | DEBUG | 404 Error.  No departments found with id 1. 
+2016-06-02 15:04:13,102 | views | index | DEBUG | GET request for all departments 
+2016-06-02 15:04:13,105 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 15:04:13,161 | views | get | DEBUG | GET request for departments: id: 15 
+2016-06-02 15:04:13,165 | views | get | DEBUG | 404 Error.  No departments found with id 15. 
+2016-06-02 15:04:13,194 | views | get | DEBUG | GET request for departments: id: 1 
+2016-06-02 15:04:13,200 | views | get | DEBUG | departments id:1 found. 
+2016-06-02 15:04:13,240 | views | index | DEBUG | GET request for all departments 
+2016-06-02 15:04:13,242 | views | index | DEBUG | Arguments passed in:  {'q': u'asdf', 'sort': u'jkll'} 
+2016-06-02 15:04:13,275 | views | put | DEBUG | PUT request for departments: 
+2016-06-02 15:04:13,278 | views | put | DEBUG | Incoming data: {u'name': u'floral'} 
+2016-06-02 15:04:13,283 | models | update_from | DEBUG | Updating Produce from floral 
+2016-06-02 15:04:13,319 | views | post | DEBUG | POST request for ingredients: 
+2016-06-02 15:04:13,322 | views | post | DEBUG | Incoming data: {u'name': u'ground pork'} 
+2016-06-02 15:04:13,325 | views | post | DEBUG | Error loading schema ingredients: {'department': [u'Missing data for required field.']} 
+2016-06-02 15:04:13,352 | views | post | DEBUG | POST request for ingredients: 
+2016-06-02 15:04:13,355 | views | post | DEBUG | Incoming data: {u'department': {u'id': 2, u'name': u'Meat'}, u'name': u'ground pork'} 
+2016-06-02 15:04:13,372 | views | index | DEBUG | GET request for all ingredients 
+2016-06-02 15:04:13,375 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 15:04:13,423 | views | delete | DEBUG | DELETE request for ingredients 1: 
+2016-06-02 15:04:13,430 | views | get | DEBUG | GET request for ingredients: id: 1 
+2016-06-02 15:04:13,434 | views | get | DEBUG | 404 Error.  No ingredients found with id 1. 
+2016-06-02 15:04:13,463 | views | index | DEBUG | GET request for all ingredients 
+2016-06-02 15:04:13,467 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 15:04:13,556 | views | get | DEBUG | GET request for ingredients: id: 15 
+2016-06-02 15:04:13,559 | views | get | DEBUG | 404 Error.  No ingredients found with id 15. 
+2016-06-02 15:04:13,588 | views | get | DEBUG | GET request for ingredients: id: 1 
+2016-06-02 15:04:13,592 | views | get | DEBUG | ingredients id:1 found. 
+2016-06-02 15:04:13,635 | views | put | DEBUG | PUT request for ingredients: 
+2016-06-02 15:04:13,638 | views | put | DEBUG | Incoming data: {u'department': {u'name': u'Meat', u'id': 3}} 
+2016-06-02 15:04:13,683 | views | put | DEBUG | PUT request for ingredients: 
+2016-06-02 15:04:13,686 | views | put | DEBUG | Incoming data: {u'name': u'watermelon'} 
+2016-06-02 15:04:13,723 | views | post | DEBUG | POST request for recipes: 
+2016-06-02 15:04:13,726 | views | post | DEBUG | Incoming data: {u'rating': 5, u'notes': [{u'note': u'Dont forget the liver'}, {u'note': u'and fish sauce'}], u'steps': [{u'step': u'Combine meat, seasonings', u'order': 1}, {u'step': u'Shape into loaf pan', u'order': 2}, {u'step': u'Bake for 1 hour', u'order': 3}], u'name': u'Meatloaf'} 
+2016-06-02 15:04:13,773 | views | post | DEBUG | POST request for recipes: 
+2016-06-02 15:04:13,776 | views | post | DEBUG | Incoming data: {u'rating': 5, u'notes': [{u'note': u'use old el paso'}], u'steps': [{u'step': u'brown beef', u'order': 1}, {u'step': u'add seasoning', u'order': 2}, {u'step': u'cook unitl done', u'order': 3}], u'name': u'Burrito'} 
+2016-06-02 15:04:13,792 | views | index | DEBUG | GET request for all recipes 
+2016-06-02 15:04:13,795 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 15:04:13,865 | views | delete | DEBUG | DELETE request for recipes 1: 
+2016-06-02 15:04:13,877 | views | get | DEBUG | GET request for recipes: id: 1 
+2016-06-02 15:04:13,881 | views | get | DEBUG | 404 Error.  No recipes found with id 1. 
+2016-06-02 15:04:13,910 | views | index | DEBUG | GET request for all recipes 
+2016-06-02 15:04:13,911 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 15:04:14,049 | views | get | DEBUG | GET request for recipes: id: 15 
+2016-06-02 15:04:14,052 | views | get | DEBUG | 404 Error.  No recipes found with id 15. 
+2016-06-02 15:04:14,079 | views | get | DEBUG | GET request for recipes: id: 1 
+2016-06-02 15:04:14,084 | views | get | DEBUG | recipes id:1 found. 
+2016-06-02 15:04:14,187 | views | put | DEBUG | PUT request for recipes: 
+2016-06-02 15:04:14,190 | views | put | DEBUG | Incoming data: {u'name': u'Lasagna'} 
+2016-06-02 15:04:14,249 | views | post | DEBUG | POST request for units: 
+2016-06-02 15:04:14,252 | views | post | DEBUG | Incoming data: {u'name': u'pound'} 
+2016-06-02 15:04:14,259 | views | index | DEBUG | GET request for all units 
+2016-06-02 15:04:14,262 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 15:04:14,296 | views | delete | DEBUG | DELETE request for units 1: 
+2016-06-02 15:04:14,303 | views | get | DEBUG | GET request for units: id: 1 
+2016-06-02 15:04:14,306 | views | get | DEBUG | 404 Error.  No units found with id 1. 
+2016-06-02 15:04:14,335 | views | index | DEBUG | GET request for all units 
+2016-06-02 15:04:14,338 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 15:04:14,390 | views | get | DEBUG | GET request for units: id: 15 
+2016-06-02 15:04:14,392 | views | get | DEBUG | 404 Error.  No units found with id 15. 
+2016-06-02 15:04:14,421 | views | get | DEBUG | GET request for units: id: 1 
+2016-06-02 15:04:14,424 | views | get | DEBUG | units id:1 found. 
+2016-06-02 15:04:14,457 | views | put | DEBUG | PUT request for units: 
+2016-06-02 15:04:14,460 | views | put | DEBUG | Incoming data: {u'name': u'liter'} 
+2016-06-02 15:04:41,681 | __init__ | <module> | WARNING | THE APP IS STARTING 
+2016-06-02 15:04:41,686 | models | <module> | DEBUG | loading models.py 
+2016-06-02 15:04:41,780 | schemas | <module> | DEBUG | loading schemas.py 
+2016-06-02 15:04:41,812 | views | <module> | DEBUG | loading views.py 
+2016-06-02 15:04:43,783 | views | post | DEBUG | POST request for departments: 
+2016-06-02 15:04:43,786 | views | post | DEBUG | Incoming data: {u'name': u'hba'} 
+2016-06-02 15:04:43,802 | views | index | DEBUG | GET request for all departments 
+2016-06-02 15:04:43,805 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 15:04:43,839 | views | delete | DEBUG | DELETE request for departments 1: 
+2016-06-02 15:04:43,848 | views | get | DEBUG | GET request for departments: id: 1 
+2016-06-02 15:04:43,854 | views | get | DEBUG | 404 Error.  No departments found with id 1. 
+2016-06-02 15:04:43,882 | views | index | DEBUG | GET request for all departments 
+2016-06-02 15:04:43,884 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 15:04:43,941 | views | get | DEBUG | GET request for departments: id: 15 
+2016-06-02 15:04:43,947 | views | get | DEBUG | 404 Error.  No departments found with id 15. 
+2016-06-02 15:04:43,974 | views | get | DEBUG | GET request for departments: id: 1 
+2016-06-02 15:04:43,980 | views | get | DEBUG | departments id:1 found. 
+2016-06-02 15:04:44,019 | views | index | DEBUG | GET request for all departments 
+2016-06-02 15:04:44,022 | views | index | DEBUG | Arguments passed in:  {'q': u'asdf', 'sort': u'jkll'} 
+2016-06-02 15:04:44,055 | views | put | DEBUG | PUT request for departments: 
+2016-06-02 15:04:44,058 | views | put | DEBUG | Incoming data: {u'name': u'floral'} 
+2016-06-02 15:04:44,063 | models | update_from | DEBUG | Updating Produce from floral 
+2016-06-02 15:04:44,098 | views | post | DEBUG | POST request for ingredients: 
+2016-06-02 15:04:44,101 | views | post | DEBUG | Incoming data: {u'name': u'ground pork'} 
+2016-06-02 15:04:44,104 | views | post | DEBUG | Error loading schema ingredients: {'department': [u'Missing data for required field.']} 
+2016-06-02 15:04:44,132 | views | post | DEBUG | POST request for ingredients: 
+2016-06-02 15:04:44,134 | views | post | DEBUG | Incoming data: {u'department': {u'id': 2, u'name': u'Meat'}, u'name': u'ground pork'} 
+2016-06-02 15:04:44,151 | views | index | DEBUG | GET request for all ingredients 
+2016-06-02 15:04:44,154 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 15:04:44,203 | views | delete | DEBUG | DELETE request for ingredients 1: 
+2016-06-02 15:04:44,210 | views | get | DEBUG | GET request for ingredients: id: 1 
+2016-06-02 15:04:44,213 | views | get | DEBUG | 404 Error.  No ingredients found with id 1. 
+2016-06-02 15:04:44,243 | views | index | DEBUG | GET request for all ingredients 
+2016-06-02 15:04:44,244 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 15:04:44,335 | views | get | DEBUG | GET request for ingredients: id: 15 
+2016-06-02 15:04:44,338 | views | get | DEBUG | 404 Error.  No ingredients found with id 15. 
+2016-06-02 15:04:44,365 | views | get | DEBUG | GET request for ingredients: id: 1 
+2016-06-02 15:04:44,369 | views | get | DEBUG | ingredients id:1 found. 
+2016-06-02 15:04:44,413 | views | put | DEBUG | PUT request for ingredients: 
+2016-06-02 15:04:44,415 | views | put | DEBUG | Incoming data: {u'department': {u'name': u'Meat', u'id': 3}} 
+2016-06-02 15:04:44,457 | views | put | DEBUG | PUT request for ingredients: 
+2016-06-02 15:04:44,460 | views | put | DEBUG | Incoming data: {u'name': u'watermelon'} 
+2016-06-02 15:04:44,497 | views | post | DEBUG | POST request for recipes: 
+2016-06-02 15:04:44,500 | views | post | DEBUG | Incoming data: {u'rating': 5, u'notes': [{u'note': u'Dont forget the liver'}, {u'note': u'and fish sauce'}], u'steps': [{u'step': u'Combine meat, seasonings', u'order': 1}, {u'step': u'Shape into loaf pan', u'order': 2}, {u'step': u'Bake for 1 hour', u'order': 3}], u'name': u'Meatloaf'} 
+2016-06-02 15:04:44,546 | views | post | DEBUG | POST request for recipes: 
+2016-06-02 15:04:44,549 | views | post | DEBUG | Incoming data: {u'rating': 5, u'notes': [{u'note': u'use old el paso'}], u'steps': [{u'step': u'brown beef', u'order': 1}, {u'step': u'add seasoning', u'order': 2}, {u'step': u'cook unitl done', u'order': 3}], u'name': u'Burrito'} 
+2016-06-02 15:04:44,568 | views | index | DEBUG | GET request for all recipes 
+2016-06-02 15:04:44,569 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 15:04:44,634 | views | delete | DEBUG | DELETE request for recipes 1: 
+2016-06-02 15:04:44,647 | views | get | DEBUG | GET request for recipes: id: 1 
+2016-06-02 15:04:44,651 | views | get | DEBUG | 404 Error.  No recipes found with id 1. 
+2016-06-02 15:04:44,680 | views | index | DEBUG | GET request for all recipes 
+2016-06-02 15:04:44,684 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 15:04:44,821 | views | get | DEBUG | GET request for recipes: id: 15 
+2016-06-02 15:04:44,823 | views | get | DEBUG | 404 Error.  No recipes found with id 15. 
+2016-06-02 15:04:44,851 | views | get | DEBUG | GET request for recipes: id: 1 
+2016-06-02 15:04:44,855 | views | get | DEBUG | recipes id:1 found. 
+2016-06-02 15:04:44,960 | views | put | DEBUG | PUT request for recipes: 
+2016-06-02 15:04:44,961 | views | put | DEBUG | Incoming data: {u'name': u'Lasagna'} 
+2016-06-02 15:04:45,022 | views | post | DEBUG | POST request for units: 
+2016-06-02 15:04:45,023 | views | post | DEBUG | Incoming data: {u'name': u'pound'} 
+2016-06-02 15:04:45,032 | views | index | DEBUG | GET request for all units 
+2016-06-02 15:04:45,033 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 15:04:45,095 | views | delete | DEBUG | DELETE request for units 1: 
+2016-06-02 15:04:45,102 | views | get | DEBUG | GET request for units: id: 1 
+2016-06-02 15:04:45,105 | views | get | DEBUG | 404 Error.  No units found with id 1. 
+2016-06-02 15:04:45,134 | views | index | DEBUG | GET request for all units 
+2016-06-02 15:04:45,137 | views | index | DEBUG | Arguments passed in:  {} 
+2016-06-02 15:04:45,188 | views | get | DEBUG | GET request for units: id: 15 
+2016-06-02 15:04:45,193 | views | get | DEBUG | 404 Error.  No units found with id 15. 
+2016-06-02 15:04:45,220 | views | get | DEBUG | GET request for units: id: 1 
+2016-06-02 15:04:45,223 | views | get | DEBUG | units id:1 found. 
+2016-06-02 15:04:45,257 | views | put | DEBUG | PUT request for units: 
+2016-06-02 15:04:45,259 | views | put | DEBUG | Incoming data: {u'name': u'liter'} 

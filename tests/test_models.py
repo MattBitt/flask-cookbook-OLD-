@@ -102,7 +102,7 @@ class RecipeTest(ModelTest):
         r2 = Recipe.query.get(1)
         assert len(r2.recipeingredients.all()) == before + 1
         
-                
+
         
 class StepTest(ModelTest):
     fixtures = ['steps.json']
@@ -151,7 +151,7 @@ class IngredientTest(ModelTest):
         
         db.session.add(i)
         db.session.commit()
-        
+       
         
 class DepartmentTest(ModelTest):
     fixtures = ['departments.json']
@@ -179,7 +179,6 @@ class DepartmentTest(ModelTest):
 
         assert len(Department.query.all()) == before - 1
         
-
 class UnitTest(ModelTest):
     fixtures = ['units.json']
     

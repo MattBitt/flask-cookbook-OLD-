@@ -129,7 +129,7 @@ class Department(db.Model, CRUDModel):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String)
     ingredients = db.relationship('Ingredient', backref='department',
-                                lazy='dynamic')
+                                lazy='subquery')
     
     def __repr__(self):
         return '<Department {} {}>'.format(self.id, self.name)

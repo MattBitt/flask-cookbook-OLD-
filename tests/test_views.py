@@ -142,7 +142,8 @@ class DepartmentsViewTest(ViewTest):
         self.new_item_string = r"""{"name" : "hba"}"""
         self.update_item_string = r"""{"name" : "floral"}"""
         
-
+    def test_query_arg(self):
+        result = TestClient().get('/departments/?q=asdf&somedata=zxcv&sort=jkll')
 class UnitsViewTest(ViewTest):
     __test__ = True
     
@@ -184,7 +185,7 @@ class RecipesViewTest(ViewTest):
     def test_all_new(self):
         #new recipe
         json_string = r"""{"name": "Meatloaf", "steps" : [{"step" : "Combine meat, seasonings", "order" : 1},
-                           {"step" : "Shape into loaf pan", "order" : 2}, {"step" : "Bake for 1 hour", "order" : 3}], 
+                          {"step" : "Shape into loaf pan", "order" : 2}, {"step" : "Bake for 1 hour", "order" : 3}], 
                            "notes" : [{"note" : "Dont forget the liver"}, {"note" : "and fish sauce"}], "rating" : 5}"""
         result = TestClient().post('/recipes/', json_string)
         assert result.status_code == 200
