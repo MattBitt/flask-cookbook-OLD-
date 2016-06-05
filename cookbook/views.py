@@ -27,6 +27,7 @@ class CRUDView(FlaskView):
     
     def index(self):
         ## retrieve all items from db and dump it them to a list of json strings
+        print "in get function"
         args = parser.parse(index_args, request)
         app.logger.debug('GET request for all {}'.format(self.desc))
         app.logger.debug('Arguments passed in:  {}'.format(args))
@@ -45,9 +46,11 @@ class CRUDView(FlaskView):
             obj = self.obj.query.get(id)
         except:
             return jsonify({"message": "Error processing {} query: {}.".format(self.desc, self.obj.query)}), 400
+        app.logger.debug('obj with id # {}:  {}'.format(id, obj))
         if obj:
             app.logger.debug('{} id:{} found.'.format(self.desc, id))
             obj_dict, errors = self.schema(many=False).dump(obj)
+            
             if errors:
                 app.logger.debug("Error dumping schema {}: {}".format(self.desc, errors))
                 return jsonify({"message": "Error dumping {}: {}.".format(self.desc, errors)}), 400
@@ -64,6 +67,7 @@ class CRUDView(FlaskView):
         app.logger.debug("POST request for {}:".format(self.desc))
         json_data = request.get_json()
         if not json_data:
+            
             app.logger.error("No json_data for POST request")
             return jsonify({'message': 'No input data provided'}), 400
         app.logger.debug("Incoming data: {}".format(json_data))
@@ -73,13 +77,13 @@ class CRUDView(FlaskView):
             return jsonify({"message": "Error dumping {}: {}.".format(self.desc, errors)}), 400
         obj_dict.save()
         result, errors = self.schema().dump(obj_dict)
+        app.logger.debug(result)
         return jsonify(result)       
 
     def put(self, id):
         ## takes in new data and converts that to a new object
         ## the existing (id) object is updated with the fields from the newly created one
         app.logger.debug("PUT request for {}:".format(self.desc))
-        json_data = request.get_json()
         if not json_data:
             app.logger.error("No json_data for PUT request")
             return jsonify({'message': 'No input data provided'}), 400
@@ -123,6 +127,26 @@ class IngredientsView(CRUDView):
         self.obj = Ingredient
         self.schema = IngredientSchema
         self.desc = 'ingredients'
+        
+    def post(self):
+
+        app.logger.debug("POST request for ingredient")
+        json_data = request.get_json()
+        if not json_data:
+            app.logger.error("No json_data for POST request")
+            return jsonify({'message': 'No input data provided'}), 400
+        app.logger.debug("Incoming data: {}".format(json_data))
+        new_obj, errors = self.schema().load(json_data)
+        if errors:
+            app.logger.debug("Error loading schema {}: {}".format(self.desc, errors))
+            return jsonify({"message": "Error dumping {}: {}.".format(self.desc, errors)}), 400
+        dept = Department.query.filter(Department.name == new_obj.department.name)
+        if dept.first():
+            new_obj.department.id = dept.first().id
+        new_obj.save()
+        result, errors = self.schema().dump(new_obj)
+        
+        return jsonify(result)
 
 class UnitsView(CRUDView):
     def __init__(self):

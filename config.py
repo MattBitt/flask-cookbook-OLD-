@@ -17,12 +17,12 @@ class ProductionConfig(Config):
     SQLALCHEMY_DATABASE_URI = 'postgresql://postgres:mattscott@192.168.0.201/cookbook'
 
 class DevelopmentConfig(Config):
+    TESTING = True
     DEBUG = True
-
+    SQLALCHEMY_DATABASE_URI = 'postgresql://postgres:mattscott@192.168.0.201/test_cookbook'
+    
 class TestingConfig(Config):
     TESTING = True
     DEBUG = True
+    SQLALCHEMY_DATABASE_URI = 'postgresql://postgres:mattscott@192.168.0.201/test_cookbook'
     
-class TestingLocalDBConfig(Config):
-    TESTING = True
-    DEBUG = True

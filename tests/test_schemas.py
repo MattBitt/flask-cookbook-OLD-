@@ -66,7 +66,8 @@ class SchemaTest(TestCase, FixturesMixin):
         assert errors == {}
         assert isinstance(data, self.component)
         assert data.name == self.test_data['new_name']
-        data.save()
+        data = data.save()
+
         assert data.id == self.test_data['new_id']
         #assert data.ingredients.all() == []
 

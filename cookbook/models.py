@@ -7,9 +7,11 @@ app.logger.debug('loading models.py')
 
 class CRUDModel(object):
     def save(self):
+        app.logger.debug('Saving object {}'.format(repr(self)))
         db.session.add(self)
         db.session.commit()
-
+        app.logger.debug('Object Saved: {}'.format(repr(self)))
+        
     def update_from(self, new_obj):
         raise NotImplementedError
     
@@ -104,7 +106,7 @@ class Ingredient(db.Model, CRUDModel):
     __tablename__ = 'ingredients'
 
     id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String)
+    name = db.Column(db.String, unique = True)
     department_id = db.Column(db.Integer, db.ForeignKey('departments.id'))
     recipeingredients = db.relationship('RecipeIngredient', backref='ingredient',
                                 lazy='dynamic')
@@ -129,7 +131,7 @@ class Department(db.Model, CRUDModel):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String)
     ingredients = db.relationship('Ingredient', backref='department',
-                                lazy='subquery')
+                                lazy='dynamic')
     
     def __repr__(self):
         return '<Department {} {}>'.format(self.id, self.name)
@@ -148,7 +150,7 @@ class Unit(db.Model, CRUDModel):
     __tablename__ = 'units'
 
     id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String)
+    name = db.Column(db.String, unique=True)
     recipeingredients = db.relationship('RecipeIngredient', backref='unit',
                                 lazy='dynamic')    
     def __repr__(self):

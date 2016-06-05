@@ -1,6 +1,6 @@
 from cookbook.models import Recipe, Step, Note, Ingredient, Department, Unit, RecipeIngredient
 from flask_testing import TestCase
-from cookbook import db, app
+from cookbook import app
 from flask_fixtures import FixturesMixin
 
 FixturesMixin.init_app(app, db)
@@ -11,6 +11,9 @@ class ModelTest(TestCase, FixturesMixin):
     def create_app(self):
         app.config.from_object('config.TestingConfig')
         #app.config.from_object('config.TestingLocalDBConfig')
+        db = SQLAlchemy()
+        db.init_app(app)
+        
         return app
 
     def setUp(self):

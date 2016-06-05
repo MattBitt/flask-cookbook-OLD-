@@ -15,8 +15,10 @@ formatter = logging.Formatter( "%(asctime)s | %(module)s | %(funcName)s | %(leve
 handler.setFormatter(formatter)
 handler.setLevel(logging.DEBUG) 
 app.logger.addHandler(handler)
-
-app.logger.warning('THE APP IS STARTING')
+logger = logging.getLogger('my-logger')
+logger.propagate = False
+app.logger.info('THE APP IS STARTING')
+app.logger.info('Using DB:  {}'.format(app.config['SQLALCHEMY_DATABASE_URI']))
 #api = Api(app)
 db = SQLAlchemy(app)
 
